@@ -1,6 +1,6 @@
 # English localization reference
 
-Implementation follows validation of the original Japanese game (Beads
+Implemented after validation of the original Japanese game (Beads
 `beads-vb.4.1` then `beads-vb.4.2`). Translation, color, and possible widescreen
 are separate optional modifications; Japanese red presentation is the baseline.
 
@@ -52,19 +52,82 @@ and codegen-embedded constants, which cannot be changed by writing the live
 ROM alone. Shared patch support belongs in vbrecomp; game assets and mappings
 belong here.
 
-## Runtime integration findings
+## Editable native text
 
-The current mod host activates plugins before `vb_memory_init` loads the ROM.
-An activation callback therefore cannot immediately change cartridge assets.
-Prepare the selected language plan during activation, then apply it at a
-documented point after ROM validation and before the game consumes the assets.
-`vb_rom_data()` currently exposes a read-only view; shared guarded patch support
-needs an explicit API instead of casting away const in game code.
+`translations/english.json` contains all 35 reference spans as editable strings,
+their fixed byte capacities and padding rules, and an explicit glyph-to-native-
+byte map. The map contains only glyphs observed in the supplied translation.
+The existing font handles those characters; this patch adds no font art.
+One span ends in NUL padding; the remaining spans use spaces. Native control
+bytes between spans are preserved. Extending the character set requires
+checking the game's actual glyph coverage first.
 
-The native emitter embeds instruction operands. Audit patch spans against the
-generated instruction-address table and ROM disassembly before treating them
-as data-only patches. Verify the complete translated runtime against the
-independently patched reference, then disable the mod and compare against the
-Japanese baseline again. The startup hook, restoration, editable text/glyph
-sources, package manifest, and coverage report are the next implementation
-milestone, not part of the Japanese bring-up.
+`tools/build_translation.py` validates the original ROM hash, rejects unknown
+glyphs, oversized strings, overlapping spans, and any intersection with generated
+instruction bytes. It generates an ignored C header containing exact original
+guards and translated bytes, plus `dist/sd-gundam-english-0.1.0.vbmod`. Source
+strings are included in the package for reference; the trusted implementation
+is statically linked. Edit the JSON and rebuild to change the text. This is not
+a runtime script loader. No ROM or generated cartridge C goes into the package.
+
+The native emitter embeds instruction operands, while data loads go through
+the runtime bus. The reference spans overlap zero of the 137,371 unique
+generated instruction entries audited in this build. This makes them suitable
+for guarded data changes without changing the Japanese generated code.
+
+Check exact reference reproduction with:
+
+```powershell
+python tools/build_translation.py --framework '..\_wt-sd-gundam-vbrecomp' --check-reference
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+The original 35 entries reproduce the patched-image SHA-256 above, including
+all padding, with exactly 1,016 changed bytes. The five authoring tests cover
+padding, unsupported glyphs, size limits, control-code mappings, and overlap.
+
+## Runtime integration
+
+`src/translation_mod.cpp` registers the optional `sd-gundam.reference-english`
+plugin. It selects the framework's exclusive `rom.assets` plan during activation.
+Since activation precedes loading, the plan stays pending until the host verifies
+the original cartridge and loaded CRC, then applies it before the first guest
+instruction. No const cast or disk patch is used.
+
+Every span must match its exact source or translated payload before any span is
+written. A failed guard rejects the entire plan. The reset callback restores
+Japanese when disabled; already-uploaded assets refresh when the game reloads
+them, so restart to replay all text in the new language. The framework's six
+CTest checks include atomic guards, restoration, reload, overlap, and bounds.
+
+Install the package in the launcher's Mods view and enable **English story text**,
+or use `.\tools\play.ps1 -Language en`. Use `-Language ja` to disable it and
+start the original language. No language argument preserves the saved selection.
+
+`tools/validate_translation.py` launches native-only execution on the original
+ROM with the package enabled, and a separate Beetle process on the privately
+patched reference. It verifies the entire live ROM image at frame zero, then
+compares all ten state/output planes. `--restore-from <prior runtime directory>`
+copies the enabled private test profile and disables English before comparing
+against the Japanese oracle. It also verifies the original file stayed unchanged.
+
+The package reproduces the supplied reference translation. It does not claim
+that every campaign screen is translated or that all 35 lines have been reached
+visually; broader editorial and gameplay coverage remains separate work.
+
+## Validated result
+
+On 2026-09-12, English enabled and Japanese restored each passed all 40
+checkpoints through frame 4,500 against their corresponding independent Beetle
+ROMs, across all ten planes with 280 byte audits each. Neither run used the
+interpreter or fallback. English executed 918,551,955 native instructions;
+Japanese executed 914,443,855. The full in-memory cartridge hashes matched the
+respective reference images, and the original disk file stayed unchanged.
+
+The runtime was `3823aed9e383b7a3316e428ec318ae9ff7ca606c502f9c2971f9a49685181cc8`,
+using framework `44988f34b3bcc089985d9686717005401a96900b`. Machine-readable
+results: [English](english-validation.json), [restored Japanese](japanese-restoration.json).
+The installed/enabled launcher toggle and the native English story were inspected.
+A patched cartridge supplied directly to the host was correctly rejected.
+
+![English text rendered by the game](english-story.png)

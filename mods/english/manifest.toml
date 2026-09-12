@@ -1,0 +1,22 @@
+format_version = 1
+id = "sd-gundam-english"
+version = "0.1.0"
+name = "SD Gundam reference English"
+author = "Translation: supplied IPS (author not identified); native integration: project contributors"
+license = "Reference translation attribution and license not supplied"
+
+[[target]]
+game_id = "sd-gundam-dimension-war"
+rom_sha256 = "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"
+
+[[feature]]
+id = "english"
+name = "English story text"
+description = "Native text from the supplied reference patch. Restart the game after changing language to replay all text."
+group = "Language"
+channel = "experimental"
+default_enabled = false
+
+[[plugin]]
+feature = "english"
+id = "sd-gundam.reference-english"

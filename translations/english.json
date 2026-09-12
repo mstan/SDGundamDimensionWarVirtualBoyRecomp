@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "language": "en",
+  "reference_ips_sha256": "4e3da3a54d520d9d14d5c98b4feeb5d39eca81587ee79b2c0ca48cfe61d45e67",
+  "glyphs": {
+    " ": "20",
+    ",": "2c",
+    "-": "2d",
+    ".": "2e",
+    "0": "30",
+    "1": "31",
+    "2": "32",
+    "9": "39",
+    ":": "3a",
+    "A": "41",
+    "B": "42",
+    "C": "43",
+    "D": "44",
+    "E": "45",
+    "F": "46",
+    "G": "47",
+    "H": "48",
+    "M": "4d",
+    "N": "4e",
+    "O": "4f",
+    "P": "50",
+    "R": "52",
+    "S": "53",
+    "T": "54",
+    "U": "55",
+    "V": "56",
+    "W": "57",
+    "Y": "59",
+    "Z": "5a",
+    "a": "61",
+    "b": "62",
+    "c": "63",
+    "d": "64",
+    "e": "65",
+    "f": "66",
+    "g": "67",
+    "h": "68",
+    "i": "69",
+    "k": "6b",
+    "l": "6c",
+    "m": "6d",
+    "n": "6e",
+    "o": "6f",
+    "p": "70",
+    "q": "71",
+    "r": "72",
+    "s": "73",
+    "t": "74",
+    "u": "75",
+    "v": "76",
+    "w": "77",
+    "y": "79"
+  },
+  "entries": [
+    {
+      "id": "story_0f98e4",
+      "offset": "0x0f98e4",
+      "capacity": 30,
+      "text": "G Force endeavors to recover",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9905",
+      "offset": "0x0f9905",
+      "capacity": 17,
+      "text": "MS units.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9919",
+      "offset": "0x0f9919",
+      "capacity": 30,
+      "text": "Prior to a colony, we meet",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f993b",
+      "offset": "0x0f993b",
+      "capacity": 13,
+      "text": "enemies.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f994b",
+      "offset": "0x0f994b",
+      "capacity": 45,
+      "text": "The enemy, however, stole our",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f997b",
+      "offset": "0x0f997b",
+      "capacity": 22,
+      "text": "GP-02A unit.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9994",
+      "offset": "0x0f9994",
+      "capacity": 42,
+      "text": "We must recover GP-02A or",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f99c1",
+      "offset": "0x0f99c1",
+      "capacity": 19,
+      "text": "destroy it.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f99d7",
+      "offset": "0x0f99d7",
+      "capacity": 42,
+      "text": "We also regained Mobile Suit ZZ",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9a04",
+      "offset": "0x0f9a04",
+      "capacity": 9,
+      "text": "Gundam.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9a10",
+      "offset": "0x0f9a10",
+      "capacity": 30,
+      "text": "More enemies show up.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9a31",
+      "offset": "0x0f9a31",
+      "capacity": 43,
+      "text": "We got Nu Gundam from the enemy",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9a5f",
+      "offset": "0x0f9a5f",
+      "capacity": 30,
+      "text": "and a new mission:",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9a80",
+      "offset": "0x0f9a80",
+      "capacity": 38,
+      "text": "SEARCH OUT THE ENEMY MS DEV BASE",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9aa9",
+      "offset": "0x0f9aa9",
+      "capacity": 6,
+      "text": "",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9ab2",
+      "offset": "0x0f9ab2",
+      "capacity": 36,
+      "text": "As we aim at our goal, enemies",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9ad9",
+      "offset": "0x0f9ad9",
+      "capacity": 10,
+      "text": "arrive.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9ae6",
+      "offset": "0x0f9ae6",
+      "capacity": 41,
+      "text": "To sub for Z Gundam, F91 was",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9b12",
+      "offset": "0x0f9b12",
+      "capacity": 29,
+      "text": "obtained.  We proceed.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9b32",
+      "offset": "0x0f9b32",
+      "capacity": 40,
+      "text": "Before the colony: enemies.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9b5d",
+      "offset": "0x0f9b5d",
+      "capacity": 47,
+      "text": "V2 Gundam is finally in G Force.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9b8f",
+      "offset": "0x0f9b8f",
+      "capacity": 36,
+      "text": "As we hurry to the MS DEV BASE,",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9bb6",
+      "offset": "0x0f9bb6",
+      "capacity": 33,
+      "text": "enemies appear.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9bda",
+      "offset": "0x0f9bda",
+      "capacity": 42,
+      "text": "For an all-out attack, G Force",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9c07",
+      "offset": "0x0f9c07",
+      "capacity": 30,
+      "text": "equips new MS units.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9c28",
+      "offset": "0x0f9c28",
+      "capacity": 31,
+      "text": "Enemy forces move in.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9c4a",
+      "offset": "0x0f9c4a",
+      "capacity": 23,
+      "text": "We can now raid the",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9c64",
+      "offset": "0x0f9c64",
+      "capacity": 32,
+      "text": "last enemy MS units.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9c87",
+      "offset": "0x0f9c87",
+      "capacity": 31,
+      "text": "We pursue the enemy.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9ca9",
+      "offset": "0x0f9ca9",
+      "capacity": 29,
+      "text": "We beat the enemy units.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9cc9",
+      "offset": "0x0f9cc9",
+      "capacity": 29,
+      "text": "We destroyed the MS units.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9ce9",
+      "offset": "0x0f9ce9",
+      "capacity": 27,
+      "text": "We beat the enemy units.",
+      "padding": "nul"
+    },
+    {
+      "id": "story_0f9d07",
+      "offset": "0x0f9d07",
+      "capacity": 33,
+      "text": "We have defeated the enemy.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9d2b",
+      "offset": "0x0f9d2b",
+      "capacity": 34,
+      "text": "The war has come to its end.",
+      "padding": "space"
+    },
+    {
+      "id": "story_0f9d50",
+      "offset": "0x0f9d50",
+      "capacity": 32,
+      "text": "We have been defeated.",
+      "padding": "space"
+    }
+  ]
+}

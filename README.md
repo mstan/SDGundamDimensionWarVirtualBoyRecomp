@@ -63,6 +63,24 @@ A/B, Q/E are L/R, Enter is Start, Right Shift is Select, and Tab is turbo.
 Escape opens settings during play. Controllers and remapping use recomp-ui.
 Progress and settings use the shared host's persistent saves and configuration.
 
+## English mod
+
+The build produces `dist/sd-gundam-english-0.1.0.vbmod`. Install it through
+the launcher's Mods view, or select the language when launching:
+
+```powershell
+.\tools\play.ps1 -Language en
+.\tools\play.ps1 -Language ja
+```
+
+The original Japanese ROM is always required. The optional package reproduces
+the supplied translation through native text assets. Its 35 strings and glyph
+map are editable in `translations/english.json`; rebuild after editing.
+English enabled and Japanese restored each match their independent oracle
+through all 40 opening-mission checkpoints, with zero fallback.
+Restart after changing language to replay all text. See
+[localization details](docs/LOCALIZATION.md) for coverage and validation.
+
 ## Validation
 
 `tools/validate.ps1` compares separate runtime and Beetle processes through the
@@ -93,6 +111,6 @@ Central Beads epic: `beads-vb.4`. Japanese fidelity (`.1`) gates the English
 localization mod (`.2`), then color (`.3`), then assessment of native widescreen
 (`.4`). Widescreen depends on what the game's scene and camera data support.
 See [localization reference](docs/LOCALIZATION.md) for the supplied IPS audit
-and the Endless Duel text/glyph workflow. Enhancements are not implemented yet.
+and the Endless Duel text/glyph workflow. Color and widescreen follow separately.
 
 See [LICENSE.md](LICENSE.md). Game content and dependencies retain their own rights.

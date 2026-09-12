@@ -52,7 +52,7 @@ try {
     $options=@('-S',$projectRoot,'-B',$buildPath,'-G','Ninja','-DCMAKE_BUILD_TYPE=Release',
         "-DCMAKE_MAKE_PROGRAM=$Toolchain/ninja.exe","-DCMAKE_C_COMPILER=$Toolchain/gcc.exe",
         "-DCMAKE_CXX_COMPILER=$Toolchain/g++.exe","-DPython3_EXECUTABLE=$Python",
-        "-DVBRECOMP_ROOT=$Framework","-DRECOMP_UI_ROOT=$Ui","-DBEETLE_VB_ROOT=$Oracle",
+        "-DVBRECOMP_ROOT=$Framework","-DRECOMP_UI_ROOT=$Ui","-DBEETLE_VB_ROOT=$Oracle","-DSD_GUNDAM_ROM=$Rom",
         ('-DSD_GUNDAM_UI='+$(if($NoUi){'OFF'}else{'ON'})),
         ('-DSD_GUNDAM_FAST_BUILD='+$(if($FastBuild){'ON'}else{'OFF'})),
         ('-DVBRECOMP_DEBUG_TOOLS='+$(if($Production){'OFF'}else{'ON'})),

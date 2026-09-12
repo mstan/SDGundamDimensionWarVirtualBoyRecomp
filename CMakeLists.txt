@@ -34,3 +34,13 @@ target_compile_definitions(vb-runtime PRIVATE
     VB_GAME_SHA256="98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"
     VB_GAME_CRC32=0x44788197u)
 set_target_properties(vb-runtime PROPERTIES OUTPUT_NAME SDGundamDimensionWarVirtualBoyRecomp)
+find_package(Python3 COMPONENTS Interpreter REQUIRED)
+set(SD_GUNDAM_ROM "${CMAKE_CURRENT_SOURCE_DIR}/roms/sd_gundam.vb" CACHE FILEPATH "Original Japanese cartridge for guarded text assets")
+set(_text_header "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_translation.h")
+add_custom_command(OUTPUT "${_text_header}" "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-english-0.1.0.vbmod"
+    COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/build_translation.py"
+        --rom "${SD_GUNDAM_ROM}" --framework "${VBRECOMP_ROOT}"
+    DEPENDS tools/build_translation.py translations/english.json mods/english/manifest.toml
+        "${SD_GUNDAM_ROM}" "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_dispatch.c"
+    VERBATIM)
+target_sources(vb-runtime PRIVATE src/translation_mod.cpp "${_text_header}")

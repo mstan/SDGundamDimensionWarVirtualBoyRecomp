@@ -9,6 +9,7 @@ import subprocess
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--exe',type=Path,required=True)
 p.add_argument('--rom',type=Path)
+p.add_argument('--english-package',type=Path)
 p.add_argument('--out',type=Path,required=True)
 p.add_argument('--visible',action='store_true',help='Inspect screenshots from a visible launcher window')
 args=p.parse_args();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
@@ -22,6 +23,8 @@ startup=None
 if os.name=='nt' and not args.visible:
     startup=subprocess.STARTUPINFO();startup.dwFlags=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
 rom_args=['--rom',str(args.rom.resolve())] if args.rom else []
+if args.english_package:
+    rom_args+=['--install-mod',str(args.english_package.resolve()),'--enable-mod','sd-gundam-english:english']
 result=subprocess.run([str(args.exe.resolve()),*rom_args,'--launcher','--no-save',
     '--config',str(out/'settings.cfg'),'--mods-dir',str(out/'mods')],cwd=out,env=environment,
     capture_output=True,timeout=30,startupinfo=startup,

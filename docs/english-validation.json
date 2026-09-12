@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "language": "en",
+  "planes": [
+    "cpu",
+    "wram",
+    "sram",
+    "vram",
+    "vip",
+    "devices",
+    "video",
+    "video_right",
+    "presented",
+    "audio"
+  ],
+  "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "oracle_rom_sha256": "a143fb582956ce1f2214c0122a6cdd1f832bc82fb598c4d8a6b21102ccaab906",
+  "runtime_sha256": "3823aed9e383b7a3316e428ec318ae9ff7ca606c502f9c2971f9a49685181cc8",
+  "oracle_sha256": "f4ac5fe15b4a0b13d87a16657a76b5645f6e5a13e595a2661c0b01262d1c6a90",
+  "package_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+  "checkpoints": 40,
+  "byte_audits": 280,
+  "runtime_memory_rom_sha256": "a143fb582956ce1f2214c0122a6cdd1f832bc82fb598c4d8a6b21102ccaab906",
+  "execution": {
+    "ok": true,
+    "id": 5209,
+    "mode": 1,
+    "interpreted": 0,
+    "fallback": 0,
+    "native_entries": 8455988,
+    "first_fallback_pc": 0,
+    "last_fallback_pc": 0,
+    "native_instructions": 918551955,
+    "stopped": 0
+  },
+  "last_frame": 4500,
+  "original_file_unchanged": true
+}
