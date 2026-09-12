@@ -1,0 +1,609 @@
+{
+  "passed": true,
+  "date": "2026-09-12",
+  "source_commit": "e76cf1f",
+  "framework_commit": "794a200f4001cb8314955794d2726ae1ea3f5123",
+  "ui_commit": "bca0bcc3949ef6f9bbb6b7b021b1ba50c13db4cb",
+  "build": "Fresh clone, dependencies fetched from their public GitHub remotes, Release runtime with FastBuild generated-code optimization. Explicit English generator dependency tested with header absent.",
+  "ctest": {
+    "passed": 6,
+    "failed": 0
+  },
+  "authoring_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "recompiler_tests": {
+    "run": 85,
+    "passed": 80,
+    "skipped": 5,
+    "failed": 0
+  },
+  "inputs": {
+    "generated": {
+      "sd_gundam_full.c": {
+        "sha256": "73ed52483a8a5292b43942eacfdd1e9fffbe445264ae4590e2ccef2ebab012a1",
+        "matches_validated_baseline": true
+      },
+      "sd_gundam_dispatch.c": {
+        "sha256": "f4debf51ee1f003263305d71418f0d705e47a59b67f6a51542885eb9c139cc56",
+        "matches_validated_baseline": true
+      },
+      "sd_gundam.h": {
+        "sha256": "af4b2dd22ecd6edd5694814925c956f3e42cbc8677e0a38c63e2c08142d1bc55",
+        "matches_validated_baseline": true
+      },
+      "sd_gundam_translation.h": {
+        "sha256": "51365d90ec0f2f5431e7c55a39c8486ddf713efec7877c0f176af705dbb04bfc",
+        "matches_validated_baseline": true
+      }
+    },
+    "packages": {
+      "sd-gundam-color-0.2.2.vbmod": {
+        "sha256": "03564fea8244b618d654c17292c5af4deb67456bd3eec0fa182d96557debc0be",
+        "files": [
+          "manifest.toml",
+          "palette.txt",
+          "materials.txt",
+          "catalog.txt",
+          "tiles.txt"
+        ]
+      },
+      "sd-gundam-english-0.1.0.vbmod": {
+        "sha256": "cfec853f461d905f461a2b37ae7a31bd8f579e894ddb578d06971419ec22667f",
+        "files": [
+          "manifest.toml",
+          "source/english.json"
+        ]
+      },
+      "sd-gundam-widescreen-0.1.0.vbmod": {
+        "sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+        "files": [
+          "manifest.toml"
+        ]
+      }
+    },
+    "english_rebuild_deterministic": true,
+    "translation_guard": {
+      "entries": 35,
+      "changed_bytes": 1016,
+      "generated_instructions_audited": 137371,
+      "code_overlaps": 0,
+      "translated_image_sha256": "a143fb582956ce1f2214c0122a6cdd1f832bc82fb598c4d8a6b21102ccaab906",
+      "matches_reference": true
+    },
+    "runtime_sha256": "9bc4aec9b5d25285f63ac1140cf4aa24687d5158a5bf1e49c2ec1fc52c3ce819"
+  },
+  "checks": {
+    "publication-ui": {
+      "passed": true,
+      "exit": 0,
+      "screenshots": [
+        "dashboard.png",
+        "settings.png",
+        "controller.png",
+        "mods.png",
+        "widescreen-options.png",
+        "widescreen-choices.png"
+      ]
+    },
+    "publication-mods-02": {
+      "passed": true,
+      "aspect": "adaptive",
+      "language": "en",
+      "color": true,
+      "runtime_sha256": "9bc4aec9b5d25285f63ac1140cf4aa24687d5158a5bf1e49c2ec1fc52c3ce819",
+      "baseline_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+      "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+      "color_sha256": "03564fea8244b618d654c17292c5af4deb67456bd3eec0fa182d96557debc0be",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "route_sha256": "b2e9f2dd6cc48a8f4a3ef112cb9776839103c029f35f7353c3c3dbf1890b4a6a",
+      "checkpoints": [
+        {
+          "frame": 1600,
+          "label": "title",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33674,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 587
+            },
+            {
+              "eye": 1,
+              "visible": 33972,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 586
+            }
+          ]
+        },
+        {
+          "frame": 2340,
+          "label": "continue-slots",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19386,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 25
+            },
+            {
+              "eye": 1,
+              "visible": 19382,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 25
+            }
+          ]
+        },
+        {
+          "frame": 2880,
+          "label": "load-confirm",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19437,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 28
+            },
+            {
+              "eye": 1,
+              "visible": 19430,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 28
+            }
+          ]
+        },
+        {
+          "frame": 3500,
+          "label": "resumed",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 24819,
+              "unclassified": 0,
+              "side_pixels": 4658,
+              "source_hashes": 432
+            },
+            {
+              "eye": 1,
+              "visible": 25809,
+              "unclassified": 0,
+              "side_pixels": 5012,
+              "source_hashes": 448
+            }
+          ]
+        }
+      ],
+      "execution": [
+        {
+          "ok": true,
+          "id": 3574,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 6199843,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 700896556,
+          "stopped": 0
+        },
+        {
+          "ok": true,
+          "id": 3329,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 6199843,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 700896556,
+          "stopped": 0
+        }
+      ]
+    },
+    "publication-window": {
+      "passed": true,
+      "checks": [
+        "default save path loads exact battery file with selected mods",
+        "window keyboard press and release reaches controller",
+        "live adaptive resize: 16:9, 21:9, 32:9, arbitrary and narrow windows match both renderer eyes",
+        "real window matches renderer output at route checkpoint",
+        "Escape opens shared pause UI and holds CPU state",
+        "Escape closes UI, physical input resumes and guest advances",
+        "English and color enabled: clean exit publishes exact battery SRAM"
+      ],
+      "runtime_sha256": "9bc4aec9b5d25285f63ac1140cf4aa24687d5158a5bf1e49c2ec1fc52c3ce819",
+      "color_sha256": "03564fea8244b618d654c17292c5af4deb67456bd3eec0fa182d96557debc0be",
+      "english_sha256": "cfec853f461d905f461a2b37ae7a31bd8f579e894ddb578d06971419ec22667f",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "resizes": [
+        {
+          "name": "16x9",
+          "client_size": [
+            960,
+            540
+          ],
+          "viewport_width": 398
+        },
+        {
+          "name": "21x9",
+          "client_size": [
+            1260,
+            540
+          ],
+          "viewport_width": 522
+        },
+        {
+          "name": "32x9",
+          "client_size": [
+            1600,
+            450
+          ],
+          "viewport_width": 796
+        },
+        {
+          "name": "arbitrary",
+          "client_size": [
+            1234,
+            567
+          ],
+          "viewport_width": 488
+        },
+        {
+          "name": "narrow",
+          "client_size": [
+            600,
+            800
+          ],
+          "viewport_width": 384
+        }
+      ],
+      "execution": {
+        "ok": true,
+        "id": 4300,
+        "mode": 0,
+        "interpreted": 0,
+        "fallback": 0,
+        "native_entries": 6206035,
+        "first_fallback_pc": 0,
+        "last_fallback_pc": 0,
+        "native_instructions": 701293569,
+        "stopped": 0
+      },
+      "exit": 0,
+      "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44"
+    },
+    "publication-save-settings": {
+      "passed": true,
+      "runtime_sha256": "9bc4aec9b5d25285f63ac1140cf4aa24687d5158a5bf1e49c2ec1fc52c3ce819",
+      "phases": [
+        {
+          "name": "default-off",
+          "viewport": {
+            "id": 3721,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.2"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3737,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "enabled-32",
+          "viewport": {
+            "id": 3617,
+            "ok": true,
+            "active": true,
+            "width": 796,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": "sd-gundam.adaptive-view"
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.2"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": true,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3633,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "persisted-32",
+          "viewport": {
+            "id": 3578,
+            "ok": true,
+            "active": true,
+            "width": 796,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": "sd-gundam.adaptive-view"
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.2"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": true,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3594,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "disabled",
+          "viewport": {
+            "id": 3548,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.2"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3564,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "persisted-off",
+          "viewport": {
+            "id": 3536,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.2"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3552,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        }
+      ]
+    }
+  },
+  "repository_audit": {
+    "game_history_blobs_checked": 162,
+    "framework_history_blobs_checked": 525,
+    "credential_signature_findings": 0,
+    "private_artifact_findings": 0,
+    "ignore_paths_checked": 13,
+    "pins_match_gitlinks": true,
+    "excluded": "ROMs, supplied IPS/ZIP references, generated cartridge code, saves, private captures/databases, local credentials and tool state. Owner-approved screenshots contain only game content."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-12",
+  "source": "Owner-supplied runtime screenshots",
+  "processing": "Lossless client-area crops; no generated or repainted game pixels; desktop and window chrome excluded from comparison.",
+  "captures": [
+    {
+      "file": "enhanced-tactical.png",
+      "size": [
+        3440,
+        1387
+      ],
+      "crop": null,
+      "source_sha256": "4a40669c8486f187e1375f8481037a841cbe619c302aba8f5d9b575e9078e50b",
+      "pixel_preserving": true
+    },
+    {
+      "file": "color-title.png",
+      "size": [
+        1167,
+        428
+      ],
+      "crop": null,
+      "source_sha256": "3ca4496be7b3bdeb3a4f334141999062a13e82b041b6791f30e528ec8e58cd64",
+      "pixel_preserving": true
+    },
+    {
+      "file": "original-red.png",
+      "size": [
+        768,
+        448
+      ],
+      "crop": [
+        290,
+        624,
+        1058,
+        1072
+      ],
+      "source_sha256": "041f452bf393dbdb9e46c7d5167812975604135bea6ca28bd1b612af4ab8e248",
+      "pixel_preserving": true
+    },
+    {
+      "file": "enhanced-color.png",
+      "size": [
+        1296,
+        560
+      ],
+      "crop": [
+        0,
+        22,
+        1296,
+        582
+      ],
+      "source_sha256": "041f452bf393dbdb9e46c7d5167812975604135bea6ca28bd1b612af4ab8e248",
+      "pixel_preserving": true
+    }
+  ]
+}

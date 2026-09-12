@@ -1,5 +1,8 @@
 # SD Gundam: Dimension War Recompiled
 
+> **Early prototype. Bugs are expected.** Rendering and mod behavior are still
+> being developed, and later missions have not received a complete playthrough.
+
 Windows recompilation setup for **SD Gundam - Dimension War (Japan)** on
 Virtual Boy, using [vbrecomp](https://github.com/mstan/vbrecomp) and
 [recomp-ui](https://github.com/mstan/recomp-ui). Based on the Zero Racers host.
@@ -11,6 +14,23 @@ fallback. Color-on/off native checks also cover ranged and melee combat.
 This is a development checkout; later missions and endings have not received
 a complete playthrough or independent-oracle validation. No ROM or generated
 cartridge code is included.
+
+![SD Gundam Dimension War title screen with the optional color mod](docs/screenshots/color-title.png)
+
+## Screenshots
+
+The optional color and adaptive widescreen mods in action:
+
+![Colorized tactical map with an expanded perspective grid](docs/screenshots/enhanced-tactical.png)
+
+| Original red presentation | Enhanced: color and widescreen |
+|---|---|
+| ![Original native-aspect red presentation](docs/screenshots/original-red.png) | ![Enhanced color and widescreen presentation](docs/screenshots/enhanced-color.png) |
+
+These are crops of actual runtime screenshots from separate sessions, with
+the desktop and window titles removed. They illustrate presentation options;
+they are not a synchronized frame comparison. The source game artwork is
+unchanged. Screenshot colors come from the optional mod.
 
 ## Supported cartridge
 
@@ -61,6 +81,10 @@ Progress and settings use the shared host's persistent saves and configuration.
 All three save areas have been validated across clean shutdown/restart and
 English/Japanese language changes. See [saving and validation](docs/SAVES.md)
 for controls, the save-file location, and the tested scope.
+
+![Shared recomp-ui launcher with game thumbnail](docs/launcher.png)
+
+![English, reference color, and adaptive widescreen in the Mods menu](docs/launcher-mods.png)
 
 ## English mod
 
