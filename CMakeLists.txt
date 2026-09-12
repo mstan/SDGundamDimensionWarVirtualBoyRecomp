@@ -55,6 +55,11 @@ add_custom_command(OUTPUT "${_text_header}" "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd
     DEPENDS tools/build_translation.py translations/english.json mods/english/manifest.toml
         "${SD_GUNDAM_ROM}" "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_dispatch.c"
     VERBATIM)
+# vb-runtime is defined in the framework subdirectory. An explicit target
+# carries the root-directory generator into its build graph on a clean clone.
+add_custom_target(sd-gundam-english-package
+    DEPENDS "${_text_header}" "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-english-0.1.0.vbmod")
+add_dependencies(vb-runtime sd-gundam-english-package)
 target_sources(vb-runtime PRIVATE src/translation_mod.cpp src/color_mod.cpp src/widescreen_mod.cpp src/widescreen_scene.cpp "${_text_header}")
 add_custom_target(sd-gundam-color-package ALL
     COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/build_color.py"
