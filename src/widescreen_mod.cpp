@@ -14,6 +14,31 @@ struct GridContext {
     double pitch = 0;
 };
 GridContext grid[32];
+struct StarContext {
+    VbViewportScene scene;
+    unsigned char classified[2048];
+};
+StarContext backdrop_stars[32];
+int stars_outside(int x, int y, int* sample_x, int* sample_y, void* opaque) {
+    auto& cache = *static_cast<StarContext*>(opaque);
+    x = (x % 384 + 384) % 384;
+    y &= 511;
+    const unsigned cell = cache.scene.dram[4 * 4096 + (y / 8) * 64 + x / 8];
+    const unsigned tile = cell & 2047;
+    auto& classified = cache.classified[tile];
+    if (!classified) {
+        const auto* bytes = reinterpret_cast<const unsigned char*>(cache.scene.chars + tile * 8);
+        uint32_t hash = 2166136261u;
+        for (int i = 0; i < 16; ++i) hash = (hash ^ bytes[i]) * 16777619u;
+        // Isolated star crosses in the tactical panorama. Content guards omit
+        // the colony and other scenery when repeating the field at the edges.
+        classified = (hash == 0xdb27e59f || hash == 0xf30e39ab ||
+                      hash == 0x19ceb3b1 || hash == 0xf7586761) ? 2 : 1;
+    }
+    if (classified != 2) return 0;
+    *sample_x = x; *sample_y = y;
+    return 1;
+}
 unsigned grid_pixel(const VbViewportScene& scene, int x, int y) {
     const unsigned cell = scene.dram[4096 + (y / 8) * 64 + x / 8];
     const int u = (x & 7) ^ ((cell & 0x2000) ? 7 : 0);
@@ -81,6 +106,12 @@ void arrange(const VbViewportScene* scene, int kind, int width, VbViewportLayout
         for (int i = 31; i >= 0; --i) {
             const auto* w = scene->worlds + i * 16;
             if (w[0] & 64) break;
+            if ((w[0] & 0x3fff) == 4 && w[1] == 8 && w[7] == 383 && w[8] == 226) {
+                backdrop_stars[i].scene = *scene;
+                std::memset(backdrop_stars[i].classified, 0, sizeof(backdrop_stars[i].classified));
+                layout->worlds[i].outside = stars_outside;
+                layout->worlds[i].outside_context = &backdrop_stars[i];
+            }
             if ((w[0] & 0x3fff) != 1 || w[1] != 0 || w[7] != 383 || w[8] != 167
                 || w[3] != 55 || (w[6] != 0 && w[6] != 168)) continue;
             grid[i].scene = *scene; grid[i].y = -1;
