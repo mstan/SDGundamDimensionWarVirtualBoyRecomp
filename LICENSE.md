@@ -23,6 +23,6 @@ THE SOFTWARE.
 ---
 
 This license covers the project build glue, tools and documentation. The game
-ROM, generated cartridge code, screenshots and game artwork retain Nintendo's
-rights. Framework, shared UI, fonts and other bundled components retain their
+ROM, generated cartridge code, screenshots and game artwork remain the property
+of their respective owners. Framework, shared UI, fonts and other components retain their
 own licenses; release ZIPs include third-party notices.

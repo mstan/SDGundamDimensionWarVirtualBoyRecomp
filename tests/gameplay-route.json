@@ -1,0 +1,21 @@
+[
+  {"frames": 300, "pad": 0, "label": "safety"},
+  {"frames": 10, "pad": 4096},
+  {"frames": 90, "pad": 0, "label": "eye alignment"},
+  {"frames": 10, "pad": 4096},
+  {"frames": 390, "pad": 0, "label": "auto pause"},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4096},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 190, "pad": 0}
+]

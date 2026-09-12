@@ -1,0 +1,14 @@
+[
+  {"frames": 300, "pad": 0, "label": "safety"},
+  {"frames": 10, "pad": 4096, "label": "start"},
+  {"frames": 90, "pad": 0, "label": "after start"},
+  {"frames": 10, "pad": 4096},
+  {"frames": 90, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 90, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 90, "pad": 0},
+  {"frames": 10, "pad": 4},
+  {"frames": 90, "pad": 0},
+  {"frames": 200, "pad": 0}
+]
