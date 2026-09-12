@@ -62,6 +62,9 @@ Keyboard defaults: arrow keys and WASD are the two directional pads, X/Z are
 A/B, Q/E are L/R, Enter is Start, Right Shift is Select, and Tab is turbo.
 Escape opens settings during play. Controllers and remapping use recomp-ui.
 Progress and settings use the shared host's persistent saves and configuration.
+All three save areas have been validated across clean shutdown/restart and
+English/Japanese language changes. See [saving and validation](docs/SAVES.md)
+for controls, the save-file location, and the tested scope.
 
 ## English mod
 
@@ -108,7 +111,8 @@ binary identities, and commands.
 ## Serial enhancement work
 
 Central Beads epic: `beads-vb.4`. Japanese fidelity (`.1`) gates the English
-localization mod (`.2`), then color (`.3`), then assessment of native widescreen
+localization mod (`.2`), save persistence validation (`.5`), then color (`.3`),
+then assessment of native widescreen
 (`.4`). Widescreen depends on what the game's scene and camera data support.
 See [localization reference](docs/LOCALIZATION.md) for the supplied IPS audit
 and the Endless Duel text/glyph workflow. Color and widescreen follow separately.

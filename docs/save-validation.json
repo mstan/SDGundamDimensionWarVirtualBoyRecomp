@@ -1,0 +1,316 @@
+{
+  "passed": true,
+  "runtime_sha256": "85aefbed2e6363155627f2441e81913397f2eb966d77224537aa3a23fea32f85",
+  "oracle_sha256": "f4ac5fe15b4a0b13d87a16657a76b5645f6e5a13e595a2661c0b01262d1c6a90",
+  "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "package_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+  "checks": {
+    "english_create": {
+      "passed": true,
+      "language": "en",
+      "checkpoints": [
+        {
+          "frame": 4500,
+          "label": "mission-start",
+          "sram_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+          "occupied": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 5660,
+          "label": "save-area-selection",
+          "sram_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+          "occupied": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 5840,
+          "label": "save-area1-confirm",
+          "sram_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+          "occupied": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6460,
+          "label": "area1-saved",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6580,
+          "label": "close-post-save-menu",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6630,
+          "label": "unit-action-menu",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6680,
+          "label": "move-mode",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6730,
+          "label": "move-target",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 6930,
+          "label": "move-confirm",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 7230,
+          "label": "unit-moved",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 8270,
+          "label": "save-selection-after-move",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 8450,
+          "label": "save-area2-selected",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 8630,
+          "label": "save-area2-confirm",
+          "sram_sha256": "867c14ecabfde7a7c31872a5513ccc5e3d9ffce66c8019a254e85566641940e9",
+          "occupied": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "frame": 9250,
+          "label": "area2-saved",
+          "sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+          "occupied": [
+            true,
+            true,
+            false
+          ]
+        }
+      ],
+      "initial_sram_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "byte_audits": 98,
+      "execution": {
+        "ok": true,
+        "id": 9162,
+        "mode": 1,
+        "interpreted": 0,
+        "fallback": 0,
+        "native_entries": 17642495,
+        "first_fallback_pc": 0,
+        "last_fallback_pc": 0,
+        "native_instructions": 1866224447,
+        "stopped": 0
+      },
+      "final_sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+      "save_file_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6"
+    },
+    "japanese_reload_and_save": {
+      "passed": true,
+      "language": "ja",
+      "checkpoints": [
+        {
+          "frame": 1600,
+          "label": "title",
+          "sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+          "occupied": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "frame": 2340,
+          "label": "continue-slots",
+          "sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+          "occupied": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "frame": 2700,
+          "label": "load-confirm",
+          "sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+          "occupied": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "frame": 3320,
+          "label": "resumed",
+          "sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+          "occupied": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "frame": 5340,
+          "label": "area3-saved",
+          "sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "occupied": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "initial_sram_sha256": "e449ff3eaee960df130d7e64c1994fc421bb2623ab454e898f1e880db4141ef6",
+      "byte_audits": 35,
+      "execution": {
+        "ok": true,
+        "id": 5322,
+        "mode": 1,
+        "interpreted": 0,
+        "fallback": 0,
+        "native_entries": 9614232,
+        "first_fallback_pc": 0,
+        "last_fallback_pc": 0,
+        "native_instructions": 1068119316,
+        "stopped": 0
+      },
+      "final_sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+      "save_file_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44"
+    },
+    "english_reload": {
+      "passed": true,
+      "language": "en",
+      "checkpoints": [
+        {
+          "frame": 1600,
+          "label": "title",
+          "sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "occupied": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "frame": 2340,
+          "label": "continue-slots",
+          "sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "occupied": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "frame": 2880,
+          "label": "load-confirm",
+          "sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "occupied": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "frame": 3500,
+          "label": "resumed",
+          "sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "occupied": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "initial_sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+      "byte_audits": 28,
+      "execution": {
+        "ok": true,
+        "id": 3656,
+        "mode": 1,
+        "interpreted": 0,
+        "fallback": 0,
+        "native_entries": 6199843,
+        "first_fallback_pc": 0,
+        "last_fallback_pc": 0,
+        "native_instructions": 700896556,
+        "stopped": 0
+      },
+      "final_sram_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+      "save_file_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44"
+    },
+    "window_default": {
+      "passed": true,
+      "default_path": "<config directory>/saves/sd-gundam-dimension-war.sav",
+      "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+      "window_close_exit": 0
+    },
+    "failures": {
+      "passed": true,
+      "truncated_rejected_without_overwrite": true,
+      "write_failure_preserved_prior_save": true
+    }
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "frames": 300,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 90,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 390,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0,
+    "label": "title"
+  },
+  {
+    "frames": 20,
+    "pad": 1024
+  },
+  {
+    "frames": 100,
+    "pad": 0
+  },
+  {
+    "frames": 20,
+    "pad": 4
+  },
+  {
+    "frames": 600,
+    "pad": 0,
+    "label": "continue-slots"
+  },
+  {
+    "frames": 20,
+    "pad": 4
+  },
+  {
+    "frames": 160,
+    "pad": 0,
+    "label": "load-confirm"
+  },
+  {
+    "frames": 20,
+    "pad": 4
+  },
+  {
+    "frames": 600,
+    "pad": 0,
+    "label": "resumed"
+  }
+]

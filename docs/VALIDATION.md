@@ -23,6 +23,10 @@ It passes safety/alignment/auto-pause screens, title, Japanese story, and the
 opening tactical mission with the unit action menu. It does not complete a
 mission, exercise combat, or validate the full campaign, saving/loading, or endings.
 
+Saving/loading was subsequently validated separately on 2026-09-12:
+see [battery-save results](SAVES.md) for the English/Japanese round trip,
+all three areas, default window persistence, and failure handling.
+
 ## Artifact identities
 
 - Original ROM SHA-256: `98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92`.
