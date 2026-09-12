@@ -15,6 +15,8 @@ p=argparse.ArgumentParser(description=__doc__)
 for name in ('exe','rom','framework','route','out'): p.add_argument('--'+name,type=Path,required=True)
 p.add_argument('--english-package',type=Path)
 p.add_argument('--color-package',type=Path)
+p.add_argument('--widescreen-package',type=Path)
+p.add_argument('--stereo',action='store_true')
 p.add_argument('--input-save',type=Path,help='Private source save copied into this test profile')
 p.add_argument('--port',type=int,default=4570)
 args=p.parse_args();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
@@ -27,6 +29,8 @@ user.PostMessageW.argtypes=[wintypes.HWND,wintypes.UINT,wintypes.WPARAM,wintypes
 user.GetWindowThreadProcessId.argtypes=[wintypes.HWND,ctypes.POINTER(wintypes.DWORD)]
 user.GetClassNameW.argtypes=[wintypes.HWND,wintypes.LPWSTR,ctypes.c_int]
 user.SetWindowPos.argtypes=[wintypes.HWND,wintypes.HWND,ctypes.c_int,ctypes.c_int,ctypes.c_int,ctypes.c_int,wintypes.UINT]
+user.GetClientRect.argtypes=[wintypes.HWND,ctypes.POINTER(wintypes.RECT)]
+user.GetWindowRect.argtypes=[wintypes.HWND,ctypes.POINTER(wintypes.RECT)]
 callback_type=ctypes.WINFUNCTYPE(wintypes.BOOL,wintypes.HWND,wintypes.LPARAM)
 def window_for(pid):
     found=[]
@@ -54,8 +58,9 @@ if assets.exists(): shutil.copytree(assets,out/'assets',dirs_exist_ok=True)
 (out/'settings.cfg').write_text('scale 2\nsource 1\naudio 0\nfullscreen 0\nfilter 0\n')
 environment={k:v for k,v in os.environ.items() if not k.startswith('VBRECOMP_')}
 startup=subprocess.STARTUPINFO();startup.dwFlags=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
-extra=[]
-for package,feature in ((args.english_package,'sd-gundam-english:english'),(args.color_package,'sd-gundam-color:color')):
+extra=['--stereo'] if args.stereo else []
+for package,feature in ((args.english_package,'sd-gundam-english:english'),(args.color_package,'sd-gundam-color:color'),
+                        (args.widescreen_package,'sd-gundam-widescreen:widescreen')):
     if package:extra+=['--install-mod',str(package.resolve()),'--enable-mod',feature]
 if args.input_save:
     save=out/'saves/sd-gundam-dimension-war.sav';save.parent.mkdir(exist_ok=True)
@@ -68,6 +73,7 @@ process=subprocess.Popen([str(exe),'--rom',str(args.rom.resolve()),'--no-launche
 client=None;report={'passed':False,'checks':[],'runtime_sha256':hashlib.sha256(exe.read_bytes()).hexdigest()}
 if args.color_package:report['color_sha256']=hashlib.sha256(args.color_package.read_bytes()).hexdigest()
 if args.english_package:report['english_sha256']=hashlib.sha256(args.english_package.read_bytes()).hexdigest()
+if args.widescreen_package:report['widescreen_sha256']=hashlib.sha256(args.widescreen_package.read_bytes()).hexdigest()
 try:
     deadline=time.monotonic()+15;hwnd=None
     while time.monotonic()<deadline:
@@ -96,12 +102,46 @@ try:
         client.command('set_input',pad=segment.get('pad',0))
         client.run_frames(segment['frames'],timeout=60)
     key(hwnd,9,False)
+    from PIL import Image
+    def expected_capture(path):
+        client.command('screenshot',presented=1,path=path.as_posix())
+        if args.stereo:
+            right=path.with_name(path.stem+'-right.png')
+            client.command('screenshot',presented=1,eye=1,path=right.as_posix())
+            left_image=Image.open(path).convert('RGB');right_image=Image.open(right).convert('RGB')
+            combined=Image.new('RGB',(left_image.width,448))
+            combined.paste(left_image,(0,0));combined.paste(right_image,(0,224));combined.save(path)
+    if args.widescreen_package:
+        report['resizes']=[]
+        for name,width,height in [('16x9',960,540),('21x9',1260,540),('32x9',1600,450),
+                                  ('arbitrary',1234,567),('narrow',600,800)]:
+            if args.stereo:height*=2
+            outer=wintypes.RECT();inner=wintypes.RECT()
+            assert user.GetWindowRect(hwnd,ctypes.byref(outer)) and user.GetClientRect(hwnd,ctypes.byref(inner))
+            assert user.SetWindowPos(hwnd,None,-20000,-20000,width+outer.right-outer.left-inner.right,
+                                     height+outer.bottom-outer.top-inner.bottom,0x14)
+            time.sleep(.25)
+            assert user.GetClientRect(hwnd,ctypes.byref(inner))
+            assert (inner.right,inner.bottom)==(width,height)
+            state=client.command('viewport_state')
+            expected_width=max(384,min(2048,int(width/(height//(2 if args.stereo else 1))*112+.5)*2))
+            assert state['active'] and state['width']==expected_width,(name,state,expected_width)
+            expected=out/(name+'-expected.png');actual=out/(name+'-host.png')
+            expected_capture(expected);client.command('screenshot',host=1,path=actual.as_posix())
+            assert load_png(actual)==load_png(expected),(name,'SDL presentation differs')
+            report['resizes'].append({'name':name,'client_size':[width,height],'viewport_width':state['width']})
+        # Leave the pause UI test on a wide image, exercising its dynamic texture.
+        assert user.GetWindowRect(hwnd,ctypes.byref(outer)) and user.GetClientRect(hwnd,ctypes.byref(inner))
+        assert user.SetWindowPos(hwnd,None,-20000,-20000,1260+outer.right-outer.left-inner.right,
+                                 540*(2 if args.stereo else 1)+outer.bottom-outer.top-inner.bottom,0x14)
+        time.sleep(.25)
+        report['checks'].append('live adaptive resize: 16:9, 21:9, 32:9, arbitrary and narrow windows match both renderer eyes')
     client.command('screenshot',path=(out/'game.png').as_posix())
     client.command('screenshot',host=1,path=(out/'presented.png').as_posix())
-    client.command('screenshot',presented=1,path=(out/'expected-presented.png').as_posix())
+    expected_capture(out/'expected-presented.png')
     assert load_png(out/'expected-presented.png')==load_png(out/'presented.png')
     if args.color_package:assert load_png(out/'game.png')!=load_png(out/'presented.png')
-    else:assert load_png(out/'game.png')==load_png(out/'presented.png')
+    elif not args.widescreen_package and not args.stereo:assert load_png(out/'game.png')==load_png(out/'presented.png')
     report['checks'].append('real window matches renderer output at route checkpoint')
     before=client.command('get_registers')
     tap(hwnd,27)

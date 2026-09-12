@@ -65,7 +65,7 @@ def main():
         checks.append({'unit':name,'eye':eye,'native_map':map_id,'bytes_equal':len(actual),'sha256':hashlib.sha256(actual).hexdigest()})
     inputs = ('roms/sd_gundam.vb','tools/author_units.py','tools/color_assets.py',
               'colors/units.json','colors/shared.json','mods/color/palette.txt','mods/color/materials.txt',
-              'mods/color/catalog.txt','mods/color/tiles.txt','dist/sd-gundam-color-0.2.0.vbmod')
+              'mods/color/catalog.txt','mods/color/tiles.txt','dist/sd-gundam-color-0.2.2.vbmod')
     hashes = {name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in inputs}
     result={'passed':True,'input_sha256':hashes,'units':report,'artwork_count':sum(len(u['artwork']) for u in report),
             'unit_tile_hashes':unit_hashes,'total_tile_hashes':len(raw_hashes),'shared_banks':shared_checks,

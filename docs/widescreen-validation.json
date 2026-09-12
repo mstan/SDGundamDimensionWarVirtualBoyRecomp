@@ -1,0 +1,1887 @@
+{
+  "passed": true,
+  "baseline_game_commit": "c21b10c",
+  "baseline_framework_commit": "44988f34b3bcc089985d9686717005401a96900b",
+  "tests": {
+    "widescreen-16": {
+      "passed": true,
+      "aspect": "16:9",
+      "language": "en",
+      "color": true,
+      "runtime_sha256": "559d2d7676172eeda9aa06e910c7c4824bebb568cc615abd792ae3f797e98a50",
+      "baseline_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+      "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+      "color_sha256": "3fe550dd897d3d200216e908b19a684b02350acde440299b5b48b9b2d525aeda",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "route_sha256": "8b2720a7686874dd5fb549ffbc6ab33f0fa3a6e80150ab0f54826a17732858a0",
+      "checkpoints": [
+        {
+          "frame": 300,
+          "label": "safety",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            },
+            {
+              "eye": 1,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            }
+          ]
+        },
+        {
+          "frame": 400,
+          "label": "eye alignment",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 800,
+          "label": "auto pause",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 1600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33674,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 587
+            },
+            {
+              "eye": 1,
+              "visible": 33972,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 586
+            }
+          ]
+        },
+        {
+          "frame": 2600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 1140,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 31
+            },
+            {
+              "eye": 1,
+              "visible": 1141,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 31
+            }
+          ]
+        },
+        {
+          "frame": 4500,
+          "label": "",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 28837,
+              "unclassified": 0,
+              "side_pixels": 490,
+              "source_hashes": 456
+            },
+            {
+              "eye": 1,
+              "visible": 28601,
+              "unclassified": 0,
+              "side_pixels": 540,
+              "source_hashes": 447
+            }
+          ]
+        },
+        {
+          "frame": 4620,
+          "label": "ready",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19204,
+              "unclassified": 0,
+              "side_pixels": 490,
+              "source_hashes": 316
+            },
+            {
+              "eye": 1,
+              "visible": 19033,
+              "unclassified": 0,
+              "side_pixels": 540,
+              "source_hashes": 309
+            }
+          ]
+        },
+        {
+          "frame": 4780,
+          "label": "turn-menu",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 21941,
+              "unclassified": 0,
+              "side_pixels": 490,
+              "source_hashes": 318
+            },
+            {
+              "eye": 1,
+              "visible": 21612,
+              "unclassified": 0,
+              "side_pixels": 540,
+              "source_hashes": 313
+            }
+          ]
+        },
+        {
+          "frame": 5290,
+          "label": "enemy-turn",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3878,
+              "unclassified": 0,
+              "side_pixels": 119,
+              "source_hashes": 83
+            },
+            {
+              "eye": 1,
+              "visible": 3871,
+              "unclassified": 0,
+              "side_pixels": 97,
+              "source_hashes": 66
+            }
+          ]
+        },
+        {
+          "frame": 5420,
+          "label": "battle-start",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3553,
+              "unclassified": 0,
+              "side_pixels": 117,
+              "source_hashes": 75
+            },
+            {
+              "eye": 1,
+              "visible": 3526,
+              "unclassified": 0,
+              "side_pixels": 102,
+              "source_hashes": 69
+            }
+          ]
+        },
+        {
+          "frame": 5720,
+          "label": "battle-approach",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3743,
+              "unclassified": 0,
+              "side_pixels": 124,
+              "source_hashes": 80
+            },
+            {
+              "eye": 1,
+              "visible": 3566,
+              "unclassified": 0,
+              "side_pixels": 101,
+              "source_hashes": 62
+            }
+          ]
+        },
+        {
+          "frame": 6020,
+          "label": "battle-melee",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 2116,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 2124,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 6200,
+          "label": "battle-close",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 6367,
+              "unclassified": 0,
+              "side_pixels": 112,
+              "source_hashes": 96
+            },
+            {
+              "eye": 1,
+              "visible": 6381,
+              "unclassified": 0,
+              "side_pixels": 96,
+              "source_hashes": 95
+            }
+          ]
+        },
+        {
+          "frame": 6380,
+          "label": "battle-defense",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 4804,
+              "unclassified": 0,
+              "side_pixels": 411,
+              "source_hashes": 76
+            },
+            {
+              "eye": 1,
+              "visible": 4821,
+              "unclassified": 0,
+              "side_pixels": 400,
+              "source_hashes": 76
+            }
+          ]
+        },
+        {
+          "frame": 6830,
+          "label": "battle-result",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 4714,
+              "unclassified": 0,
+              "side_pixels": 411,
+              "source_hashes": 79
+            },
+            {
+              "eye": 1,
+              "visible": 4722,
+              "unclassified": 0,
+              "side_pixels": 416,
+              "source_hashes": 79
+            }
+          ]
+        },
+        {
+          "frame": 7430,
+          "label": "melee-attack",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 4648,
+              "unclassified": 0,
+              "side_pixels": 411,
+              "source_hashes": 78
+            },
+            {
+              "eye": 1,
+              "visible": 4665,
+              "unclassified": 0,
+              "side_pixels": 396,
+              "source_hashes": 78
+            }
+          ]
+        },
+        {
+          "frame": 8030,
+          "label": "melee-attack2",
+          "width": 398,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 18584,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 298
+            },
+            {
+              "eye": 1,
+              "visible": 18828,
+              "unclassified": 0,
+              "side_pixels": 134,
+              "source_hashes": 298
+            }
+          ]
+        }
+      ],
+      "execution": [
+        {
+          "ok": true,
+          "id": 10528,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 15359879,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 1611534510,
+          "stopped": 0
+        },
+        {
+          "ok": true,
+          "id": 10786,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 15359879,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 1611534510,
+          "stopped": 0
+        }
+      ]
+    },
+    "widescreen-21": {
+      "passed": true,
+      "aspect": "21:9",
+      "language": "ja",
+      "color": false,
+      "runtime_sha256": "559d2d7676172eeda9aa06e910c7c4824bebb568cc615abd792ae3f797e98a50",
+      "baseline_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+      "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+      "color_sha256": "3fe550dd897d3d200216e908b19a684b02350acde440299b5b48b9b2d525aeda",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "route_sha256": "8b2720a7686874dd5fb549ffbc6ab33f0fa3a6e80150ab0f54826a17732858a0",
+      "checkpoints": [
+        {
+          "frame": 300,
+          "label": "safety",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            },
+            {
+              "eye": 1,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            }
+          ]
+        },
+        {
+          "frame": 400,
+          "label": "eye alignment",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 800,
+          "label": "auto pause",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 1600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33674,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 587
+            },
+            {
+              "eye": 1,
+              "visible": 33972,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 586
+            }
+          ]
+        },
+        {
+          "frame": 2600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 2065,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 82
+            },
+            {
+              "eye": 1,
+              "visible": 2138,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 83
+            }
+          ]
+        },
+        {
+          "frame": 4500,
+          "label": "",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 30626,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 463
+            },
+            {
+              "eye": 1,
+              "visible": 30152,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 4620,
+          "label": "ready",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31054,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 30561,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 4780,
+          "label": "turn-menu",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 30626,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 463
+            },
+            {
+              "eye": 1,
+              "visible": 30152,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 5290,
+          "label": "enemy-turn",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31054,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 30561,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 5420,
+          "label": "battle-start",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31655,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 31162,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 5720,
+          "label": "battle-approach",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31655,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 31162,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 6020,
+          "label": "battle-melee",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31655,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 31162,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 6200,
+          "label": "battle-close",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31655,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 31162,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 6380,
+          "label": "battle-defense",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 31054,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 462
+            },
+            {
+              "eye": 1,
+              "visible": 30561,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 6830,
+          "label": "battle-result",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 30626,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 463
+            },
+            {
+              "eye": 1,
+              "visible": 30152,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 7430,
+          "label": "melee-attack",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 30626,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 463
+            },
+            {
+              "eye": 1,
+              "visible": 30152,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        },
+        {
+          "frame": 8030,
+          "label": "melee-attack2",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 30626,
+              "unclassified": 0,
+              "side_pixels": 2707,
+              "source_hashes": 463
+            },
+            {
+              "eye": 1,
+              "visible": 30152,
+              "unclassified": 0,
+              "side_pixels": 2500,
+              "source_hashes": 453
+            }
+          ]
+        }
+      ],
+      "execution": [
+        {
+          "ok": true,
+          "id": 10462,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 16889064,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 1612171692,
+          "stopped": 0
+        },
+        {
+          "ok": true,
+          "id": 10619,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 16889064,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 1612171692,
+          "stopped": 0
+        }
+      ]
+    },
+    "widescreen-units-adaptive": {
+      "passed": true,
+      "aspect": "adaptive",
+      "language": "en",
+      "color": true,
+      "runtime_sha256": "ad73cfb665e30cbeccc5942fa7502328bc965909eeffc1443b5346986419b46d",
+      "baseline_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+      "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+      "color_sha256": "7d57139b742bd9e83750ff9254323e82deba316921da167efbf325aab6d7b60c",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "route_sha256": "6c895ffe1cd113f6fa1e61af128c1e81f9a38c5e7f3043a3b432184ec3e23cc0",
+      "checkpoints": [
+        {
+          "frame": 300,
+          "label": "safety",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            },
+            {
+              "eye": 1,
+              "visible": 3094,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 55
+            }
+          ]
+        },
+        {
+          "frame": 400,
+          "label": "eye alignment",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 800,
+          "label": "auto pause",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 3330,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 1600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33674,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 587
+            },
+            {
+              "eye": 1,
+              "visible": 33972,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 586
+            }
+          ]
+        },
+        {
+          "frame": 2600,
+          "label": "",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 1140,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 31
+            },
+            {
+              "eye": 1,
+              "visible": 1141,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 31
+            }
+          ]
+        },
+        {
+          "frame": 4500,
+          "label": "",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33012,
+              "unclassified": 0,
+              "side_pixels": 4665,
+              "source_hashes": 484
+            },
+            {
+              "eye": 1,
+              "visible": 32504,
+              "unclassified": 0,
+              "side_pixels": 4443,
+              "source_hashes": 474
+            }
+          ]
+        },
+        {
+          "frame": 4620,
+          "label": "ready",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 22197,
+              "unclassified": 0,
+              "side_pixels": 3483,
+              "source_hashes": 342
+            },
+            {
+              "eye": 1,
+              "visible": 21746,
+              "unclassified": 0,
+              "side_pixels": 3253,
+              "source_hashes": 335
+            }
+          ]
+        },
+        {
+          "frame": 4780,
+          "label": "turn-menu",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 24934,
+              "unclassified": 0,
+              "side_pixels": 3483,
+              "source_hashes": 344
+            },
+            {
+              "eye": 1,
+              "visible": 24325,
+              "unclassified": 0,
+              "side_pixels": 3253,
+              "source_hashes": 339
+            }
+          ]
+        },
+        {
+          "frame": 5290,
+          "label": "enemy-turn",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3878,
+              "unclassified": 0,
+              "side_pixels": 1617,
+              "source_hashes": 83
+            },
+            {
+              "eye": 1,
+              "visible": 3871,
+              "unclassified": 0,
+              "side_pixels": 1611,
+              "source_hashes": 66
+            }
+          ]
+        },
+        {
+          "frame": 5420,
+          "label": "battle-start",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3554,
+              "unclassified": 0,
+              "side_pixels": 1619,
+              "source_hashes": 75
+            },
+            {
+              "eye": 1,
+              "visible": 3527,
+              "unclassified": 0,
+              "side_pixels": 1614,
+              "source_hashes": 69
+            }
+          ]
+        },
+        {
+          "frame": 5720,
+          "label": "battle-approach",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3744,
+              "unclassified": 0,
+              "side_pixels": 1516,
+              "source_hashes": 80
+            },
+            {
+              "eye": 1,
+              "visible": 3566,
+              "unclassified": 0,
+              "side_pixels": 1506,
+              "source_hashes": 62
+            }
+          ]
+        },
+        {
+          "frame": 6020,
+          "label": "battle-melee",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 2125,
+              "unclassified": 0,
+              "side_pixels": 7,
+              "source_hashes": 54
+            },
+            {
+              "eye": 1,
+              "visible": 2120,
+              "unclassified": 0,
+              "side_pixels": 8,
+              "source_hashes": 54
+            }
+          ]
+        },
+        {
+          "frame": 6200,
+          "label": "battle-close",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 6356,
+              "unclassified": 0,
+              "side_pixels": 1420,
+              "source_hashes": 96
+            },
+            {
+              "eye": 1,
+              "visible": 6359,
+              "unclassified": 0,
+              "side_pixels": 1430,
+              "source_hashes": 95
+            }
+          ]
+        },
+        {
+          "frame": 6380,
+          "label": "battle-defense",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 5129,
+              "unclassified": 0,
+              "side_pixels": 1837,
+              "source_hashes": 82
+            },
+            {
+              "eye": 1,
+              "visible": 5145,
+              "unclassified": 0,
+              "side_pixels": 1847,
+              "source_hashes": 82
+            }
+          ]
+        },
+        {
+          "frame": 6830,
+          "label": "battle-result",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 5038,
+              "unclassified": 0,
+              "side_pixels": 1708,
+              "source_hashes": 85
+            },
+            {
+              "eye": 1,
+              "visible": 5052,
+              "unclassified": 0,
+              "side_pixels": 1742,
+              "source_hashes": 85
+            }
+          ]
+        },
+        {
+          "frame": 7430,
+          "label": "melee-attack",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 4972,
+              "unclassified": 0,
+              "side_pixels": 1547,
+              "source_hashes": 84
+            },
+            {
+              "eye": 1,
+              "visible": 4974,
+              "unclassified": 0,
+              "side_pixels": 1557,
+              "source_hashes": 84
+            }
+          ]
+        },
+        {
+          "frame": 8030,
+          "label": "melee-attack2",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19692,
+              "unclassified": 0,
+              "side_pixels": 1108,
+              "source_hashes": 323
+            },
+            {
+              "eye": 1,
+              "visible": 20076,
+              "unclassified": 0,
+              "side_pixels": 1382,
+              "source_hashes": 324
+            }
+          ]
+        },
+        {
+          "frame": 9530,
+          "label": "battle-finish",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3830,
+              "unclassified": 0,
+              "side_pixels": 1595,
+              "source_hashes": 94
+            },
+            {
+              "eye": 1,
+              "visible": 3707,
+              "unclassified": 0,
+              "side_pixels": 1608,
+              "source_hashes": 74
+            }
+          ]
+        },
+        {
+          "frame": 12030,
+          "label": "enemy-turn-late",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 3574,
+              "unclassified": 0,
+              "side_pixels": 1796,
+              "source_hashes": 100
+            },
+            {
+              "eye": 1,
+              "visible": 3585,
+              "unclassified": 0,
+              "side_pixels": 1801,
+              "source_hashes": 100
+            }
+          ]
+        },
+        {
+          "frame": 15530,
+          "label": "enemy-turn-end",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 17837,
+              "unclassified": 0,
+              "side_pixels": 4591,
+              "source_hashes": 273
+            },
+            {
+              "eye": 1,
+              "visible": 18036,
+              "unclassified": 0,
+              "side_pixels": 4797,
+              "source_hashes": 270
+            }
+          ]
+        },
+        {
+          "frame": 16530,
+          "label": "turn-two",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 17837,
+              "unclassified": 0,
+              "side_pixels": 4591,
+              "source_hashes": 273
+            },
+            {
+              "eye": 1,
+              "visible": 18036,
+              "unclassified": 0,
+              "side_pixels": 4797,
+              "source_hashes": 270
+            }
+          ]
+        },
+        {
+          "frame": 16580,
+          "label": "turn-two-menu",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 21377,
+              "unclassified": 0,
+              "side_pixels": 4591,
+              "source_hashes": 279
+            },
+            {
+              "eye": 1,
+              "visible": 21289,
+              "unclassified": 0,
+              "side_pixels": 4797,
+              "source_hashes": 278
+            }
+          ]
+        },
+        {
+          "frame": 19660,
+          "label": "turn-three-battle",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 5036,
+              "unclassified": 0,
+              "side_pixels": 1643,
+              "source_hashes": 80
+            },
+            {
+              "eye": 1,
+              "visible": 5049,
+              "unclassified": 0,
+              "side_pixels": 1655,
+              "source_hashes": 80
+            }
+          ]
+        },
+        {
+          "frame": 28660,
+          "label": "turn-three-end",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 20978,
+              "unclassified": 0,
+              "side_pixels": 1927,
+              "source_hashes": 376
+            },
+            {
+              "eye": 1,
+              "visible": 20554,
+              "unclassified": 0,
+              "side_pixels": 1980,
+              "source_hashes": 368
+            }
+          ]
+        },
+        {
+          "frame": 34790,
+          "label": "turn-four",
+          "width": 522,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 22113,
+              "unclassified": 0,
+              "side_pixels": 5395,
+              "source_hashes": 315
+            },
+            {
+              "eye": 1,
+              "visible": 22267,
+              "unclassified": 0,
+              "side_pixels": 5504,
+              "source_hashes": 318
+            }
+          ]
+        }
+      ],
+      "execution": [
+        {
+          "ok": true,
+          "id": 37223,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 72862981,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 6901693891,
+          "stopped": 0
+        },
+        {
+          "ok": true,
+          "id": 36468,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 72862981,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 6901693891,
+          "stopped": 0
+        }
+      ]
+    },
+    "widescreen-units-window": {
+      "passed": true,
+      "checks": [
+        "default save path loads exact battery file with selected mods",
+        "window keyboard press and release reaches controller",
+        "live adaptive resize: 16:9, 21:9, 32:9, arbitrary and narrow windows match both renderer eyes",
+        "real window matches renderer output at route checkpoint",
+        "Escape opens shared pause UI and holds CPU state",
+        "Escape closes UI, physical input resumes and guest advances",
+        "English and color enabled: clean exit publishes exact battery SRAM"
+      ],
+      "runtime_sha256": "ad73cfb665e30cbeccc5942fa7502328bc965909eeffc1443b5346986419b46d",
+      "color_sha256": "7d57139b742bd9e83750ff9254323e82deba316921da167efbf325aab6d7b60c",
+      "english_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "resizes": [
+        {
+          "name": "16x9",
+          "client_size": [
+            960,
+            1080
+          ],
+          "viewport_width": 398
+        },
+        {
+          "name": "21x9",
+          "client_size": [
+            1260,
+            1080
+          ],
+          "viewport_width": 522
+        },
+        {
+          "name": "32x9",
+          "client_size": [
+            1600,
+            900
+          ],
+          "viewport_width": 796
+        },
+        {
+          "name": "arbitrary",
+          "client_size": [
+            1234,
+            1134
+          ],
+          "viewport_width": 488
+        },
+        {
+          "name": "narrow",
+          "client_size": [
+            600,
+            1600
+          ],
+          "viewport_width": 384
+        }
+      ],
+      "execution": {
+        "ok": true,
+        "id": 5902,
+        "mode": 0,
+        "interpreted": 0,
+        "fallback": 0,
+        "native_entries": 6206035,
+        "first_fallback_pc": 0,
+        "last_fallback_pc": 0,
+        "native_instructions": 701293569,
+        "stopped": 0
+      },
+      "exit": 0,
+      "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44"
+    },
+    "widescreen-units-settings": {
+      "passed": true,
+      "runtime_sha256": "ad73cfb665e30cbeccc5942fa7502328bc965909eeffc1443b5346986419b46d",
+      "phases": [
+        {
+          "name": "default-off",
+          "viewport": {
+            "id": 4395,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.1"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 4411,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "enabled-32",
+          "viewport": {
+            "id": 3941,
+            "ok": true,
+            "active": true,
+            "width": 796,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": "sd-gundam.adaptive-view"
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.1"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": true,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3957,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "persisted-32",
+          "viewport": {
+            "id": 3645,
+            "ok": true,
+            "active": true,
+            "width": 796,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": "sd-gundam.adaptive-view"
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.1"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": true,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 3661,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "disabled",
+          "viewport": {
+            "id": 4220,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.1"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 4236,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        },
+        {
+          "name": "persisted-off",
+          "viewport": {
+            "id": 4364,
+            "ok": true,
+            "active": false,
+            "width": 384,
+            "height": 224,
+            "maximum_width": 2048,
+            "plugin": ""
+          },
+          "settings": {
+            "format_version": 1,
+            "package": [
+              {
+                "id": "sd-gundam-color",
+                "version": "0.2.1"
+              },
+              {
+                "id": "sd-gundam-english",
+                "version": "0.1.0"
+              },
+              {
+                "id": "sd-gundam-widescreen",
+                "version": "0.1.0"
+              }
+            ],
+            "feature": [
+              {
+                "package_id": "sd-gundam-color",
+                "id": "color",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-english",
+                "id": "english",
+                "enabled": true
+              },
+              {
+                "package_id": "sd-gundam-widescreen",
+                "id": "widescreen",
+                "enabled": false,
+                "values": {
+                  "aspect": "32:9"
+                }
+              }
+            ]
+          },
+          "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44",
+          "execution": {
+            "ok": true,
+            "id": 4380,
+            "mode": 1,
+            "interpreted": 0,
+            "fallback": 0,
+            "native_entries": 6199843,
+            "first_fallback_pc": 0,
+            "last_fallback_pc": 0,
+            "native_instructions": 700896556,
+            "stopped": 0
+          }
+        }
+      ]
+    },
+    "uniform-menu-wide": {
+      "passed": true,
+      "aspect": "32:9",
+      "language": "en",
+      "color": true,
+      "runtime_sha256": "ad73cfb665e30cbeccc5942fa7502328bc965909eeffc1443b5346986419b46d",
+      "baseline_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+      "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+      "color_sha256": "03564fea8244b618d654c17292c5af4deb67456bd3eec0fa182d96557debc0be",
+      "widescreen_sha256": "b028856ed1e323f152097536a136f49eb759766f1201d110b506dd18172a40c9",
+      "route_sha256": "b2e9f2dd6cc48a8f4a3ef112cb9776839103c029f35f7353c3c3dbf1890b4a6a",
+      "checkpoints": [
+        {
+          "frame": 1600,
+          "label": "title",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 33674,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 587
+            },
+            {
+              "eye": 1,
+              "visible": 33972,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 586
+            }
+          ]
+        },
+        {
+          "frame": 2340,
+          "label": "continue-slots",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19386,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 25
+            },
+            {
+              "eye": 1,
+              "visible": 19382,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 25
+            }
+          ]
+        },
+        {
+          "frame": 2880,
+          "label": "load-confirm",
+          "width": 384,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 19437,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 28
+            },
+            {
+              "eye": 1,
+              "visible": 19430,
+              "unclassified": 0,
+              "side_pixels": 0,
+              "source_hashes": 28
+            }
+          ]
+        },
+        {
+          "frame": 3500,
+          "label": "resumed",
+          "width": 796,
+          "eyes": [
+            {
+              "eye": 0,
+              "visible": 29072,
+              "unclassified": 0,
+              "side_pixels": 8911,
+              "source_hashes": 458
+            },
+            {
+              "eye": 1,
+              "visible": 29748,
+              "unclassified": 0,
+              "side_pixels": 8951,
+              "source_hashes": 471
+            }
+          ]
+        }
+      ],
+      "execution": [
+        {
+          "ok": true,
+          "id": 3713,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 6199843,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 700896556,
+          "stopped": 0
+        },
+        {
+          "ok": true,
+          "id": 3643,
+          "mode": 1,
+          "interpreted": 0,
+          "fallback": 0,
+          "native_entries": 6199843,
+          "first_fallback_pc": 0,
+          "last_fallback_pc": 0,
+          "native_instructions": 700896556,
+          "stopped": 0
+        }
+      ]
+    },
+    "launcher": {
+      "passed": true,
+      "exit": 0,
+      "screenshots": [
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\dashboard.png",
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\settings.png",
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\controller.png",
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\mods.png",
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\widescreen-options.png",
+        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\widescreen-choices.png"
+      ]
+    }
+  }
+}

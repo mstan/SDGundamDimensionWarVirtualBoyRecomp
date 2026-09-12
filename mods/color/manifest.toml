@@ -1,6 +1,6 @@
 format_version = 1
 id = "sd-gundam-color"
-version = "0.2.0"
+version = "0.2.2"
 name = "SD Gundam reference colors"
 author = "SD Gundam Recomp contributors"
 description = "Optional colors authored from Gundam reference art, applied to native source texels."

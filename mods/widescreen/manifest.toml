@@ -1,0 +1,44 @@
+format_version = 1
+id = "sd-gundam-widescreen"
+version = "0.1.0"
+name = "SD Gundam adaptive widescreen"
+author = "SD Gundam Recomp contributors"
+description = "Expand tactical and battle views with native artwork and adjustable aspect ratio."
+
+[[target]]
+game_id = "sd-gundam-dimension-war"
+rom_sha256 = "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"
+
+[[feature]]
+id = "widescreen"
+name = "Adaptive widescreen"
+description = "Reveal scene edges and anchor the battle HUD. Title and menu artwork retain their original proportions."
+group = "Video"
+channel = "experimental"
+default_enabled = false
+
+[[option]]
+feature = "widescreen"
+id = "aspect"
+label = "Aspect ratio"
+description = "Adaptive follows the window. Narrow windows retain the full original view."
+group = "Video"
+type = "choice"
+default = "adaptive"
+
+[[option.choice]]
+value = "16:9"
+label = "16:9"
+[[option.choice]]
+value = "21:9"
+label = "21:9"
+[[option.choice]]
+value = "32:9"
+label = "32:9"
+[[option.choice]]
+value = "adaptive"
+label = "Adaptive (fit window)"
+
+[[plugin]]
+feature = "widescreen"
+id = "sd-gundam.adaptive-view"

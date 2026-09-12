@@ -8,6 +8,7 @@ import argparse
 import json
 from pathlib import Path
 import struct
+from color_assets import uniform_materials
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -21,6 +22,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--recipe',type=Path,default=ROOT/'colors/opening.json')
     parser.add_argument('--out',type=Path,default=ROOT/'mods/color/materials.txt')
+    parser.add_argument('--rom',type=Path,default=ROOT/'roms/sd_gundam.vb')
     args=parser.parse_args();recipe=json.loads(args.recipe.read_text())
     entries={};conflicts=[];counts={}
     for capture in recipe['captures']:
@@ -51,8 +53,10 @@ def main():
                 count+=1
         if not count:raise ValueError(f'Annotation matched no source texels: {capture["path"]}')
         counts[capture['path']]=count
+    uniform=uniform_materials(args.rom.read_bytes(),json.loads((ROOT/'colors/shared.json').read_text()))
     masks=[]
     for (m,k,x,y,h),row in sorted(entries.items()):
+        if (3 if k==3 else 0,h) in uniform:continue
         mask=''.join(f'{row.get(i,(0,0))[1]:x}' for i in range(64))
         if any(c!='0' for c in mask):masks.append(f'{m} {k} {x} {y} {h:08x} {mask}')
     args.out.parent.mkdir(parents=True,exist_ok=True)

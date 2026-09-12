@@ -1,6 +1,6 @@
 # Gundam reference color mod
 
-Version **0.2.0** expands the optional color mod to all **47 cartridge units**:
+Version **0.2.2** extends the optional color mod to all **47 cartridge units**:
 five tactical layouts and both battle sheets, including later-roster mobile
 suits, mobile armors and warships. Shared masks cover Japanese/Latin text,
 menus, HUD, terrain, rifle fire, impacts, thrusters and explosions. The accepted
@@ -13,7 +13,7 @@ independently of color; a fresh installation defaults to color **off**.
 ## Use and upgrade
 
 Rebuild the game for the expanded mask loader, then install
-`dist/sd-gundam-color-0.2.0.vbmod` in the launcher's Mods view and enable
+`dist/sd-gundam-color-0.2.2.vbmod` in the launcher's Mods view and enable
 **Gundam reference colors**, or use:
 
 ```powershell
@@ -21,12 +21,12 @@ Rebuild the game for the expanded mask loader, then install
 .\tools\play.ps1 -Color off
 ```
 
-The play helper installs 0.2.0 when missing, selecting the new package while
+The play helper installs 0.2.2 when missing, selecting the new package while
 retaining the profile's other mods and saves. `-Color saved` (the default)
 retains the existing selection. Older executables support only the opening
 masks; install this package with the rebuilt game.
 
-The current development executable is in `build/campaign/`. Earlier review
+The current development executable is in `build/widescreen-v2/`. Earlier review
 windows remain open on their separate builds and profiles. The new preview uses:
 
 ```powershell
@@ -86,7 +86,7 @@ SRAM, unit descriptors, destination coordinates or elapsed frames. Unknown
 sources retain stock red. Each hue is normalized so its maximum RGB channel
 equals the original red intensity, including register fades.
 
-The package contains **5,611 opening masks**, **63,249 catalog masks** and
+The package contains **4,421 opening masks**, **63,249 catalog masks** and
 **21,942 relocatable masks**, with 25 palette entries. It ships color IDs and
 source fingerprints. Cartridge bytes, downloaded reference artwork, ROM patches
 and generated guest code are excluded.
@@ -132,11 +132,11 @@ result implied by the **installed package's** source mask. A missing visible
 assignment fails the run, distinguishing intentional red from uncovered art.
 All three opening allies also have per-eye semantic gates.
 
-Current reports: [English combat](color-validation.json),
+The 0.2.0 baseline reports: [English combat](color-validation.json),
 [Japanese opening](color-japanese-validation.json),
 [window/save persistence](color-window-save-validation.json), and
 [persisted disabling](color-restoration-validation.json).
-The final package passes **29 combat-route checkpoints through frame 34,790**
+The 0.2.0 package passes **29 combat-route checkpoints through frame 34,790**
 and **10 Japanese opening checkpoints**. All nine guest/raw/audio planes match
 off/on, with 174 and 60 byte audits respectively. Every visible source is
 classified in both eyes, and its rendered RGB agrees with the packaged mask.
@@ -145,9 +145,9 @@ zero fallback or interpreter instructions. The real SDL window loads the
 validated save, accepts keyboard and pause/resume input, and publishes exact
 SRAM on clean exit. Persisted disabling restores stock red while keeping English.
 
-Color package SHA-256:
+Color 0.2.0 baseline package SHA-256:
 `3fe550dd897d3d200216e908b19a684b02350acde440299b5b48b9b2d525aeda`.
-Runtime SHA-256:
+Color 0.2.0 baseline runtime SHA-256:
 `ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5`.
 
 The runtime suite passes 6/6; authoring tests pass 9/9, including RLE semantics,
@@ -158,9 +158,9 @@ campaign playthrough. Later mission and ending sequences have not all been
 played or compared against the independent oracle. Shared fonts and scenery
 follow source identity wherever reused; undiscovered sources keep stock red.
 An unreferenced 151-tile block at `70F10–71880` is excluded from the catalog;
-no descriptor pointer into it was found. No widescreen changes are included.
+no descriptor pointer into it was found. Those baseline reports predate the independent widescreen mod.
 
-The game-local renderer uses framework commit
+The 0.2.0 baseline uses framework commit
 `44988f34b3bcc089985d9686717005401a96900b`, unchanged by this expansion.
 Central issue: `beads-vb.4.6`.
 
@@ -183,3 +183,33 @@ python tools/validate_color.py `
 ![Melee battle, right eye](color-battle-right.png)
 
 ![Cartridge save-area menu](color-save.png)
+
+## Uniform menu correction (0.2.2)
+
+The shared border, checker fill and inset tiles were incorrectly grouped with
+gold tactical cursor art. Position-specific blue masks covered only parts of
+reused panels, producing the blue/gold seams in Auto Pause and Load Data.
+Fourteen source tiles now have a uniform blue role in `colors/shared.json`.
+The authoring compilers omit 1,190 narrower panel masks and retain this shared
+role at every position. Separate text, cursor and arrow artwork keeps its
+existing colors. No glyphs or native menu geometry changed.
+
+[Menu validation](menu-color-validation.json) records 20 off/on checkpoints
+through the opening and save flow, seven load/restart-route checkpoints, and
+54 real source captures with uniformly blue panels in both eyes. All nine
+guest/raw/audio planes agree and every rendered color matches the installed
+package while preserving native brightness. All 329 unit layouts still pass
+the full asset audit; their catalog and palette are byte-for-byte unchanged.
+The updated package also composes with 32:9 widescreen in the load/resume route.
+
+Package SHA-256:
+`03564fea8244b618d654c17292c5af4deb67456bd3eec0fa182d96557debc0be`.
+
+The independent widescreen mod is documented in [WIDESCREEN.md](WIDESCREEN.md);
+this menu fix also applies with widescreen disabled. Central issue: `beads-vb.4.7`.
+
+![Uniform Auto Pause panel](color-auto-pause.png)
+
+![Uniform Load Data panels](color-load.png)
+
+![Uniform Save Data panels](color-save-uniform.png)

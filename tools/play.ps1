@@ -1,6 +1,7 @@
 param([string]$Rom = '', [string]$Build = 'build',
       [ValidateSet('saved','ja','en')][string]$Language = 'saved',
       [ValidateSet('saved','on','off')][string]$Color = 'saved',
+      [ValidateSet('saved','off','16:9','21:9','32:9','adaptive')][string]$Widescreen = 'saved',
       [string]$Executable = '', [string]$Profile = '')
 $ErrorActionPreference='Stop'
 $projectRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
@@ -25,13 +26,25 @@ if($Language -ne 'saved') {
     $arguments+=@($(if($Language -eq 'en'){'--enable-mod'}else{'--disable-mod'}),'sd-gundam-english:english')
 }
 if($Color -ne 'saved') {
-    $installed=Join-Path $profileRoot 'mods/packages/sd-gundam-color/0.2.0/manifest.toml'
+    $installed=Join-Path $profileRoot 'mods/packages/sd-gundam-color/0.2.2/manifest.toml'
     if(!(Test-Path -LiteralPath $installed)) {
-        $package=Join-Path $projectRoot 'dist/sd-gundam-color-0.2.0.vbmod'
+        $package=Join-Path $projectRoot 'dist/sd-gundam-color-0.2.2.vbmod'
         if(!(Test-Path -LiteralPath $package)) { throw 'Build the color package first.' }
         $arguments+=@('--install-mod',$package)
     }
     $arguments+=@($(if($Color -eq 'on'){'--enable-mod'}else{'--disable-mod'}),'sd-gundam-color:color')
+}
+if($Widescreen -ne 'saved') {
+    $installed=Join-Path $profileRoot 'mods/packages/sd-gundam-widescreen/0.1.0/manifest.toml'
+    if(!(Test-Path -LiteralPath $installed)) {
+        $package=Join-Path $projectRoot 'dist/sd-gundam-widescreen-0.1.0.vbmod'
+        if(!(Test-Path -LiteralPath $package)) { throw 'Build the widescreen package first.' }
+        $arguments+=@('--install-mod',$package)
+    }
+    $arguments+=@($(if($Widescreen -eq 'off'){'--disable-mod'}else{'--enable-mod'}),'sd-gundam-widescreen:widescreen')
+    if($Widescreen -ne 'off') {
+        $arguments+=@('--set-mod-option',"sd-gundam-widescreen:widescreen:aspect=$Widescreen")
+    }
 }
 & $exe @arguments
 if($LASTEXITCODE) { throw "Game exited with code $LASTEXITCODE" }

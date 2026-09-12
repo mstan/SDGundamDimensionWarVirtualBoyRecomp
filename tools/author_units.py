@@ -9,7 +9,7 @@ import json
 import struct
 from pathlib import Path
 from PIL import Image, ImageDraw
-from color_assets import catalog, artwork, fingerprint
+from color_assets import catalog, artwork, fingerprint, uniform_materials
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -144,6 +144,12 @@ def main():
                     for category in bank['categories']:
                         assign(shared,(category,h),v*8+u,ink)
         bank_report.append({'name':bank['name'],'tiles':(end-start)//16})
+    # A shared panel retains its material when reused at a new atlas position.
+    # Remove narrower catalog overrides and resolve any cross-bank ambiguity.
+    uniform=uniform_materials(rom,shared_recipe)
+    exact={key:mask for key,mask in exact.items() if (key[0],key[-1]) not in uniform}
+    for key,ink in uniform.items():
+        shared[key]={texel:ink for texel in shared[key]}
     args.out.mkdir(parents=True,exist_ok=True)
     for name,table in (('catalog.txt',exact),('tiles.txt',shared)):
         lines=[]

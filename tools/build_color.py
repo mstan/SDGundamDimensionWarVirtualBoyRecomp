@@ -6,7 +6,7 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    output=ROOT/'dist/sd-gundam-color-0.2.0.vbmod'
+    output=ROOT/'dist/sd-gundam-color-0.2.2.vbmod'
     output.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as archive:
         for name in ('manifest.toml','palette.txt','materials.txt','catalog.txt','tiles.txt'):

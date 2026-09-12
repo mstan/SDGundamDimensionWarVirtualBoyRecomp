@@ -20,7 +20,7 @@ uint64_t key(unsigned map, unsigned kind, unsigned x, unsigned y, uint32_t hash)
 
 void render(const VbRenderFrame* frame, uint32_t* out, void*) {
     if (!frame->sources) return;
-    for (unsigned i = 0; i < VB_RENDER_PIXELS; ++i) {
+    for (unsigned i = 0; i < unsigned(frame->width * frame->height); ++i) {
         const unsigned light = (frame->stock_argb[i] >> 16) & 255;
         if (!light) continue;
         const auto& s = frame->sources[i];

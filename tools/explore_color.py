@@ -30,7 +30,7 @@ def main():
     if args.input_save:
         shutil.copy2(args.input_save, out / 'progress.sav')
     if args.color:
-        extra += ['--install-mod', str(ROOT / 'dist/sd-gundam-color-0.2.0.vbmod'),
+        extra += ['--install-mod', str(ROOT / 'dist/sd-gundam-color-0.2.2.vbmod'),
                   '--enable-mod', 'sd-gundam-color:color']
     route = []
     report = []

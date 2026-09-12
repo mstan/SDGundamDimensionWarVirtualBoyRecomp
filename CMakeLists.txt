@@ -43,10 +43,15 @@ add_custom_command(OUTPUT "${_text_header}" "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd
     DEPENDS tools/build_translation.py translations/english.json mods/english/manifest.toml
         "${SD_GUNDAM_ROM}" "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_dispatch.c"
     VERBATIM)
-target_sources(vb-runtime PRIVATE src/translation_mod.cpp src/color_mod.cpp "${_text_header}")
+target_sources(vb-runtime PRIVATE src/translation_mod.cpp src/color_mod.cpp src/widescreen_mod.cpp src/widescreen_scene.cpp "${_text_header}")
 add_custom_target(sd-gundam-color-package ALL
     COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/build_color.py"
-    BYPRODUCTS "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-color-0.2.0.vbmod"
+    BYPRODUCTS "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-color-0.2.2.vbmod"
     DEPENDS tools/build_color.py mods/color/manifest.toml mods/color/palette.txt mods/color/materials.txt
         mods/color/catalog.txt mods/color/tiles.txt
+    VERBATIM)
+add_custom_target(sd-gundam-widescreen-package ALL
+    COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/build_widescreen.py"
+    BYPRODUCTS "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-widescreen-0.1.0.vbmod"
+    DEPENDS tools/build_widescreen.py mods/widescreen/manifest.toml
     VERBATIM)

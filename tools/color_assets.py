@@ -18,6 +18,26 @@ def fingerprint(data):
     return value
 
 
+def uniform_materials(rom, recipe):
+    """Shared source roles that must not inherit position-specific colors."""
+    result = {}
+    for bank in recipe['banks']:
+        start, end = int(bank['start'], 16), int(bank['end'], 16)
+        for rule in bank.get('overrides', []):
+            if not rule.get('uniform'):
+                continue
+            for tile in range(rule['first_tile'], rule['last_tile'] + 1):
+                offset = start + tile * 16
+                if not start <= offset < end or offset + 16 > len(rom):
+                    raise ValueError(f'Invalid uniform material in {bank["name"]}')
+                for category in bank['categories']:
+                    key = (category, fingerprint(rom[offset:offset + 16]))
+                    if key in result and result[key] != rule['ink']:
+                        raise ValueError(f'Conflicting uniform material {key}')
+                    result[key] = rule['ink']
+    return result
+
+
 def decode_map(rom, offset):
     """Decode literal/repeat/increasing/decreasing tile-map runs."""
     start = offset

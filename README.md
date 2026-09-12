@@ -88,15 +88,27 @@ Restart after changing language to replay all text. See
 
 ## Color mod
 
-The optional `dist/sd-gundam-color-0.2.0.vbmod` adds colors based on the original
+The optional `dist/sd-gundam-color-0.2.2.vbmod` adds colors based on the original
 Bandai booklet and official Gundam reference art. Enable **Gundam reference
 colors** in Mods, or launch with `tools/play.ps1 -Language en -Color on`.
-Version 0.2.0 covers all 47 units' tactical views and battle sheets, plus title,
+Version 0.2.2 covers all 47 units' tactical views and battle sheets, plus title,
 interface, terrain, effects and save menus. Both eyes preserve native shading
-and silhouettes. Color stays off by default and is independent of English.
+and silhouettes. Shared menu frames and fills stay uniformly blue wherever
+reused; cursor and label accents remain distinct. Color stays off by default
+and is independent of English.
 Rebuild the game before installing this version; the new source-mask lookup
 is game-local. Unknown source artwork still uses the original red display.
 See [color references, authoring, and validation](docs/COLOR.md).
+
+## Widescreen mod
+
+The optional `dist/sd-gundam-widescreen-0.1.0.vbmod` expands tactical and battle
+views. Choose **16:9**, **21:9**, **32:9**, or **Adaptive (fit window)** in its
+Mods detail panel. It is off by default and composes with English and color:
+`tools/play.ps1 -Language en -Color on -Widescreen adaptive`.
+Resize the window to expand the adaptive view. Menus retain their original
+proportions; expanded views reveal native submitted artwork, with some empty
+space where the original game supplies none. See [scope and validation](docs/WIDESCREEN.md).
 
 ## Validation
 
@@ -129,7 +141,7 @@ localization mod (`.2`), save persistence validation (`.5`), then color (`.3`),
 then assessment of native widescreen
 (`.4`). Widescreen depends on what the game's scene and camera data support.
 See [localization reference](docs/LOCALIZATION.md) for the supplied IPS audit
-and the Endless Duel text/glyph workflow. The full-roster color mod is available;
-widescreen applicability remains a separate assessment.
+and the Endless Duel text/glyph workflow. Full-roster color and adaptive
+widescreen are available as independent opt-in mods.
 
 See [LICENSE.md](LICENSE.md). Game content and dependencies retain their own rights.

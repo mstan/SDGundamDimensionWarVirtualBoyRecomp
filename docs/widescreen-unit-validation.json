@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "scenes": [
+    {
+      "name": "3500",
+      "camera": [
+        4,
+        8
+      ],
+      "units": [
+        {
+          "name": "GUNDAM",
+          "depth": 2,
+          "column": 5,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 20
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 20
+            }
+          ]
+        },
+        {
+          "name": "GP-01 Fb",
+          "depth": 3,
+          "column": 1,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 20
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 20
+            }
+          ]
+        },
+        {
+          "name": "RICK-DIAS",
+          "depth": 2,
+          "column": 6,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 20
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 20
+            }
+          ]
+        },
+        {
+          "name": "G  M",
+          "depth": 2,
+          "column": -1,
+          "originally_culled": true,
+          "eyes": [
+            {
+              "eye": 0,
+              "candidate_texels": 776,
+              "visible_source_matches": 776
+            },
+            {
+              "eye": 1,
+              "candidate_texels": 753,
+              "visible_source_matches": 753
+            }
+          ]
+        },
+        {
+          "name": "SALAMIS",
+          "depth": 0,
+          "column": 1,
+          "originally_culled": true,
+          "eyes": [
+            {
+              "eye": 0,
+              "candidate_texels": 1445,
+              "visible_source_matches": 1445
+            },
+            {
+              "eye": 1,
+              "candidate_texels": 1445,
+              "visible_source_matches": 1445
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pan-still",
+      "camera": [
+        4,
+        7
+      ],
+      "units": [
+        {
+          "name": "GUNDAM",
+          "depth": 1,
+          "column": 5,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 30
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 30
+            }
+          ]
+        },
+        {
+          "name": "GP-01 Fb",
+          "depth": 2,
+          "column": 1,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 20
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 20
+            }
+          ]
+        },
+        {
+          "name": "RICK-DIAS",
+          "depth": 1,
+          "column": 6,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 30
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 30
+            }
+          ]
+        },
+        {
+          "name": "G  M",
+          "depth": 1,
+          "column": -1,
+          "originally_culled": true,
+          "eyes": [
+            {
+              "eye": 0,
+              "candidate_texels": 1065,
+              "visible_source_matches": 1065
+            },
+            {
+              "eye": 1,
+              "candidate_texels": 1039,
+              "visible_source_matches": 1039
+            }
+          ]
+        },
+        {
+          "name": "ZAKU",
+          "depth": 5,
+          "column": 7,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 12
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grid-on",
+      "camera": [
+        0,
+        7
+      ],
+      "units": [
+        {
+          "name": "GUNDAM",
+          "depth": 1,
+          "column": 9,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 30
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 30
+            }
+          ]
+        },
+        {
+          "name": "GP-01 Fb",
+          "depth": 2,
+          "column": 5,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 20
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 20
+            }
+          ]
+        },
+        {
+          "name": "RICK-DIAS",
+          "depth": 1,
+          "column": 10,
+          "originally_culled": true,
+          "eyes": [
+            {
+              "eye": 0,
+              "candidate_texels": 1363,
+              "visible_source_matches": 1363
+            },
+            {
+              "eye": 1,
+              "candidate_texels": 1359,
+              "visible_source_matches": 1359
+            }
+          ]
+        },
+        {
+          "name": "G  M",
+          "depth": 1,
+          "column": 3,
+          "originally_culled": false,
+          "eyes": [
+            {
+              "eye": 0,
+              "native_tiles_equal": 30
+            },
+            {
+              "eye": 1,
+              "native_tiles_equal": 30
+            }
+          ]
+        },
+        {
+          "name": "ZAKU",
+          "depth": 5,
+          "column": 11,
+          "originally_culled": true,
+          "eyes": [
+            {
+              "eye": 0,
+              "candidate_texels": 501,
+              "visible_source_matches": 501
+            },
+            {
+              "eye": 1,
+              "candidate_texels": 501,
+              "visible_source_matches": 501
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
