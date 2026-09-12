@@ -6,5 +6,5 @@ thumbnail, not official retail box art. The original game logo and artwork
 retain their owners' rights; the project code license does not relicense them.
 
 Shared Virtual Boy interface artwork, controller images, icons and fonts come
-from the pinned recomp-ui dependency. Its asset licenses remain in
-`recomp-ui/assets/licenses/`; framework and UI source retain their own licenses.
+from the pinned recomp-ui dependency. See `recomp-ui/LICENSE` and `recomp-ui/assets/common/fonts/NOTICE.md` for
+source and font notices; framework and bundled components retain their own licenses.
