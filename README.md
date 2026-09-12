@@ -7,8 +7,10 @@ Virtual Boy, using [vbrecomp](https://github.com/mstan/vbrecomp) and
 The Japanese baseline is built and validated through the opening tactical
 mission, in its original red display. All 40 checkpoints through frame 4,500
 match independent Beetle across ten state/output planes, with zero interpreter
-fallback. This is a development checkout; combat, later missions, and endings
-have not been validated. No ROM or generated cartridge code is included.
+fallback. Color-on/off native checks also cover ranged and melee combat.
+This is a development checkout; later missions and endings have not received
+a complete playthrough or independent-oracle validation. No ROM or generated
+cartridge code is included.
 
 ## Supported cartridge
 
@@ -86,11 +88,14 @@ Restart after changing language to replay all text. See
 
 ## Color mod
 
-The optional `dist/sd-gundam-color-0.1.0.vbmod` adds colors based on the original
+The optional `dist/sd-gundam-color-0.2.0.vbmod` adds colors based on the original
 Bandai booklet and official Gundam reference art. Enable **Gundam reference
 colors** in Mods, or launch with `tools/play.ps1 -Language en -Color on`.
-The first pass covers the title, interface, identified opening allies, terrain,
-and save menus. Uncaptured artwork remains red; full-campaign coverage is pending.
+Version 0.2.0 covers all 47 units' tactical views and battle sheets, plus title,
+interface, terrain, effects and save menus. Both eyes preserve native shading
+and silhouettes. Color stays off by default and is independent of English.
+Rebuild the game before installing this version; the new source-mask lookup
+is game-local. Unknown source artwork still uses the original red display.
 See [color references, authoring, and validation](docs/COLOR.md).
 
 ## Validation
@@ -124,7 +129,7 @@ localization mod (`.2`), save persistence validation (`.5`), then color (`.3`),
 then assessment of native widescreen
 (`.4`). Widescreen depends on what the game's scene and camera data support.
 See [localization reference](docs/LOCALIZATION.md) for the supplied IPS audit
-and the Endless Duel text/glyph workflow. The first color mod is available;
+and the Endless Duel text/glyph workflow. The full-roster color mod is available;
 widescreen applicability remains a separate assessment.
 
 See [LICENSE.md](LICENSE.md). Game content and dependencies retain their own rights.

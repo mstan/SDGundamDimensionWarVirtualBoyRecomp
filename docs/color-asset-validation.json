@@ -1,0 +1,4218 @@
+{
+  "passed": true,
+  "input_sha256": {
+    "roms/sd_gundam.vb": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+    "tools/author_units.py": "23448aa91fc2d214995393c92cfe45a86ef7e61e42143e72f3e0897c2d9590be",
+    "tools/color_assets.py": "53a40754cf659900475ad3eb3647769245d7d21c84fcd2b2c93ec92cbe4a4a10",
+    "colors/units.json": "abee13b215349a402aa1dfe775017b02d9ac8ef439d428fba574503532564a56",
+    "colors/shared.json": "994a9406f425df7b9b8291e04cf574f9d9ff1b4791886868134105138f345152",
+    "mods/color/palette.txt": "e083a809a3b6630bd2732510a5eba27d43fa6fe8f64c1f94152063d4e3e642da",
+    "mods/color/materials.txt": "910dd0947b868342b802ae43460baa3724aa8570b0e9f4c15edb61dbe81613b7",
+    "mods/color/catalog.txt": "0629d0452f4ab465c906d5c54359ffbe4c9d1f3078336dc3b039ea4336c07800",
+    "mods/color/tiles.txt": "3aa2501c48900d82d2800be5cd1a2a4733fb8bf9836f1e758c8e43bf29fd4ad8",
+    "dist/sd-gundam-color-0.2.0.vbmod": "3fe550dd897d3d200216e908b19a684b02350acde440299b5b48b9b2d525aeda"
+  },
+  "units": [
+    {
+      "name": "GUNDAM",
+      "descriptor": "e8630",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 505,
+          "ink_counts": {
+            "1": 260,
+            "4": 12,
+            "3": 135,
+            "2": 88,
+            "8": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 808,
+          "ink_counts": {
+            "1": 408,
+            "4": 34,
+            "3": 198,
+            "8": 28,
+            "2": 138,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 771,
+          "ink_counts": {
+            "1": 390,
+            "4": 29,
+            "3": 196,
+            "8": 26,
+            "2": 130
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1123,
+          "ink_counts": {
+            "1": 602,
+            "4": 42,
+            "5": 2,
+            "8": 32,
+            "3": 273,
+            "2": 172
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1058,
+          "ink_counts": {
+            "1": 592,
+            "4": 34,
+            "5": 2,
+            "8": 28,
+            "3": 248,
+            "2": 154
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 42366,
+          "ink_counts": {
+            "1": 24372,
+            "4": 1022,
+            "8": 838,
+            "2": 7232,
+            "3": 7294,
+            "9": 1608
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 40160,
+          "ink_counts": {
+            "1": 23856,
+            "4": 1084,
+            "8": 852,
+            "2": 7380,
+            "3": 6984,
+            "5": 4
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GELGOOG",
+      "descriptor": "e87c0",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 562,
+          "ink_counts": {
+            "13": 451,
+            "18": 13,
+            "9": 11,
+            "17": 87
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 889,
+          "ink_counts": {
+            "13": 692,
+            "18": 31,
+            "9": 28,
+            "17": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 858,
+          "ink_counts": {
+            "13": 658,
+            "18": 34,
+            "9": 28,
+            "17": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1364,
+          "ink_counts": {
+            "13": 1072,
+            "18": 44,
+            "9": 36,
+            "17": 212
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1258,
+          "ink_counts": {
+            "13": 965,
+            "18": 42,
+            "9": 34,
+            "17": 214,
+            "5": 3
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 46498,
+          "ink_counts": {
+            "13": 34382,
+            "18": 1074,
+            "9": 3758,
+            "17": 7260,
+            "5": 24
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 41980,
+          "ink_counts": {
+            "13": 32300,
+            "18": 1152,
+            "9": 876,
+            "17": 7544,
+            "5": 108
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ZAKU",
+      "descriptor": "e8964",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 501,
+          "ink_counts": {
+            "23": 353,
+            "18": 12,
+            "19": 126,
+            "9": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 810,
+          "ink_counts": {
+            "23": 551,
+            "18": 20,
+            "9": 28,
+            "19": 211
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 799,
+          "ink_counts": {
+            "23": 540,
+            "18": 20,
+            "9": 28,
+            "19": 211
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1102,
+          "ink_counts": {
+            "5": 3,
+            "23": 712,
+            "18": 44,
+            "9": 36,
+            "19": 307
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1089,
+          "ink_counts": {
+            "5": 4,
+            "23": 703,
+            "18": 44,
+            "9": 36,
+            "19": 302
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 41287,
+          "ink_counts": {
+            "23": 23575,
+            "18": 912,
+            "9": 864,
+            "19": 14542,
+            "5": 78,
+            "14": 1316
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 38706,
+          "ink_counts": {
+            "23": 22152,
+            "18": 912,
+            "9": 864,
+            "19": 14730,
+            "5": 48
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "RA-KAILUM",
+      "descriptor": "e8af8",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 2338,
+          "ink_counts": {
+            "1": 1340,
+            "6": 50,
+            "5": 74,
+            "18": 458,
+            "3": 416
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 2938,
+          "ink_counts": {
+            "1": 1608,
+            "6": 57,
+            "18": 572,
+            "5": 328,
+            "3": 373
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 2938,
+          "ink_counts": {
+            "1": 1608,
+            "6": 57,
+            "18": 572,
+            "5": 328,
+            "3": 373
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 3665,
+          "ink_counts": {
+            "1": 2149,
+            "6": 63,
+            "18": 700,
+            "5": 132,
+            "3": 621
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 3665,
+          "ink_counts": {
+            "1": 2149,
+            "6": 63,
+            "5": 132,
+            "18": 700,
+            "3": 621
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2717,
+          "ink_counts": {
+            "1": 1946,
+            "18": 491,
+            "3": 280
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2717,
+          "ink_counts": {
+            "1": 1945,
+            "18": 502,
+            "3": 270
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GWANBAN",
+      "descriptor": "e9124",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1788,
+          "ink_counts": {
+            "3": 1216,
+            "9": 48,
+            "5": 116,
+            "18": 408
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 2269,
+          "ink_counts": {
+            "3": 1637,
+            "9": 56,
+            "5": 58,
+            "18": 518
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 2280,
+          "ink_counts": {
+            "3": 1648,
+            "5": 58,
+            "9": 56,
+            "18": 518
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2636,
+          "ink_counts": {
+            "3": 1838,
+            "5": 144,
+            "9": 65,
+            "18": 589
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2636,
+          "ink_counts": {
+            "3": 1838,
+            "9": 65,
+            "5": 144,
+            "18": 589
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1931,
+          "ink_counts": {
+            "3": 1402,
+            "18": 286,
+            "16": 243
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1931,
+          "ink_counts": {
+            "3": 1393,
+            "18": 302,
+            "16": 236
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "G  M",
+      "descriptor": "e9744",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 462,
+          "ink_counts": {
+            "20": 251,
+            "4": 11,
+            "6": 10,
+            "3": 190
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 776,
+          "ink_counts": {
+            "5": 5,
+            "20": 387,
+            "4": 26,
+            "3": 330,
+            "6": 28
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 753,
+          "ink_counts": {
+            "5": 5,
+            "20": 387,
+            "4": 29,
+            "3": 308,
+            "6": 24
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1065,
+          "ink_counts": {
+            "20": 543,
+            "4": 40,
+            "6": 32,
+            "3": 450
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1039,
+          "ink_counts": {
+            "20": 524,
+            "4": 40,
+            "6": 30,
+            "3": 444,
+            "5": 1
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 41498,
+          "ink_counts": {
+            "20": 22460,
+            "4": 1138,
+            "6": 874,
+            "3": 14354,
+            "5": 8,
+            "9": 2664
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 37852,
+          "ink_counts": {
+            "20": 21140,
+            "4": 1152,
+            "6": 876,
+            "3": 14680,
+            "5": 4
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "RICK-DOM",
+      "descriptor": "e98d0",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 478,
+          "ink_counts": {
+            "15": 368,
+            "3": 12,
+            "18": 88,
+            "9": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 795,
+          "ink_counts": {
+            "15": 598,
+            "3": 31,
+            "9": 28,
+            "18": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 772,
+          "ink_counts": {
+            "15": 572,
+            "3": 34,
+            "9": 28,
+            "18": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1149,
+          "ink_counts": {
+            "15": 854,
+            "3": 44,
+            "9": 36,
+            "18": 212,
+            "5": 3
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1134,
+          "ink_counts": {
+            "15": 842,
+            "3": 44,
+            "9": 36,
+            "18": 212
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 42298,
+          "ink_counts": {
+            "15": 32008,
+            "3": 1042,
+            "9": 748,
+            "18": 7330,
+            "5": 64,
+            "14": 1106
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 40768,
+          "ink_counts": {
+            "15": 31592,
+            "3": 1028,
+            "9": 684,
+            "18": 7340,
+            "5": 100,
+            "14": 24
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "MARASAI",
+      "descriptor": "e9a5c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 560,
+          "ink_counts": {
+            "14": 386,
+            "17": 12,
+            "3": 152,
+            "8": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 904,
+          "ink_counts": {
+            "14": 614,
+            "17": 31,
+            "8": 28,
+            "3": 231
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 916,
+          "ink_counts": {
+            "14": 620,
+            "17": 31,
+            "8": 28,
+            "3": 237
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1305,
+          "ink_counts": {
+            "14": 874,
+            "17": 44,
+            "8": 36,
+            "3": 351
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1315,
+          "ink_counts": {
+            "14": 882,
+            "17": 44,
+            "8": 36,
+            "3": 353
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 43221,
+          "ink_counts": {
+            "14": 24950,
+            "17": 949,
+            "8": 880,
+            "3": 15099,
+            "5": 26,
+            "9": 1317
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 42818,
+          "ink_counts": {
+            "14": 24974,
+            "17": 984,
+            "8": 912,
+            "3": 15938,
+            "5": 10
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GUNDAM-F91",
+      "descriptor": "e9be8",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 473,
+          "ink_counts": {
+            "5": 2,
+            "1": 304,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 57
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 809,
+          "ink_counts": {
+            "1": 500,
+            "4": 20,
+            "8": 28,
+            "2": 149,
+            "3": 112
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 815,
+          "ink_counts": {
+            "1": 503,
+            "4": 20,
+            "8": 28,
+            "2": 149,
+            "3": 115
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1165,
+          "ink_counts": {
+            "1": 665,
+            "4": 44,
+            "8": 54,
+            "2": 232,
+            "3": 170
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1171,
+          "ink_counts": {
+            "1": 672,
+            "4": 44,
+            "8": 51,
+            "2": 232,
+            "3": 172
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 46740,
+          "ink_counts": {
+            "1": 29072,
+            "4": 966,
+            "8": 680,
+            "2": 6952,
+            "3": 7518,
+            "5": 204,
+            "9": 1348
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 42042,
+          "ink_counts": {
+            "1": 25554,
+            "4": 1104,
+            "8": 762,
+            "2": 7368,
+            "3": 7234,
+            "5": 20
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GP-02A",
+      "descriptor": "e9d74",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 744,
+          "ink_counts": {
+            "1": 504,
+            "4": 17,
+            "8": 14,
+            "2": 117,
+            "18": 92
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1167,
+          "ink_counts": {
+            "1": 781,
+            "4": 40,
+            "8": 36,
+            "2": 172,
+            "18": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1102,
+          "ink_counts": {
+            "1": 732,
+            "4": 38,
+            "8": 34,
+            "2": 164,
+            "18": 134
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1644,
+          "ink_counts": {
+            "1": 1033,
+            "4": 49,
+            "8": 36,
+            "5": 104,
+            "2": 222,
+            "18": 200
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1600,
+          "ink_counts": {
+            "1": 1009,
+            "4": 46,
+            "8": 34,
+            "5": 104,
+            "2": 210,
+            "18": 197
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 59094,
+          "ink_counts": {
+            "1": 36464,
+            "4": 1114,
+            "8": 886,
+            "2": 7430,
+            "18": 10158,
+            "9": 3042
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 55874,
+          "ink_counts": {
+            "1": 36382,
+            "4": 1152,
+            "8": 912,
+            "2": 7644,
+            "18": 9784
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "Re-GZ",
+      "descriptor": "e9f34",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 478,
+          "ink_counts": {
+            "20": 305,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 63
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 818,
+          "ink_counts": {
+            "20": 505,
+            "5": 3,
+            "4": 31,
+            "8": 28,
+            "2": 137,
+            "3": 114
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 802,
+          "ink_counts": {
+            "20": 485,
+            "5": 3,
+            "4": 31,
+            "8": 28,
+            "2": 136,
+            "3": 119
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1125,
+          "ink_counts": {
+            "20": 691,
+            "4": 44,
+            "8": 36,
+            "2": 201,
+            "3": 153
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1098,
+          "ink_counts": {
+            "20": 681,
+            "4": 42,
+            "8": 32,
+            "2": 190,
+            "3": 147,
+            "5": 6
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 42720,
+          "ink_counts": {
+            "20": 24772,
+            "4": 1128,
+            "8": 840,
+            "2": 7464,
+            "3": 7390,
+            "5": 22,
+            "9": 1104
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 41832,
+          "ink_counts": {
+            "20": 24534,
+            "4": 1152,
+            "8": 852,
+            "2": 7464,
+            "3": 7800,
+            "5": 20,
+            "9": 10
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "RICK-DIAS",
+      "descriptor": "ea0c0",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 568,
+          "ink_counts": {
+            "12": 458,
+            "3": 12,
+            "18": 88,
+            "6": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 939,
+          "ink_counts": {
+            "12": 742,
+            "3": 31,
+            "6": 28,
+            "18": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 931,
+          "ink_counts": {
+            "12": 734,
+            "3": 31,
+            "6": 28,
+            "18": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1363,
+          "ink_counts": {
+            "12": 1073,
+            "3": 42,
+            "6": 34,
+            "18": 214
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1359,
+          "ink_counts": {
+            "12": 1067,
+            "3": 44,
+            "6": 36,
+            "18": 212
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 48450,
+          "ink_counts": {
+            "12": 35602,
+            "3": 1042,
+            "6": 906,
+            "18": 7644,
+            "5": 114,
+            "9": 3142
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 45016,
+          "ink_counts": {
+            "12": 35294,
+            "3": 1032,
+            "6": 900,
+            "18": 7604,
+            "5": 134,
+            "9": 52
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "SAZABI",
+      "descriptor": "ea254",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 481,
+          "ink_counts": {
+            "3": 383,
+            "4": 12,
+            "18": 76,
+            "8": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 809,
+          "ink_counts": {
+            "5": 1,
+            "3": 627,
+            "4": 20,
+            "8": 28,
+            "18": 133
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 779,
+          "ink_counts": {
+            "3": 599,
+            "4": 19,
+            "8": 28,
+            "18": 133
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1131,
+          "ink_counts": {
+            "3": 845,
+            "4": 38,
+            "8": 36,
+            "18": 212
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1104,
+          "ink_counts": {
+            "3": 817,
+            "4": 39,
+            "8": 36,
+            "18": 212
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 53306,
+          "ink_counts": {
+            "3": 40170,
+            "4": 1128,
+            "8": 902,
+            "18": 7624,
+            "5": 328,
+            "9": 3154
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 53306,
+          "ink_counts": {
+            "3": 40170,
+            "4": 1128,
+            "8": 902,
+            "18": 7624,
+            "5": 328,
+            "9": 3154
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "BYG-ZAM",
+      "descriptor": "ea3f0",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 680,
+          "ink_counts": {
+            "19": 406,
+            "9": 18,
+            "17": 256
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 988,
+          "ink_counts": {
+            "19": 580,
+            "9": 24,
+            "17": 384
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 966,
+          "ink_counts": {
+            "5": 1,
+            "19": 563,
+            "9": 20,
+            "17": 382
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1309,
+          "ink_counts": {
+            "19": 784,
+            "5": 4,
+            "9": 27,
+            "17": 494
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1284,
+          "ink_counts": {
+            "19": 763,
+            "5": 6,
+            "9": 27,
+            "17": 488
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 50142,
+          "ink_counts": {
+            "19": 28750,
+            "9": 516,
+            "5": 414,
+            "17": 20462
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 58634,
+          "ink_counts": {
+            "19": 32185,
+            "9": 570,
+            "5": 2836,
+            "17": 23043
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "MOUSAI",
+      "descriptor": "ea62c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1124,
+          "ink_counts": {
+            "17": 758,
+            "5": 100,
+            "9": 32,
+            "19": 234
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1456,
+          "ink_counts": {
+            "17": 983,
+            "9": 38,
+            "5": 106,
+            "19": 329
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1456,
+          "ink_counts": {
+            "17": 983,
+            "5": 106,
+            "9": 38,
+            "19": 329
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1838,
+          "ink_counts": {
+            "17": 1234,
+            "5": 119,
+            "9": 50,
+            "19": 435
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1838,
+          "ink_counts": {
+            "17": 1234,
+            "9": 50,
+            "5": 119,
+            "19": 435
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1622,
+          "ink_counts": {
+            "17": 1131,
+            "19": 491
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1622,
+          "ink_counts": {
+            "17": 1115,
+            "19": 507
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "SALAMIS",
+      "descriptor": "eab9c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 844,
+          "ink_counts": {
+            "21": 544,
+            "5": 42,
+            "6": 32,
+            "18": 204,
+            "16": 22
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1123,
+          "ink_counts": {
+            "21": 700,
+            "5": 55,
+            "6": 36,
+            "18": 274,
+            "16": 58
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1123,
+          "ink_counts": {
+            "21": 700,
+            "5": 55,
+            "6": 36,
+            "18": 274,
+            "16": 58
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1445,
+          "ink_counts": {
+            "21": 877,
+            "5": 112,
+            "6": 32,
+            "18": 360,
+            "16": 64
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1445,
+          "ink_counts": {
+            "21": 877,
+            "5": 112,
+            "6": 32,
+            "18": 360,
+            "16": 64
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1876,
+          "ink_counts": {
+            "21": 1272,
+            "18": 216,
+            "16": 388
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1876,
+          "ink_counts": {
+            "21": 1271,
+            "18": 219,
+            "16": 386
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "THIBE",
+      "descriptor": "eb10c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1016,
+          "ink_counts": {
+            "3": 604,
+            "5": 82,
+            "9": 30,
+            "16": 216,
+            "18": 84
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1133,
+          "ink_counts": {
+            "3": 706,
+            "5": 58,
+            "9": 26,
+            "16": 263,
+            "18": 80
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1133,
+          "ink_counts": {
+            "3": 706,
+            "5": 58,
+            "9": 26,
+            "16": 263,
+            "18": 80
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1451,
+          "ink_counts": {
+            "3": 918,
+            "5": 112,
+            "9": 32,
+            "16": 309,
+            "18": 80
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1451,
+          "ink_counts": {
+            "3": 918,
+            "16": 309,
+            "5": 112,
+            "9": 32,
+            "18": 80
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1736,
+          "ink_counts": {
+            "3": 1047,
+            "9": 14,
+            "16": 359,
+            "18": 316
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1736,
+          "ink_counts": {
+            "3": 1055,
+            "9": 11,
+            "16": 353,
+            "18": 317
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "WHITE BASE",
+      "descriptor": "eb67c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1324,
+          "ink_counts": {
+            "1": 1036,
+            "6": 34,
+            "5": 24,
+            "3": 230
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1838,
+          "ink_counts": {
+            "1": 1428,
+            "6": 47,
+            "5": 23,
+            "3": 340
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1838,
+          "ink_counts": {
+            "1": 1428,
+            "6": 47,
+            "5": 23,
+            "3": 340
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2319,
+          "ink_counts": {
+            "1": 1807,
+            "6": 60,
+            "5": 28,
+            "3": 424
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2319,
+          "ink_counts": {
+            "1": 1807,
+            "6": 60,
+            "5": 28,
+            "3": 424
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2096,
+          "ink_counts": {
+            "1": 1545,
+            "6": 39,
+            "3": 512
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2096,
+          "ink_counts": {
+            "1": 1548,
+            "6": 36,
+            "3": 512
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "AHGAMA",
+      "descriptor": "ebbec",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1460,
+          "ink_counts": {
+            "1": 814,
+            "6": 28,
+            "5": 80,
+            "18": 294,
+            "3": 244
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1964,
+          "ink_counts": {
+            "1": 1120,
+            "6": 34,
+            "5": 87,
+            "18": 408,
+            "3": 315
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1964,
+          "ink_counts": {
+            "1": 1120,
+            "6": 34,
+            "5": 87,
+            "18": 408,
+            "3": 315
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2480,
+          "ink_counts": {
+            "1": 1470,
+            "6": 47,
+            "18": 534,
+            "5": 115,
+            "3": 314
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2480,
+          "ink_counts": {
+            "1": 1470,
+            "6": 47,
+            "18": 534,
+            "5": 115,
+            "3": 314
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1795,
+          "ink_counts": {
+            "1": 1213,
+            "6": 25,
+            "18": 472,
+            "3": 85
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1795,
+          "ink_counts": {
+            "1": 1215,
+            "18": 475,
+            "6": 22,
+            "3": 83
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ALEXANDRIA",
+      "descriptor": "ec15c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1120,
+          "ink_counts": {
+            "15": 738,
+            "5": 92,
+            "6": 28,
+            "18": 254,
+            "16": 8
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1435,
+          "ink_counts": {
+            "15": 981,
+            "6": 29,
+            "5": 65,
+            "18": 344,
+            "16": 16
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1435,
+          "ink_counts": {
+            "15": 981,
+            "18": 344,
+            "5": 65,
+            "6": 29,
+            "16": 16
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1785,
+          "ink_counts": {
+            "15": 1220,
+            "5": 122,
+            "18": 377,
+            "6": 46,
+            "16": 20
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1785,
+          "ink_counts": {
+            "15": 1220,
+            "6": 46,
+            "5": 122,
+            "18": 377,
+            "16": 20
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1501,
+          "ink_counts": {
+            "15": 1046,
+            "18": 117,
+            "16": 330,
+            "5": 8
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1501,
+          "ink_counts": {
+            "15": 1012,
+            "18": 151,
+            "16": 330,
+            "5": 8
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ALBION",
+      "descriptor": "ec6cc",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1350,
+          "ink_counts": {
+            "5": 92,
+            "1": 756,
+            "6": 34,
+            "18": 266,
+            "3": 202
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1835,
+          "ink_counts": {
+            "1": 1051,
+            "6": 41,
+            "5": 101,
+            "18": 368,
+            "3": 274
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1835,
+          "ink_counts": {
+            "1": 1051,
+            "6": 41,
+            "5": 101,
+            "18": 368,
+            "3": 274
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2337,
+          "ink_counts": {
+            "1": 1339,
+            "6": 47,
+            "5": 141,
+            "18": 502,
+            "3": 308
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2337,
+          "ink_counts": {
+            "1": 1339,
+            "6": 47,
+            "18": 502,
+            "5": 141,
+            "3": 308
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2215,
+          "ink_counts": {
+            "1": 1525,
+            "6": 27,
+            "18": 480,
+            "3": 175,
+            "5": 8
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2215,
+          "ink_counts": {
+            "1": 1530,
+            "6": 24,
+            "18": 482,
+            "3": 171,
+            "5": 8
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "DOGOSGERE",
+      "descriptor": "ecc3c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1512,
+          "ink_counts": {
+            "16": 1071,
+            "5": 34,
+            "6": 46,
+            "18": 361
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1907,
+          "ink_counts": {
+            "16": 1375,
+            "5": 81,
+            "6": 44,
+            "18": 407
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1907,
+          "ink_counts": {
+            "16": 1375,
+            "6": 44,
+            "5": 81,
+            "18": 407
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2331,
+          "ink_counts": {
+            "16": 1653,
+            "5": 96,
+            "6": 64,
+            "18": 518
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2331,
+          "ink_counts": {
+            "16": 1653,
+            "6": 64,
+            "5": 96,
+            "18": 518
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1930,
+          "ink_counts": {
+            "16": 1767,
+            "18": 163
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1930,
+          "ink_counts": {
+            "16": 1763,
+            "18": 167
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "G-PHANTOM",
+      "descriptor": "ed264",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1416,
+          "ink_counts": {
+            "1": 804,
+            "5": 66,
+            "6": 36,
+            "21": 274,
+            "3": 236
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1740,
+          "ink_counts": {
+            "1": 991,
+            "5": 73,
+            "6": 41,
+            "21": 322,
+            "3": 313
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1740,
+          "ink_counts": {
+            "1": 991,
+            "6": 41,
+            "5": 73,
+            "21": 322,
+            "3": 313
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2274,
+          "ink_counts": {
+            "1": 1306,
+            "5": 96,
+            "6": 48,
+            "21": 430,
+            "3": 394
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2274,
+          "ink_counts": {
+            "1": 1306,
+            "6": 48,
+            "5": 96,
+            "21": 430,
+            "3": 394
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2229,
+          "ink_counts": {
+            "1": 1222,
+            "21": 396,
+            "6": 38,
+            "3": 573
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2229,
+          "ink_counts": {
+            "6": 41,
+            "1": 1200,
+            "21": 415,
+            "3": 573
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GWAZINN",
+      "descriptor": "ed7d4",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1426,
+          "ink_counts": {
+            "3": 920,
+            "5": 118,
+            "9": 40,
+            "16": 348
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1776,
+          "ink_counts": {
+            "3": 1182,
+            "5": 126,
+            "9": 40,
+            "16": 428
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1776,
+          "ink_counts": {
+            "3": 1182,
+            "5": 126,
+            "9": 40,
+            "16": 428
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2175,
+          "ink_counts": {
+            "3": 1425,
+            "16": 536,
+            "5": 142,
+            "9": 72
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2175,
+          "ink_counts": {
+            "3": 1425,
+            "16": 536,
+            "5": 142,
+            "9": 72
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1952,
+          "ink_counts": {
+            "3": 1379,
+            "16": 571,
+            "9": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1952,
+          "ink_counts": {
+            "3": 1385,
+            "16": 563,
+            "9": 4
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "LEU RAULA",
+      "descriptor": "eddfc",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1358,
+          "ink_counts": {
+            "3": 1008,
+            "5": 54,
+            "6": 32,
+            "16": 264
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1698,
+          "ink_counts": {
+            "3": 1255,
+            "6": 36,
+            "16": 342,
+            "5": 65
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1698,
+          "ink_counts": {
+            "3": 1255,
+            "16": 342,
+            "5": 65,
+            "6": 36
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2077,
+          "ink_counts": {
+            "3": 1493,
+            "5": 136,
+            "6": 45,
+            "16": 403
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2077,
+          "ink_counts": {
+            "3": 1493,
+            "6": 45,
+            "5": 136,
+            "16": 403
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2061,
+          "ink_counts": {
+            "3": 1329,
+            "16": 732
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2061,
+          "ink_counts": {
+            "3": 1295,
+            "16": 765,
+            "6": 1
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "Nel-AHGAMA",
+      "descriptor": "ee424",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 2056,
+          "ink_counts": {
+            "1": 1358,
+            "6": 28,
+            "5": 142,
+            "21": 390,
+            "3": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 2533,
+          "ink_counts": {
+            "1": 1688,
+            "5": 114,
+            "21": 503,
+            "6": 48,
+            "3": 180
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 2533,
+          "ink_counts": {
+            "5": 114,
+            "1": 1688,
+            "21": 503,
+            "6": 48,
+            "3": 180
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 3135,
+          "ink_counts": {
+            "1": 2082,
+            "5": 155,
+            "6": 49,
+            "21": 631,
+            "3": 218
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 3135,
+          "ink_counts": {
+            "5": 155,
+            "1": 2082,
+            "6": 49,
+            "21": 631,
+            "3": 218
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1938,
+          "ink_counts": {
+            "1": 1283,
+            "21": 538,
+            "6": 47,
+            "3": 70
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1938,
+          "ink_counts": {
+            "1": 1275,
+            "6": 48,
+            "21": 547,
+            "3": 68
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "SAZAREARN",
+      "descriptor": "eea4c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1136,
+          "ink_counts": {
+            "3": 808,
+            "6": 24,
+            "5": 28,
+            "18": 248,
+            "16": 28
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1500,
+          "ink_counts": {
+            "3": 1037,
+            "6": 36,
+            "5": 50,
+            "18": 360,
+            "16": 17
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1500,
+          "ink_counts": {
+            "3": 1037,
+            "6": 36,
+            "5": 50,
+            "18": 360,
+            "16": 17
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1897,
+          "ink_counts": {
+            "3": 1315,
+            "5": 108,
+            "6": 46,
+            "18": 412,
+            "16": 16
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1897,
+          "ink_counts": {
+            "3": 1315,
+            "6": 46,
+            "5": 108,
+            "18": 412,
+            "16": 16
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1798,
+          "ink_counts": {
+            "3": 1153,
+            "18": 291,
+            "16": 354
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1798,
+          "ink_counts": {
+            "3": 1141,
+            "18": 305,
+            "16": 352
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ZANZIBAR",
+      "descriptor": "eefbc",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1438,
+          "ink_counts": {
+            "18": 958,
+            "5": 116,
+            "13": 306,
+            "9": 10,
+            "3": 48
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1871,
+          "ink_counts": {
+            "18": 1294,
+            "5": 72,
+            "13": 382,
+            "9": 32,
+            "3": 91
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1871,
+          "ink_counts": {
+            "18": 1294,
+            "5": 72,
+            "9": 32,
+            "13": 382,
+            "3": 91
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2366,
+          "ink_counts": {
+            "5": 142,
+            "18": 1612,
+            "13": 479,
+            "9": 35,
+            "3": 98
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2366,
+          "ink_counts": {
+            "18": 1612,
+            "5": 142,
+            "9": 35,
+            "13": 479,
+            "3": 98
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 2135,
+          "ink_counts": {
+            "18": 1461,
+            "9": 36,
+            "13": 443,
+            "3": 195
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 2135,
+          "ink_counts": {
+            "18": 1472,
+            "9": 32,
+            "13": 436,
+            "3": 195
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ZAMUS-GARR",
+      "descriptor": "ef52c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1270,
+          "ink_counts": {
+            "13": 818,
+            "5": 56,
+            "6": 30,
+            "17": 366
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1543,
+          "ink_counts": {
+            "13": 973,
+            "5": 65,
+            "6": 30,
+            "17": 475
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1543,
+          "ink_counts": {
+            "13": 973,
+            "5": 65,
+            "6": 30,
+            "17": 475
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2047,
+          "ink_counts": {
+            "13": 1301,
+            "5": 126,
+            "6": 41,
+            "17": 579
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2047,
+          "ink_counts": {
+            "13": 1301,
+            "6": 41,
+            "5": 126,
+            "17": 579
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1895,
+          "ink_counts": {
+            "13": 1200,
+            "17": 695
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1895,
+          "ink_counts": {
+            "13": 1170,
+            "17": 723,
+            "6": 2
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "JAGD-DOGA",
+      "descriptor": "efa94",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 480,
+          "ink_counts": {
+            "19": 370,
+            "4": 12,
+            "18": 88,
+            "9": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 764,
+          "ink_counts": {
+            "19": 569,
+            "4": 24,
+            "9": 30,
+            "18": 141
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 728,
+          "ink_counts": {
+            "5": 1,
+            "19": 550,
+            "4": 16,
+            "9": 28,
+            "18": 133
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1063,
+          "ink_counts": {
+            "19": 770,
+            "4": 44,
+            "9": 36,
+            "18": 212,
+            "5": 1
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1063,
+          "ink_counts": {
+            "19": 773,
+            "4": 41,
+            "9": 36,
+            "18": 212,
+            "5": 1
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 49904,
+          "ink_counts": {
+            "19": 37212,
+            "4": 1062,
+            "9": 4164,
+            "18": 7466
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 47628,
+          "ink_counts": {
+            "19": 38100,
+            "4": 1092,
+            "9": 900,
+            "18": 7536
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "V2 GUNDAM",
+      "descriptor": "efc20",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 501,
+          "ink_counts": {
+            "1": 326,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 65
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 789,
+          "ink_counts": {
+            "1": 479,
+            "4": 36,
+            "8": 30,
+            "2": 145,
+            "3": 99
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 751,
+          "ink_counts": {
+            "1": 452,
+            "4": 34,
+            "8": 28,
+            "2": 134,
+            "3": 103
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1122,
+          "ink_counts": {
+            "1": 675,
+            "4": 48,
+            "8": 38,
+            "2": 219,
+            "5": 8,
+            "3": 134
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1075,
+          "ink_counts": {
+            "1": 660,
+            "4": 44,
+            "8": 36,
+            "2": 206,
+            "5": 3,
+            "3": 126
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 44944,
+          "ink_counts": {
+            "5": 30,
+            "4": 1142,
+            "1": 25484,
+            "8": 912,
+            "2": 7496,
+            "3": 8376,
+            "9": 1504
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 55156,
+          "ink_counts": {
+            "1": 35914,
+            "4": 1152,
+            "8": 912,
+            "5": 1464,
+            "2": 7444,
+            "3": 8264,
+            "9": 6
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "THE$O",
+      "descriptor": "efdac",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 448,
+          "ink_counts": {
+            "22": 427,
+            "3": 11,
+            "6": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 738,
+          "ink_counts": {
+            "22": 688,
+            "3": 21,
+            "6": 29
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 714,
+          "ink_counts": {
+            "22": 669,
+            "3": 17,
+            "6": 28
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1095,
+          "ink_counts": {
+            "5": 2,
+            "22": 1018,
+            "3": 40,
+            "6": 35
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1038,
+          "ink_counts": {
+            "5": 2,
+            "22": 964,
+            "3": 38,
+            "6": 34
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 50008,
+          "ink_counts": {
+            "22": 47010,
+            "3": 1104,
+            "6": 900,
+            "5": 140,
+            "9": 854
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 54728,
+          "ink_counts": {
+            "22": 52698,
+            "3": 1104,
+            "6": 902,
+            "5": 24
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "%-AZIERU",
+      "descriptor": "eff38",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 767,
+          "ink_counts": {
+            "7": 442,
+            "8": 17,
+            "5": 2,
+            "13": 153,
+            "3": 153
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1100,
+          "ink_counts": {
+            "5": 3,
+            "7": 612,
+            "8": 20,
+            "13": 234,
+            "3": 231
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1097,
+          "ink_counts": {
+            "5": 1,
+            "7": 614,
+            "8": 18,
+            "13": 237,
+            "3": 227
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1493,
+          "ink_counts": {
+            "7": 857,
+            "8": 21,
+            "13": 328,
+            "3": 287
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1480,
+          "ink_counts": {
+            "7": 859,
+            "8": 18,
+            "13": 326,
+            "3": 277
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 69034,
+          "ink_counts": {
+            "7": 36364,
+            "8": 308,
+            "5": 1204,
+            "13": 15877,
+            "3": 14865,
+            "9": 416
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 70180,
+          "ink_counts": {
+            "7": 36856,
+            "8": 298,
+            "5": 1397,
+            "13": 16133,
+            "3": 15368,
+            "9": 128
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ZZ GUNDAM",
+      "descriptor": "f016c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 500,
+          "ink_counts": {
+            "1": 334,
+            "4": 12,
+            "2": 86,
+            "8": 10,
+            "3": 58
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 813,
+          "ink_counts": {
+            "1": 531,
+            "4": 31,
+            "8": 28,
+            "2": 135,
+            "3": 88
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 823,
+          "ink_counts": {
+            "1": 544,
+            "4": 31,
+            "8": 28,
+            "2": 135,
+            "3": 85
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1156,
+          "ink_counts": {
+            "1": 761,
+            "4": 42,
+            "8": 34,
+            "2": 205,
+            "3": 114
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1185,
+          "ink_counts": {
+            "1": 767,
+            "4": 44,
+            "8": 36,
+            "2": 208,
+            "3": 130
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 55891,
+          "ink_counts": {
+            "1": 36021,
+            "4": 1138,
+            "8": 876,
+            "2": 7388,
+            "5": 252,
+            "3": 8400,
+            "9": 1816
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 50528,
+          "ink_counts": {
+            "1": 32262,
+            "4": 1152,
+            "8": 912,
+            "2": 7632,
+            "3": 8376,
+            "5": 152,
+            "9": 42
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "HAMBRABI",
+      "descriptor": "f02f8",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 596,
+          "ink_counts": {
+            "2": 448,
+            "3": 18,
+            "9": 13,
+            "18": 117
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 882,
+          "ink_counts": {
+            "2": 650,
+            "3": 31,
+            "9": 27,
+            "18": 174
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 858,
+          "ink_counts": {
+            "5": 9,
+            "2": 637,
+            "3": 31,
+            "9": 27,
+            "18": 154
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1228,
+          "ink_counts": {
+            "5": 2,
+            "2": 924,
+            "3": 35,
+            "9": 33,
+            "18": 234
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1195,
+          "ink_counts": {
+            "2": 898,
+            "3": 36,
+            "9": 29,
+            "18": 232
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 44522,
+          "ink_counts": {
+            "2": 34342,
+            "3": 1042,
+            "9": 1602,
+            "18": 7536
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 28392,
+          "ink_counts": {
+            "2": 21936,
+            "3": 744,
+            "9": 552,
+            "18": 5032,
+            "5": 128
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "DENAN ZON",
+      "descriptor": "f04b8",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 462,
+          "ink_counts": {
+            "17": 364,
+            "4": 12,
+            "18": 76,
+            "6": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 713,
+          "ink_counts": {
+            "17": 532,
+            "4": 34,
+            "6": 14,
+            "18": 133
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 692,
+          "ink_counts": {
+            "17": 512,
+            "4": 34,
+            "6": 14,
+            "18": 132
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1036,
+          "ink_counts": {
+            "5": 4,
+            "17": 755,
+            "4": 42,
+            "6": 34,
+            "18": 201
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1008,
+          "ink_counts": {
+            "17": 721,
+            "4": 42,
+            "6": 34,
+            "18": 209,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 34402,
+          "ink_counts": {
+            "17": 24422,
+            "6": 740,
+            "18": 7504,
+            "4": 672,
+            "5": 82,
+            "9": 982
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 34410,
+          "ink_counts": {
+            "17": 25294,
+            "6": 772,
+            "18": 7512,
+            "4": 712,
+            "5": 80,
+            "9": 40
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "GP-01 Fb",
+      "descriptor": "f0644",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 482,
+          "ink_counts": {
+            "1": 313,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 59
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 766,
+          "ink_counts": {
+            "1": 484,
+            "4": 31,
+            "8": 28,
+            "2": 134,
+            "3": 89
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 766,
+          "ink_counts": {
+            "1": 476,
+            "4": 34,
+            "8": 28,
+            "2": 134,
+            "3": 94
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1039,
+          "ink_counts": {
+            "1": 641,
+            "4": 42,
+            "8": 34,
+            "2": 197,
+            "3": 125
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1058,
+          "ink_counts": {
+            "1": 655,
+            "4": 42,
+            "8": 34,
+            "2": 197,
+            "3": 129,
+            "5": 1
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 50708,
+          "ink_counts": {
+            "1": 31145,
+            "4": 1152,
+            "8": 912,
+            "2": 7553,
+            "3": 8742,
+            "5": 24,
+            "9": 1180
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 49336,
+          "ink_counts": {
+            "1": 31708,
+            "4": 1152,
+            "8": 912,
+            "2": 7620,
+            "3": 7908,
+            "5": 24,
+            "9": 12
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "&-GUNDAM",
+      "descriptor": "f07d0",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 496,
+          "ink_counts": {
+            "1": 328,
+            "4": 12,
+            "18": 88,
+            "8": 10,
+            "3": 58
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 807,
+          "ink_counts": {
+            "1": 514,
+            "4": 31,
+            "8": 28,
+            "18": 138,
+            "3": 96
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 795,
+          "ink_counts": {
+            "1": 502,
+            "4": 31,
+            "8": 28,
+            "18": 138,
+            "3": 96
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1125,
+          "ink_counts": {
+            "1": 706,
+            "4": 42,
+            "8": 34,
+            "18": 201,
+            "3": 142
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1110,
+          "ink_counts": {
+            "1": 690,
+            "4": 42,
+            "8": 34,
+            "18": 201,
+            "3": 137,
+            "5": 6
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 50000,
+          "ink_counts": {
+            "1": 29752,
+            "4": 1152,
+            "8": 912,
+            "18": 7640,
+            "3": 9042,
+            "5": 94,
+            "9": 1408
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 48516,
+          "ink_counts": {
+            "1": 29813,
+            "4": 1152,
+            "8": 912,
+            "18": 7644,
+            "3": 8856,
+            "5": 93,
+            "9": 46
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "QUBELEY",
+      "descriptor": "f096c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 585,
+          "ink_counts": {
+            "1": 397,
+            "15": 129,
+            "9": 57,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 916,
+          "ink_counts": {
+            "1": 618,
+            "15": 188,
+            "9": 107,
+            "5": 3
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 879,
+          "ink_counts": {
+            "1": 583,
+            "15": 185,
+            "9": 106,
+            "5": 5
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1250,
+          "ink_counts": {
+            "1": 799,
+            "15": 309,
+            "9": 142
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1198,
+          "ink_counts": {
+            "1": 755,
+            "15": 305,
+            "9": 136,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 53738,
+          "ink_counts": {
+            "1": 34308,
+            "15": 8714,
+            "9": 10634,
+            "5": 82
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 52120,
+          "ink_counts": {
+            "1": 33268,
+            "15": 8772,
+            "9": 10002,
+            "5": 78
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "LAFRESSIA",
+      "descriptor": "f0b2c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 774,
+          "ink_counts": {
+            "16": 617,
+            "6": 14,
+            "15": 139,
+            "5": 4
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1015,
+          "ink_counts": {
+            "16": 760,
+            "5": 7,
+            "6": 24,
+            "15": 224
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1031,
+          "ink_counts": {
+            "16": 773,
+            "6": 27,
+            "15": 225,
+            "5": 6
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1323,
+          "ink_counts": {
+            "16": 1056,
+            "6": 30,
+            "15": 237
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1346,
+          "ink_counts": {
+            "16": 1079,
+            "6": 30,
+            "15": 237
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 69068,
+          "ink_counts": {
+            "5": 1423,
+            "16": 47593,
+            "6": 616,
+            "15": 19056,
+            "9": 380
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 69444,
+          "ink_counts": {
+            "16": 48207,
+            "6": 643,
+            "5": 1607,
+            "15": 18971,
+            "9": 16
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "VIGNA GHINA",
+      "descriptor": "f0d60",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 474,
+          "ink_counts": {
+            "21": 364,
+            "16": 12,
+            "15": 88,
+            "6": 10
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 777,
+          "ink_counts": {
+            "5": 3,
+            "21": 578,
+            "16": 30,
+            "6": 28,
+            "15": 138
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 771,
+          "ink_counts": {
+            "21": 572,
+            "16": 31,
+            "6": 28,
+            "15": 138,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1108,
+          "ink_counts": {
+            "21": 822,
+            "16": 36,
+            "6": 36,
+            "15": 212,
+            "5": 2
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1086,
+          "ink_counts": {
+            "21": 797,
+            "16": 40,
+            "6": 36,
+            "15": 212,
+            "5": 1
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 46072,
+          "ink_counts": {
+            "16": 1042,
+            "21": 33614,
+            "6": 858,
+            "15": 7400,
+            "5": 12,
+            "9": 3146
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 41642,
+          "ink_counts": {
+            "16": 1044,
+            "21": 32334,
+            "6": 864,
+            "15": 7376,
+            "5": 24
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "SHINNING-G",
+      "descriptor": "f0eec",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 477,
+          "ink_counts": {
+            "1": 305,
+            "4": 13,
+            "2": 85,
+            "8": 11,
+            "3": 63
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 794,
+          "ink_counts": {
+            "1": 479,
+            "4": 36,
+            "8": 30,
+            "2": 143,
+            "3": 106
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 748,
+          "ink_counts": {
+            "1": 438,
+            "4": 36,
+            "8": 30,
+            "2": 143,
+            "3": 101
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1128,
+          "ink_counts": {
+            "5": 1,
+            "1": 696,
+            "4": 44,
+            "8": 36,
+            "2": 206,
+            "3": 145
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1086,
+          "ink_counts": {
+            "5": 1,
+            "1": 657,
+            "4": 44,
+            "8": 36,
+            "2": 206,
+            "3": 142
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 39676,
+          "ink_counts": {
+            "1": 21512,
+            "4": 916,
+            "8": 776,
+            "2": 7584,
+            "3": 7818,
+            "9": 1070
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 42352,
+          "ink_counts": {
+            "1": 25008,
+            "4": 900,
+            "8": 768,
+            "2": 7576,
+            "3": 8100
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "Q-MANTHA",
+      "descriptor": "f1078",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 907,
+          "ink_counts": {
+            "23": 683,
+            "8": 15,
+            "19": 209
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1310,
+          "ink_counts": {
+            "5": 5,
+            "23": 952,
+            "8": 24,
+            "19": 329
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1275,
+          "ink_counts": {
+            "5": 5,
+            "23": 933,
+            "8": 21,
+            "19": 316
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1742,
+          "ink_counts": {
+            "23": 1248,
+            "8": 27,
+            "19": 464,
+            "5": 3
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1698,
+          "ink_counts": {
+            "23": 1213,
+            "5": 5,
+            "8": 24,
+            "19": 456
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 71782,
+          "ink_counts": {
+            "23": 49286,
+            "8": 579,
+            "5": 988,
+            "19": 19893,
+            "9": 1036
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 69226,
+          "ink_counts": {
+            "23": 47434,
+            "8": 530,
+            "5": 1228,
+            "19": 20017,
+            "9": 17
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "Z GUNDAM",
+      "descriptor": "f12ac",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 512,
+          "ink_counts": {
+            "1": 344,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 58
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 795,
+          "ink_counts": {
+            "1": 509,
+            "4": 31,
+            "8": 28,
+            "2": 135,
+            "3": 92
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 770,
+          "ink_counts": {
+            "1": 484,
+            "4": 31,
+            "8": 28,
+            "2": 136,
+            "3": 91
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1140,
+          "ink_counts": {
+            "1": 729,
+            "4": 44,
+            "8": 36,
+            "2": 206,
+            "3": 125
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1105,
+          "ink_counts": {
+            "5": 8,
+            "1": 691,
+            "4": 44,
+            "8": 36,
+            "2": 207,
+            "3": 119
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 50132,
+          "ink_counts": {
+            "1": 30980,
+            "4": 1140,
+            "8": 864,
+            "2": 7268,
+            "3": 7818,
+            "5": 136,
+            "9": 1926
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 31740,
+          "ink_counts": {
+            "1": 20272,
+            "4": 768,
+            "8": 568,
+            "2": 5008,
+            "3": 5116,
+            "5": 8
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "WING GUNDAM",
+      "descriptor": "f1448",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 516,
+          "ink_counts": {
+            "1": 347,
+            "4": 12,
+            "2": 88,
+            "8": 10,
+            "3": 59
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 874,
+          "ink_counts": {
+            "1": 556,
+            "4": 36,
+            "8": 30,
+            "2": 146,
+            "3": 106
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 857,
+          "ink_counts": {
+            "1": 557,
+            "4": 31,
+            "8": 28,
+            "2": 138,
+            "3": 103
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1260,
+          "ink_counts": {
+            "1": 829,
+            "4": 44,
+            "8": 36,
+            "2": 212,
+            "3": 139
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1260,
+          "ink_counts": {
+            "1": 847,
+            "4": 42,
+            "8": 34,
+            "2": 214,
+            "3": 123
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 52290,
+          "ink_counts": {
+            "1": 31924,
+            "4": 1130,
+            "8": 882,
+            "2": 7518,
+            "5": 368,
+            "3": 8188,
+            "9": 2280
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 46944,
+          "ink_counts": {
+            "1": 29190,
+            "4": 1152,
+            "8": 888,
+            "2": 7596,
+            "5": 76,
+            "3": 8004,
+            "9": 38
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "G-EPYON",
+      "descriptor": "f15d4",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 668,
+          "ink_counts": {
+            "16": 521,
+            "22": 16,
+            "8": 14,
+            "18": 117
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1037,
+          "ink_counts": {
+            "16": 790,
+            "22": 37,
+            "8": 35,
+            "18": 172,
+            "5": 3
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1013,
+          "ink_counts": {
+            "16": 770,
+            "22": 37,
+            "8": 34,
+            "18": 172
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 1503,
+          "ink_counts": {
+            "16": 1164,
+            "5": 7,
+            "22": 45,
+            "8": 44,
+            "18": 243
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 1482,
+          "ink_counts": {
+            "16": 1154,
+            "5": 7,
+            "22": 47,
+            "8": 44,
+            "18": 230
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 52180,
+          "ink_counts": {
+            "16": 40520,
+            "22": 982,
+            "8": 832,
+            "18": 7610,
+            "24": 2236
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 48964,
+          "ink_counts": {
+            "16": 39262,
+            "22": 972,
+            "8": 826,
+            "18": 7602,
+            "24": 302
+          },
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "name": "ZAMUS-GIRI",
+      "descriptor": "f179c",
+      "artwork": [
+        {
+          "name": "tactical-0-0",
+          "visible_texels": 1246,
+          "ink_counts": {
+            "25": 818,
+            "6": 38,
+            "5": 110,
+            "17": 240,
+            "15": 40
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-0",
+          "visible_texels": 1614,
+          "ink_counts": {
+            "25": 1089,
+            "6": 42,
+            "5": 59,
+            "17": 372,
+            "15": 52
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-1-1",
+          "visible_texels": 1614,
+          "ink_counts": {
+            "5": 59,
+            "25": 1089,
+            "6": 42,
+            "17": 372,
+            "15": 52
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-0",
+          "visible_texels": 2047,
+          "ink_counts": {
+            "25": 1361,
+            "6": 40,
+            "17": 478,
+            "5": 109,
+            "15": 59
+          },
+          "missing": 0
+        },
+        {
+          "name": "tactical-2-1",
+          "visible_texels": 2047,
+          "ink_counts": {
+            "25": 1361,
+            "6": 40,
+            "17": 478,
+            "5": 109,
+            "15": 59
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-0",
+          "visible_texels": 1549,
+          "ink_counts": {
+            "25": 976,
+            "17": 142,
+            "15": 431
+          },
+          "missing": 0
+        },
+        {
+          "name": "battle-1",
+          "visible_texels": 1549,
+          "ink_counts": {
+            "25": 960,
+            "17": 154,
+            "15": 435
+          },
+          "missing": 0
+        }
+      ]
+    }
+  ],
+  "artwork_count": 329,
+  "unit_tile_hashes": 17174,
+  "total_tile_hashes": 20995,
+  "shared_banks": [
+    {
+      "name": "Latin and Japanese glyphs",
+      "classified_texels_by_category": 11444
+    },
+    {
+      "name": "Boot and safety lettering",
+      "classified_texels_by_category": 5834
+    },
+    {
+      "name": "Opening planet and map scenery",
+      "classified_texels_by_category": 67488
+    },
+    {
+      "name": "Tactical cursor and command symbols",
+      "classified_texels_by_category": 3906
+    },
+    {
+      "name": "Tactical grid",
+      "classified_texels_by_category": 1117
+    },
+    {
+      "name": "Rock and ruined structure scenery",
+      "classified_texels_by_category": 118145
+    },
+    {
+      "name": "Rifle beam animation",
+      "classified_texels_by_category": 1112
+    },
+    {
+      "name": "Impact and muzzle animation A",
+      "classified_texels_by_category": 4358
+    },
+    {
+      "name": "Impact and muzzle animation B",
+      "classified_texels_by_category": 6110
+    },
+    {
+      "name": "Impact and muzzle animation C",
+      "classified_texels_by_category": 4886
+    },
+    {
+      "name": "Thruster and beam trails",
+      "classified_texels_by_category": 2910
+    },
+    {
+      "name": "Battle explosion animation",
+      "classified_texels_by_category": 6392
+    },
+    {
+      "name": "Steel interface panels",
+      "classified_texels_by_category": 16775
+    },
+    {
+      "name": "Battle HUD lettering and digits",
+      "classified_texels_by_category": 2010
+    }
+  ],
+  "hash_collisions": [],
+  "native_map_checks": [
+    {
+      "unit": "RICK-DIAS",
+      "eye": 0,
+      "native_map": 4,
+      "bytes_equal": 8192,
+      "sha256": "2d8e6a12fa4baabab1ad122bdd0c7fadb441e35708b0782b788f2ccd9ea7b700"
+    },
+    {
+      "unit": "RICK-DIAS",
+      "eye": 1,
+      "native_map": 5,
+      "bytes_equal": 8192,
+      "sha256": "c79908104b959836cc858b40385c1c6a9c63616089306ce8b67e2e3c2b9cae3f"
+    },
+    {
+      "unit": "ZAKU",
+      "eye": 0,
+      "native_map": 6,
+      "bytes_equal": 8192,
+      "sha256": "0281223f8354e6a044a93b5547ecc13670e6a8b9c3d019d1a93ee86d1936b25d"
+    }
+  ],
+  "native_capture_sha256": "a534c0acd6dc20e7b49cb2a67f0babb3776629052e6562a4909ef7392f1ce504"
+}

@@ -6,10 +6,10 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    output=ROOT/'dist/sd-gundam-color-0.1.0.vbmod'
+    output=ROOT/'dist/sd-gundam-color-0.2.0.vbmod'
     output.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as archive:
-        for name in ('manifest.toml','palette.txt','materials.txt'):
+        for name in ('manifest.toml','palette.txt','materials.txt','catalog.txt','tiles.txt'):
             data=(ROOT/'mods/color'/name).read_bytes()
             entry=zipfile.ZipInfo(name,(2026,9,12,0,0,0))
             entry.compress_type=zipfile.ZIP_DEFLATED

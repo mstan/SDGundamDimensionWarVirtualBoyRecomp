@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "notes": "Source-bank colors for text, interface, scenery and effects. Ranges are cartridge data; native CHR uploads and inspected tile sheets establish their roles. These are offline authoring addresses, never runtime memory hooks. Existing detailed masks have priority.",
+  "banks": [
+    {"name": "Latin and Japanese glyphs", "start": "5d200", "end": "5e100", "categories": [0, 3], "ink": 1},
+    {"name": "Boot and safety lettering", "start": "5e100", "end": "5e860", "categories": [0, 3], "ink": 1},
+    {"name": "Opening planet and map scenery", "start": "5e860", "end": "63a30", "categories": [0], "ink": 10},
+    {"name": "Tactical cursor and command symbols", "start": "63a30", "end": "63ed0", "categories": [0, 3], "ink": 4},
+    {"name": "Tactical grid", "start": "63ed0", "end": "64660", "categories": [0], "ink": 6},
+    {"name": "Rock and ruined structure scenery", "start": "64660", "end": "6f4a0", "categories": [0], "ink": 7},
+    {"name": "Rifle beam animation", "start": "856a0", "end": "85810", "categories": [0, 3], "levels": {"1": 9, "2": 9, "3": 1}},
+    {"name": "Impact and muzzle animation A", "start": "85810", "end": "85e00", "categories": [0, 3], "levels": {"1": 14, "2": 4, "3": 1}},
+    {"name": "Impact and muzzle animation B", "start": "85e00", "end": "864e0", "categories": [0, 3], "levels": {"1": 14, "2": 4, "3": 1}},
+    {"name": "Impact and muzzle animation C", "start": "864e0", "end": "86b20", "categories": [0, 3], "levels": {"1": 14, "2": 4, "3": 1}},
+    {"name": "Thruster and beam trails", "start": "86b20", "end": "86ef0", "categories": [0, 3], "levels": {"1": 2, "2": 6, "3": 1}},
+    {"name": "Battle explosion animation", "start": "86ef0", "end": "87650", "categories": [0, 3], "levels": {"1": 14, "2": 4, "3": 1}},
+    {"name": "Steel interface panels", "start": "87650", "end": "88850", "categories": [0], "ink": 10},
+    {"name": "Battle HUD lettering and digits", "start": "88850", "end": "88a40", "categories": [0, 3], "ink": 1,
+     "overrides": [{"first_tile": 1, "last_tile": 1, "ink": 8}]}
+  ]
+}

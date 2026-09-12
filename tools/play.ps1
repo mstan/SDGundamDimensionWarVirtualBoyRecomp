@@ -25,9 +25,9 @@ if($Language -ne 'saved') {
     $arguments+=@($(if($Language -eq 'en'){'--enable-mod'}else{'--disable-mod'}),'sd-gundam-english:english')
 }
 if($Color -ne 'saved') {
-    $installed=Join-Path $profileRoot 'mods/packages/sd-gundam-color/0.1.0/manifest.toml'
+    $installed=Join-Path $profileRoot 'mods/packages/sd-gundam-color/0.2.0/manifest.toml'
     if(!(Test-Path -LiteralPath $installed)) {
-        $package=Join-Path $projectRoot 'dist/sd-gundam-color-0.1.0.vbmod'
+        $package=Join-Path $projectRoot 'dist/sd-gundam-color-0.2.0.vbmod'
         if(!(Test-Path -LiteralPath $package)) { throw 'Build the color package first.' }
         $arguments+=@('--install-mod',$package)
     }

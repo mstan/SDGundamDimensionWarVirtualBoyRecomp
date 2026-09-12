@@ -1,9 +1,17 @@
 {
   "passed": true,
-  "runtime_sha256": "c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13",
+  "runtime_sha256": "ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5",
+  "color_version": "0.2.0",
+  "installed_color_sha256": {
+    "catalog.txt": "0629d0452f4ab465c906d5c54359ffbe4c9d1f3078336dc3b039ea4336c07800",
+    "manifest.toml": "669a9f32109a16c19e087c9dbc7513a29db29c6c771572312d5790d47e083b7b",
+    "materials.txt": "910dd0947b868342b802ae43460baa3724aa8570b0e9f4c15edb61dbe81613b7",
+    "palette.txt": "e083a809a3b6630bd2732510a5eba27d43fa6fe8f64c1f94152063d4e3e642da",
+    "tiles.txt": "3aa2501c48900d82d2800be5cd1a2a4733fb8bf9836f1e758c8e43bf29fd4ad8"
+  },
   "execution": {
     "ok": true,
-    "id": 1788,
+    "id": 2060,
     "mode": 1,
     "interpreted": 0,
     "fallback": 0,

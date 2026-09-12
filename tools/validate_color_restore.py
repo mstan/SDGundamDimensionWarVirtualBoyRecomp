@@ -16,6 +16,11 @@ sys.path.insert(0,str(args.framework.resolve()/'tools'))
 from cosim import Runner
 from _imgio import load_png
 report={'passed':False,'runtime_sha256':hashlib.sha256(args.exe.read_bytes()).hexdigest()}
+manifest=out/'runner/mods/packages/sd-gundam-color/0.2.0/manifest.toml'
+assert manifest.exists(),'Expected the expanded color package in this profile'
+report['color_version']='0.2.0'
+report['installed_color_sha256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest()
+                                  for p in sorted(manifest.parent.iterdir()) if p.is_file()}
 try:
     with Runner(args.exe,args.rom,'native',args.port,out/'runner',extra=['--disable-mod','sd-gundam-color:color']) as r:
         assert hashlib.sha256(r.memory(0x07000000,1048576)).hexdigest()=='a143fb582956ce1f2214c0122a6cdd1f832bc82fb598c4d8a6b21102ccaab906'

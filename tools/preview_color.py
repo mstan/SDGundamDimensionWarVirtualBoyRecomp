@@ -33,8 +33,8 @@ def main():
     env['SDL_VIDEO_WINDOW_POS']='-20000,-20000'
     command=[str(args.exe.resolve()),'--rom',str(args.rom.resolve()),'--no-launcher','--paused','--execution','native',
              '--config',str(config),'--mods-dir',str(profile/'mods'),'--port',str(args.port)]
-    for name,feature in (('english','english'),('color','color')):
-        command+=['--install-mod',str(ROOT/f'dist/sd-gundam-{name}-0.1.0.vbmod'),'--enable-mod',f'sd-gundam-{name}:{feature}']
+    for name,feature,version in (('english','english','0.1.0'),('color','color','0.2.0')):
+        command+=['--install-mod',str(ROOT/f'dist/sd-gundam-{name}-{version}.vbmod'),'--enable-mod',f'sd-gundam-{name}:{feature}']
     with socket.socket() as probe:
         probe.setsockopt(socket.SOL_SOCKET,socket.SO_EXCLUSIVEADDRUSE,1);probe.bind(('127.0.0.1',args.port))
     with (profile/'host.log').open('wb') as log:
@@ -76,7 +76,7 @@ def main():
         client.command('clear_input');client.command('continue')
         report={'pid':process.pid,'profile':str(profile),'execution':execution,'preview':str(profile/'preview.png'),
                 'runtime_sha256':hashlib.sha256(args.exe.read_bytes()).hexdigest(),
-                'color_sha256':hashlib.sha256((ROOT/'dist/sd-gundam-color-0.1.0.vbmod').read_bytes()).hexdigest()}
+                'color_sha256':hashlib.sha256((ROOT/'dist/sd-gundam-color-0.2.0.vbmod').read_bytes()).hexdigest()}
         (profile/'preview.json').write_text(json.dumps(report,indent=2)+'\n')
         print(json.dumps(report,indent=2))
     except Exception:

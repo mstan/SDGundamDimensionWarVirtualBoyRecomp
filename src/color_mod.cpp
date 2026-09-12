@@ -9,7 +9,9 @@
 namespace {
 using Mask = std::array<uint8_t, 64>;
 std::unordered_map<uint64_t, Mask> materials;
-std::array<uint32_t, 16> palette{};
+std::unordered_map<uint64_t, Mask> catalog_materials;
+std::unordered_map<uint64_t, Mask> shared_materials;
+std::array<uint32_t, 256> palette{};
 
 uint64_t key(unsigned map, unsigned kind, unsigned x, unsigned y, uint32_t hash) {
     return hash | (uint64_t(x) << 32) | (uint64_t(y) << 42)
@@ -23,9 +25,18 @@ void render(const VbRenderFrame* frame, uint32_t* out, void*) {
         if (!light) continue;
         const auto& s = frame->sources[i];
         if (!s.world || s.kind > 3) continue;
+        const unsigned texel = s.v * 8 + s.u;
         auto found = materials.find(key(s.map, s.kind, s.x / 8, s.y / 8, s.tile_hash));
-        if (found == materials.end()) continue;
-        const unsigned ink = found->second[s.v * 8 + s.u];
+        unsigned ink = found == materials.end() ? 0 : found->second[texel];
+        const unsigned category = s.kind == 3 ? 3 : 0;
+        if (!ink) {
+            auto authored = catalog_materials.find(key(0, category, s.x / 8, s.y / 8, s.tile_hash));
+            if (authored != catalog_materials.end()) ink = authored->second[texel];
+        }
+        if (!ink) {
+            auto shared = shared_materials.find(s.tile_hash | (uint64_t(category) << 32));
+            if (shared != shared_materials.end()) ink = shared->second[texel];
+        }
         if (!ink) continue;
         const unsigned rgb = palette[ink];
         const unsigned r = (rgb >> 16) & 255, g = (rgb >> 8) & 255, b = rgb & 255;
@@ -39,6 +50,8 @@ void render(const VbRenderFrame* frame, uint32_t* out, void*) {
 
 void activate() {
     materials.clear();
+    catalog_materials.clear();
+    shared_materials.clear();
     palette.fill(0);
     char path[1024];
     if (vb_mod_asset("palette.txt", path, sizeof(path))) {
@@ -58,6 +71,28 @@ void activate() {
                 values[i] = uint8_t(digit);
             }
             if (valid) materials[key(map, kind, x, y, hash)] = values;
+        }
+    }
+    for (bool shared : {false, true}) {
+        if (!vb_mod_asset(shared ? "tiles.txt" : "catalog.txt", path, sizeof(path))) continue;
+        std::ifstream input(path);
+        unsigned category, x = 0, y = 0, hash;
+        std::string mask;
+        while (input >> std::dec >> category) {
+            if (!shared && !(input >> x >> y)) break;
+            if (!(input >> std::hex >> hash >> mask)) break;
+            if ((category != 0 && category != 3) || x > 1023 || y > 1023 || mask.size() != 128) continue;
+            Mask values{};
+            bool valid = true;
+            for (unsigned i = 0; i < 128; ++i) {
+                const int digit = mask[i] >= '0' && mask[i] <= '9' ? mask[i] - '0'
+                    : mask[i] >= 'a' && mask[i] <= 'f' ? mask[i] - 'a' + 10 : -1;
+                if (digit < 0) { valid = false; break; }
+                values[i / 2] = uint8_t((values[i / 2] << 4) | digit);
+            }
+            if (!valid) continue;
+            if (shared) shared_materials[hash | (uint64_t(category) << 32)] = values;
+            else catalog_materials[key(0, category, x, y, hash)] = values;
         }
     }
     vb_renderer_register("sd-gundam.reference-color", render, nullptr);

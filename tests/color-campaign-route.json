@@ -1,0 +1,332 @@
+[
+  {
+    "frames": 300,
+    "pad": 0,
+    "label": "safety"
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 90,
+    "pad": 0,
+    "label": "eye alignment"
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 390,
+    "pad": 0,
+    "label": "auto pause"
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 190,
+    "pad": 0
+  },
+  {
+    "frames": 300,
+    "pad": 0
+  },
+  {
+    "frames": 20,
+    "pad": 8
+  },
+  {
+    "frames": 100,
+    "pad": 0,
+    "label": "ready"
+  },
+  {
+    "frames": 10,
+    "pad": 8192
+  },
+  {
+    "frames": 40,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 100,
+    "pad": 0,
+    "label": "turn-menu"
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 500,
+    "pad": 0,
+    "label": "enemy-turn"
+  },
+  {
+    "frames": 10,
+    "pad": 4096
+  },
+  {
+    "frames": 120,
+    "pad": 4,
+    "label": "battle-start"
+  },
+  {
+    "frames": 300,
+    "pad": 4,
+    "label": "battle-approach"
+  },
+  {
+    "frames": 300,
+    "pad": 4,
+    "label": "battle-melee"
+  },
+  {
+    "frames": 180,
+    "pad": 4,
+    "label": "battle-close"
+  },
+  {
+    "frames": 180,
+    "pad": 8,
+    "label": "battle-defense"
+  },
+  {
+    "frames": 450,
+    "pad": 4,
+    "label": "battle-result"
+  },
+  {
+    "frames": 600,
+    "pad": 4,
+    "label": "melee-attack"
+  },
+  {
+    "frames": 600,
+    "pad": 4,
+    "label": "melee-attack2"
+  },
+  {
+    "frames": 1500,
+    "pad": 4,
+    "label": "battle-finish"
+  },
+  {
+    "frames": 2500,
+    "pad": 4,
+    "label": "enemy-turn-late"
+  },
+  {
+    "frames": 3500,
+    "pad": 4,
+    "label": "enemy-turn-end"
+  },
+  {
+    "frames": 1000,
+    "pad": 0,
+    "label": "turn-two"
+  },
+  {
+    "frames": 10,
+    "pad": 8192
+  },
+  {
+    "frames": 40,
+    "pad": 0,
+    "label": "turn-two-menu"
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 60,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 3000,
+    "pad": 4,
+    "label": "turn-three-battle"
+  },
+  {
+    "frames": 3000,
+    "pad": 4
+  },
+  {
+    "frames": 3000,
+    "pad": 4
+  },
+  {
+    "frames": 3000,
+    "pad": 4,
+    "label": "turn-three-end"
+  },
+  {
+    "frames": 10,
+    "pad": 8192
+  },
+  {
+    "frames": 40,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 60,
+    "pad": 0
+  },
+  {
+    "frames": 10,
+    "pad": 4
+  },
+  {
+    "frames": 3000,
+    "pad": 4
+  },
+  {
+    "frames": 3000,
+    "pad": 4,
+    "label": "turn-four"
+  }
+]

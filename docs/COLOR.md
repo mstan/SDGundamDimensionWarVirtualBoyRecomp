@@ -1,161 +1,185 @@
 # Gundam reference color mod
 
-This optional presentation mod colors the title, interface, opening tactical
-scene, and identified allied mobile suits using original artwork. It changes
-hue after native rendering. It does not replace sprites, rewrite game logic,
-alter the camera, or add pixels. Japanese and English are both supported;
-language and color are independent selections.
+Version **0.2.0** expands the optional color mod to all **47 cartridge units**:
+five tactical layouts and both battle sheets, including later-roster mobile
+suits, mobile armors and warships. Shared masks cover Japanese/Latin text,
+menus, HUD, terrain, rifle fire, impacts, thrusters and explosions. The accepted
+booklet-inspired title and detailed opening masks remain in place.
 
-## References and artwork identity
+Color changes hue after native rendering. Original shading, fades, black gaps,
+sprite geometry and stereo projection remain intact. Japanese and English work
+independently of color; a fresh installation defaults to color **off**.
 
-| Artwork | Reference and authored treatment |
-|---|---|
-| Title | [Bandai's original game booklet](https://www.virtual-boy.com/games/sd-gundam-dimension-war/manuals/957156/), front: blue SD, gold Gundam lettering, silver subtitle |
-| RX-78-2 Gundam | Booklet p4 and [official Bandai product art](https://www.bandai.com/gundam-infinity-rx-78-2-gundam): white armor, blue torso, red shield/feet, yellow accents |
-| GP-01 Fb | [Bandai Spirits Full Burnern reference](https://tamashiiweb.com/item/13375/?wovn=en): white armor, blue upper chest/shoulder pods, yellow vents, green eyes, red feet |
-| Rick Dias | [Bandai Spirits standard RMS-099 reference](https://tamashiiweb.com/item/14804/?wovn=en): gray/blue-gray armor, red forehead, teal mono-eye |
-| Interface and environment | Authored white text, cyan grid, blue panels, gold selection, neutral steel and rocky terrain hues |
+## Use and upgrade
 
-The standard Rick Dias scheme is an authoring choice; no named pilot establishes
-the Quattro-specific red variant. At this resolution, body-part masks are an
-interpretation of the reference art. Original four-level shading remains intact.
-
-The native save records identify the opening allies without guessing from
-silhouettes. Their descriptor pointers are `FFFE8630` (GUNDAM), `FFFF0644`
-(GP-01 Fb), and `FFFEA0C0` (RICK-DIAS). In the original opening save they stand
-at (8,11), (5,10), and (10,11). These are inspection evidence only: the runtime
-color plugin never reads these descriptors, save data, or work RAM.
-
-## Use
-
-The build creates `dist/sd-gundam-color-0.1.0.vbmod`. Install it in the launcher's
-Mods view and enable **Gundam reference colors**, or use:
+Rebuild the game for the expanded mask loader, then install
+`dist/sd-gundam-color-0.2.0.vbmod` in the launcher's Mods view and enable
+**Gundam reference colors**, or use:
 
 ```powershell
 .\tools\play.ps1 -Language en -Color on
 .\tools\play.ps1 -Color off
 ```
 
-The current development executable is in `build/preview/` because the earlier
-review executable remains open. Launch that build with an isolated profile:
+The play helper installs 0.2.0 when missing, selecting the new package while
+retaining the profile's other mods and saves. `-Color saved` (the default)
+retains the existing selection. Older executables support only the opening
+masks; install this package with the rebuilt game.
+
+The current development executable is in `build/campaign/`. Earlier review
+windows remain open on their separate builds and profiles. The new preview uses:
 
 ```powershell
 .\tools\play.ps1 `
-  -Executable 'build/preview/SDGundamDimensionWarVirtualBoyRecomp.exe' `
-  -Profile 'build/color-review-stereo' -Language en -Color on
+  -Executable 'build/campaign/SDGundamDimensionWarVirtualBoyRecomp.exe' `
+  -Profile 'build/color-review-roster' -Language en -Color on
 ```
 
-`-Color saved` (the default) retains the profile's selection. Saves remain
-under that profile's `saves/` directory. The preview profile is separate from
-the original review game. See [save persistence](SAVES.md) for saving controls.
+`tools/preview_color.py` prepares a **new** isolated profile, optionally copies
+the validated save with `--input-save`, loads Area 3 through ordinary controls,
+and leaves a real SDL game window running. See [SAVES.md](SAVES.md) for the
+cartridge's save commands. Validation uses separate profiles and copies of saves.
 
-For a fresh prepared preview, `tools/preview_color.py` accepts a new profile
-directory and optionally `--input-save` pointing to a private copy of the
-validated three-area save. It loads Area 3 using ordinary controls, shows the
-real SDL game window, releases debugger input, and leaves it running.
+## Gundam references
 
-## Authoring
+[The roster reference table](COLOR-ROSTER.md) links every unit to its source.
+[colors/units.json](../colors/units.json) records artwork URLs, selected schemes
+and authoring parameters. Most references are Sunrise's official mechanical
+art; original-design reproductions and licensed models fill the remaining ship
+references. Downloaded reference images remain private.
 
-[colors/opening.json](../colors/opening.json) records reference links and
-annotations against private source captures. `tools/capture_color.py` captures
-the actual sampled CHR identities at draw time, independently for both eyes.
-Some stereo sprites use different CHR artwork, so each eye has its own authored
-masks. Opening a menu also changes world indices; those indices are used only
-to label specific authoring captures.
+The title follows [Bandai's original booklet](https://www.virtual-boy.com/games/sd-gundam-dimension-war/manuals/957156/).
+The opening GP-01 Fb uses the [Full Burnern reference](https://tamashiiweb.com/item/13375/?wovn=en),
+and Rick Dias retains the accepted [standard gray scheme](https://tamashiiweb.com/item/14804/?wovn=en).
+No named pilot establishes the Quattro-specific red variant. Nahel Argama uses
+the original ZZ design rather than its Unicorn refit; Chivvay uses its original
+red design. Cartridge `SAZAREARN` is interpreted as Sadalahn. Zaku's heat hawk
+and Rick Dom's heat saber receive orange attack accents; beam weapons use
+separate inks. Each roster entry links the artwork supporting its scheme.
 
-`tools/author_color.py` compiles annotations into `mods/color/materials.txt`.
-At runtime a lookup uses background map, sampling kind, source atlas cell,
-CHR-content hash, and unflipped tile texel. Destination screen coordinates,
-elapsed frames, and world indices are not runtime classification rules. Color
-therefore follows the identified artwork through movement, flips, native
-clipping, and stereo projection. Uniform materials can cover complete identified
-tiles; anatomical detail masks retain individual texels.
+Body-part boundaries at this resolution are authored interpretations. Shared
+source texels with incompatible roles use neutral steel, avoiding another
+unit's distinctive color on identical reused artwork.
 
-The packaged metadata contains color IDs and source identities, not cartridge
-graphics. Palette RGB values in `mods/color/palette.txt` are editable. Each hue
-is normalized so its maximum channel equals the original native red intensity,
-including brightness-register fades. Zero-intensity pixels remain black.
-Conflicting uses of identical source art retain original red. The compiler
-rejects annotations that match no source texels.
+## Source identity and authoring
+
+`tools/color_assets.py` reads all 47 cartridge descriptors: CHR bank pointers,
+near/medium/far tactical maps and stereo battle maps. Tactical dimensions follow
+ROM table `DD670` and native functions `FFF0D174`, `FFF0D296`, `FFF0D3BE`.
+Battle RLE follows `FFF05B64`: literal, repeat, increasing and decreasing runs,
+with 16-bit wraparound. Suit/armor sheets contain 64 by 64 cells; ship maps
+contain 16 by 8. Map flips preserve the original unflipped texel identity.
+
+`tools/author_units.py` compiles reference masks against all **329 layouts**.
+Body regions and pose-sheet coordinates are offline annotations, not runtime
+screen-position rules. [colors/shared.json](../colors/shared.json) identifies
+14 shared banks through native CHR uploads and inspected source sheets.
+
+The renderer resolves each visible source texel in this order:
+
+1. Detailed opening mask: map, sampling kind, atlas cell and CHR hash.
+2. Full-roster mask: source category, atlas cell and CHR hash.
+3. Relocatable shared mask: source category and CHR hash.
+
+Masks address the unflipped tile texel. Classification never reads game RAM,
+SRAM, unit descriptors, destination coordinates or elapsed frames. Unknown
+sources retain stock red. Each hue is normalized so its maximum RGB channel
+equals the original red intensity, including register fades.
+
+The package contains **5,611 opening masks**, **63,249 catalog masks** and
+**21,942 relocatable masks**, with 25 palette entries. It ships color IDs and
+source fingerprints. Cartridge bytes, downloaded reference artwork, ROM patches
+and generated guest code are excluded.
 
 ```powershell
-python tools/author_color.py
+python tools/author_units.py
 python tools/build_color.py
+python tools/render_color_catalog.py --out validation/roster-review
+python -m unittest discover -s tests -v
 ```
 
-Reauthoring requires the ignored captures named in the recipe. Ordinary builds
-use the committed material metadata and need no authoring captures. Install a
-rebuilt package into a fresh profile when iterating the same package version.
+Full-roster authoring needs the unchanged Japanese ROM and Pillow. Ordinary
+builds use committed masks and need no private captures or reference downloads.
+Diagnostic galleries contain cartridge artwork and stay in ignored `validation/`.
 
-Reproduce the private capture inputs with `tools/capture_color.py`, supplying
-`--framework`, `--exe`, and `--rom` as in the build instructions:
+The detailed opening masks are authored through `tools/author_color.py` and
+[colors/opening.json](../colors/opening.json), using private source captures
+from `tools/capture_color.py`. Their reproduction inputs are:
 
-| Output directory (`--out`) | Route (`--route`) | English package |
+| Output directory | Route | English package |
 |---|---|---|
 | `validation/color-sources` | `tests/first-mission-route.json` | Disabled |
-| `validation/color-sources-english` | `tests/save-create-route.json` | `--english-package dist/sd-gundam-english-0.1.0.vbmod` |
+| `validation/color-sources-english` | `tests/save-create-route.json` | `dist/sd-gundam-english-0.1.0.vbmod` |
 | `validation/color-free-map` | `tests/color-authoring-route.json` | Same English package |
 
-Use new directories for independent captures; the recipe paths can be adjusted
-to a new capture set. Shared profiles and owner save files are not required.
+## Validation and its limits
 
-## Scope
+The [asset audit](color-asset-validation.json) checks every visible texel in all
+329 unit layouts, requires multiple materials per layout, and checks all 14
+shared banks. There are no content collisions among the 20,995 distinct tile
+fingerprints inspected. Three decoded Rick Dias/Zaku battle maps match actual
+native VRAM byte-for-byte, including both Rick Dias eyes.
 
-This is the first color pass, covering the inspected opening route and save
-menus. It is not a full-campaign asset audit: uncaptured poses, enemies, combat,
-later missions, and endings can retain red. Unknown source art deliberately
-falls back to the stock display. No widescreen changes are included.
+[The recorded controller route](../tests/color-campaign-route.json) uses ordinary
+play through multiple enemy turns, ranged and melee combat, Rick Dias/Zaku and
+GP-01 Fb/Rick Dom encounters, effects and tactical warship views. No guest memory
+writes or gameplay shortcuts are used.
 
-The validation tools compare independent off/on executions across CPU, WRAM,
-SRAM, VRAM, VIP, devices, raw left/right images, and audio. Every displayed pixel
-must preserve its native maximum-channel intensity, which also proves exact
-black/visible masks. Each identified opening ally must receive color in both
-eyes. Separate checks cover persisted disabling, actual SDL presentation,
-keyboard/pause/resume, and save loading/publication with English and color active.
+`tools/validate_color.py` compares independent native off/on processes across
+CPU, WRAM, SRAM, VRAM, VIP, devices, raw left/right video and audio. For every
+displayed pixel in both eyes it checks native brightness and the exact RGB
+result implied by the **installed package's** source mask. A missing visible
+assignment fails the run, distinguishing intentional red from uncovered art.
+All three opening allies also have per-eye semantic gates.
 
-## Validated result — 2026-09-12
+Current reports: [English combat](color-validation.json),
+[Japanese opening](color-japanese-validation.json),
+[window/save persistence](color-window-save-validation.json), and
+[persisted disabling](color-restoration-validation.json).
+The final package passes **29 combat-route checkpoints through frame 34,790**
+and **10 Japanese opening checkpoints**. All nine guest/raw/audio planes match
+off/on, with 174 and 60 byte audits respectively. Every visible source is
+classified in both eyes, and its rendered RGB agrees with the packaged mask.
+Both long-route processes execute **6,901,693,891 native instructions** with
+zero fallback or interpreter instructions. The real SDL window loads the
+validated save, accepts keyboard and pause/resume input, and publishes exact
+SRAM on clean exit. Persisted disabling restores stock red while keeping English.
 
-| Check | Result |
-|---|---|
-| Final package off/on | [23 checkpoints through frame 9,250](color-validation.json), all nine guest/raw/audio planes identical; 138 byte audits |
-| Native execution | 1,866,224,447 instructions per off/on process; zero interpreter/fallback instructions |
-| Japanese + color | [10 opening checkpoints through frame 4,500](color-japanese-validation.json); all nine planes equal off/on, both-eye unit colors present, zero interpreter/fallback instructions |
-| Presentation | Both eyes; exact native visible/black masks and maximum-channel intensities; all three allies receive color in each eye |
-| Window and persistence | [English + color + Continue Area 3](color-window-save-validation.json): exact default-path load and clean-exit disk SRAM, real SDL presentation, keyboard, pause/resume all pass |
-| Disable persisted color | [Stock red restored in both eyes](color-restoration-validation.json); English remains selected and its ROM asset hash remains exact |
-| Runtime regression suite | CTest 6/6 passed |
-| Translation authoring regression suite | 5/5 passed |
-| Launcher/play helper | Both optional features appear independently in Mods; PowerShell explicit color/profile launch exits successfully |
-
-Final color package SHA-256:
-`fe1a77217703480e63965a434e53fd2370fdd6b98b8fc102f95f2df86cea1cbf`.
+Color package SHA-256:
+`3fe550dd897d3d200216e908b19a684b02350acde440299b5b48b9b2d525aeda`.
 Runtime SHA-256:
-`c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13`.
-The color feature is game-local; framework commit
-`44988f34b3bcc089985d9686717005401a96900b` is unchanged.
+`ac2887e0401b8166225e0e897b167ae9803d3cd072b2bf964a09aec3cb5c96c5`.
 
-The final package contains 5,611 guarded material masks. One ambiguous 64-texel
-source tile retains red; original black pixels remain black. Earlier private
-iterations exposed empty authoring matches and missing right-eye sprite masks;
-the compiler and semantic coverage checks now catch those cases. The persisted
-disable check used an earlier material revision of the same plugin/package
-version. The final off/on and window/save reports identify the final package hash.
-Broader asset coverage is tracked as central issue `beads-vb.4.6`.
+The runtime suite passes 6/6; authoring tests pass 9/9, including RLE semantics,
+malformed maps, word wrapping and stereo flips.
+
+This covers all descriptor-referenced unit artwork; it is not a complete
+campaign playthrough. Later mission and ending sequences have not all been
+played or compared against the independent oracle. Shared fonts and scenery
+follow source identity wherever reused; undiscovered sources keep stock red.
+An unreferenced 151-tile block at `70F10–71880` is excluded from the catalog;
+no descriptor pointer into it was found. No widescreen changes are included.
+
+The game-local renderer uses framework commit
+`44988f34b3bcc089985d9686717005401a96900b`, unchanged by this expansion.
+Central issue: `beads-vb.4.6`.
 
 ```powershell
 python tools/validate_color.py `
   --framework '..\_wt-sd-gundam-vbrecomp' `
-  --exe 'build/preview/SDGundamDimensionWarVirtualBoyRecomp.exe' `
-  --rom 'roms/sd_gundam.vb' --route 'tests/save-create-route.json' `
+  --exe 'build/campaign/SDGundamDimensionWarVirtualBoyRecomp.exe' `
+  --rom 'roms/sd_gundam.vb' --route 'tests/color-campaign-route.json' `
   --english 'dist/sd-gundam-english-0.1.0.vbmod' `
-  --color 'dist/sd-gundam-color-0.1.0.vbmod' `
+  --color 'dist/sd-gundam-color-0.2.0.vbmod' `
   --out 'validation/color-new'
 ```
 
 ![Title in booklet-inspired colors](color-title.png)
 
-![Opening mission, left eye](color-mission-left.png)
+![Tactical battle map](color-mission-left.png)
 
-![Opening mission, right eye](color-mission-right.png)
+![Melee battle, left eye](color-battle-left.png)
+
+![Melee battle, right eye](color-battle-right.png)
 
 ![Cartridge save-area menu](color-save.png)

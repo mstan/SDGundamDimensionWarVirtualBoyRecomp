@@ -3,9 +3,13 @@ import argparse
 import hashlib
 import json
 import shutil
+import struct
+import zipfile
+from collections import Counter
 from pathlib import Path
 import sys
 from PIL import Image
+from audit_color_coverage import Materials
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -18,6 +22,14 @@ def main():
     args=p.parse_args()
     for name in ('framework','exe','rom','route','english','color','out'):setattr(args,name,getattr(args,name).resolve())
     args.out.mkdir(parents=True,exist_ok=False)
+    # Validate the actual package, including its runtime lookup precedence.
+    metadata=args.out/'metadata';metadata.mkdir()
+    with zipfile.ZipFile(args.color) as package:
+        for name in ('materials.txt','catalog.txt','tiles.txt','palette.txt'):
+            (metadata/name).write_bytes(package.read(name))
+    materials=Materials(metadata)
+    palette={int(i):tuple(bytes.fromhex(rgb)) for i,rgb in
+             (line.split() for line in (metadata/'palette.txt').read_text().splitlines())}
     sys.path.insert(0,str(args.framework/'tools'))
     from cosim import Runner,compare_snapshots
     extra=['--install-mod',str(args.english),'--enable-mod' if args.language=='en' else '--disable-mod','sd-gundam-english:english',
@@ -47,7 +59,7 @@ def main():
                 differences=compare_snapshots(left,right)
                 report['byte_audits']+=sum(isinstance(v,bytes) for v in left.values())
                 if differences:raise AssertionError(f'Guest/raw output divergence at {frame}: {differences}')
-                changed=[]
+                changed=[];coverage=[]
                 for eye,raw_name in ((0,'video'),(1,'video_right')):
                     images=[]
                     for r in (a,b):
@@ -58,9 +70,21 @@ def main():
                         images.append(list(im.get_flattened_data()))
                     raw=Image.open(a.directory/f'frame-{frame}-{raw_name}.png').convert('RGB')
                     assert list(raw.get_flattened_data())==images[0],'Disabled renderer did not restore stock output'
+                    source_path=b.directory/f'frame-{frame}-{eye}.src'
+                    b.client.command('source_dump',eye=eye,path=source_path.as_posix())
+                    data=source_path.read_bytes()
+                    assert data[:8]==b'VBSRC001' and len(data)==24+384*224*16
+                    sources=list(struct.iter_unpack('<IHHHBBBBBB',data[24:]))
+                    inks=Counter()
                     count=0
-                    for stock,color in zip(*images):
+                    for stock,color,source in zip(*images,sources):
                         assert max(stock)==max(color),f'Brightness/visible mask changed at {frame}, eye {eye}'
+                        if max(stock):
+                            ink=materials.ink(source);inks[ink]+=1
+                            assert ink,f'Unclassified visible source at {frame}, eye {eye}: {source}'
+                            rgb=palette[ink]
+                            expected=tuple(c*max(stock)//max(rgb) for c in rgb)
+                            assert color==expected,f'Packaged mask/render mismatch at {frame}, eye {eye}: {source}'
                         count+=stock!=color
                     if frame==4500:
                         # Semantic coverage gate: every identified opening ally
@@ -71,7 +95,8 @@ def main():
                                         for py in range(y,yy) for px in range(x,xx))
                             assert touched>=20,f'{name} color missing in eye {eye}'
                     changed.append(count)
-                report['checkpoints'].append({'frame':frame,'label':step.get('label',''),'recolored_pixels':changed})
+                    coverage.append({'visible':sum(inks.values()),'unclassified':inks[0],'ink_counts':dict(inks)})
+                report['checkpoints'].append({'frame':frame,'label':step.get('label',''),'recolored_pixels':changed,'source_coverage':coverage})
                 print(frame,step.get('label',''),changed,flush=True)
             report['execution']=[r.client.command('execution_stats') for r in (a,b)]
             assert all(not e['fallback'] and not e['interpreted'] and not e['stopped'] for e in report['execution'])

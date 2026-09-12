@@ -1,0 +1,1335 @@
+{
+  "version": 1,
+  "description": "Reference-guided source masks for all 47 cartridge unit descriptors, all five tactical layouts and both battle sheets. Coordinates are offline authoring only.",
+  "shared_texels": "Source-identical texels with incompatible authored roles use neutral steel; detailed source-atlas masks take priority over location-independent masks.",
+  "units": [
+    {
+      "name": "GUNDAM",
+      "descriptor": "e8630",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 0,
+        "name": "GUNDAM",
+        "series": "mobile-suit-gundam",
+        "official_name": "ガンダム",
+        "url": "https://gundam-official.com/mecha/bgzb6pntfzadnqgl1moz8chk",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_gundam_upper_body_7832a40e15/1st_tv_mecha_gundam_upper_body_7832a40e15.png",
+        "document_id": "bgzb6pntfzadnqgl1moz8chk"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GELGOOG",
+      "descriptor": "e87c0",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 13,
+        "torso": 17,
+        "trim": 13,
+        "sensor": 9,
+        "accent": 18,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 1,
+        "name": "GELGOOG",
+        "series": "mobile-suit-gundam",
+        "official_name": "ゲルググ",
+        "url": "https://gundam-official.com/mecha/i754utp3hym9u0u3avoyguru",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_gelgoog_upper_body_305967edb8/1st_tv_mecha_gelgoog_upper_body_305967edb8.png",
+        "document_id": "i754utp3hym9u0u3avoyguru"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ZAKU",
+      "descriptor": "e8964",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 23,
+        "torso": 19,
+        "trim": 19,
+        "sensor": 9,
+        "accent": 18,
+        "weapon": 5,
+        "beam": 14
+      },
+      "reference": {
+        "index": 2,
+        "name": "ZAKU",
+        "series": "mobile-suit-gundam",
+        "official_name": "ザクII",
+        "url": "https://gundam-official.com/mecha/eg57jwhd75t4svilt8ta1dtl",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_zaku_2_upper_upper_body_27f4acbc9a/1st_tv_mecha_zaku_2_upper_upper_body_27f4acbc9a.png",
+        "document_id": "eg57jwhd75t4svilt8ta1dtl",
+        "weapon_use": "Orange heat-weapon attack accents: Zaku heat hawk / Rick Dom heat saber. Beam-equipped suits use their separate beam palette."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "RA-KAILUM",
+      "descriptor": "e8af8",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 18,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 14,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 3,
+        "name": "RA-KAILUM",
+        "series": "chars-counterattack",
+        "official_name": "ラー・カイラム",
+        "url": "https://gundam-official.com/mecha/ccz57ijj08skmymgp73q3aox",
+        "image": "https://gundam-official.com/media/cca_mecha_ra_cailum_upper_body_a56e71106b/cca_mecha_ra_cailum_upper_body_a56e71106b.png",
+        "document_id": "ccz57ijj08skmymgp73q3aox"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GWANBAN",
+      "descriptor": "e9124",
+      "form": "ship",
+      "inks": {
+        "body": 3,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 9,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://gundam-official.com/mecha/bjae0j692mga7qhc2wjl6rqm",
+        "official_name": "グワンバン",
+        "image": "https://gundam-official.com/media/z_movie_3_mecha_gwanvan_upper_body_76e057fbc1/z_movie_3_mecha_gwanvan_upper_body_76e057fbc1.png"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "G  M",
+      "descriptor": "e9744",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 20,
+        "torso": 3,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 5,
+        "name": "G  M",
+        "series": "mobile-suit-gundam",
+        "official_name": "ジム",
+        "url": "https://gundam-official.com/mecha/ox13ebjjc5osubp8sup4bcgk",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_gm_upper_body_2b164f9fea/1st_tv_mecha_gm_upper_body_2b164f9fea.png",
+        "document_id": "ox13ebjjc5osubp8sup4bcgk"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "RICK-DOM",
+      "descriptor": "e98d0",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 15,
+        "torso": 18,
+        "trim": 15,
+        "sensor": 9,
+        "accent": 3,
+        "weapon": 5,
+        "beam": 14
+      },
+      "reference": {
+        "index": 6,
+        "name": "RICK-DOM",
+        "series": "mobile-suit-gundam",
+        "official_name": "リック・ドム",
+        "url": "https://gundam-official.com/mecha/locjouwp6pqaggf984zdwnf5",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_rick_dom_upper_body_18a53b72db/1st_tv_mecha_rick_dom_upper_body_18a53b72db.png",
+        "document_id": "locjouwp6pqaggf984zdwnf5",
+        "weapon_use": "Orange heat-weapon attack accents: Zaku heat hawk / Rick Dom heat saber. Beam-equipped suits use their separate beam palette."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "MARASAI",
+      "descriptor": "e9a5c",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 14,
+        "torso": 3,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 17,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 7,
+        "name": "MARASAI",
+        "series": "z",
+        "official_name": "マラサイ",
+        "url": "https://gundam-official.com/mecha/n1gd2kaqttnvfvo28izdnehj",
+        "image": "https://gundam-official.com/media/z_movie_1_mecha_marasai_upper_body_ebb2d02a92/z_movie_1_mecha_marasai_upper_body_ebb2d02a92.png",
+        "document_id": "n1gd2kaqttnvfvo28izdnehj"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GUNDAM-F91",
+      "descriptor": "e9be8",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 8,
+        "name": "GUNDAM-F91",
+        "series": "f91",
+        "official_name": "ガンダムF91",
+        "url": "https://gundam-official.com/mecha/wsoeqrg7hwvkj2bd0t9qf62y",
+        "image": "https://gundam-official.com/media/F91_F91_11751a29bc/F91_F91_11751a29bc.png",
+        "document_id": "wsoeqrg7hwvkj2bd0t9qf62y"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GP-02A",
+      "descriptor": "e9d74",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 18,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 9,
+        "name": "GP-02A",
+        "series": "0083",
+        "official_name": "ガンダム試作2号機  サイサリス",
+        "url": "https://gundam-official.com/mecha/h74f1belyaf9o7k627xeebba",
+        "image": "https://gundam-official.com/media/0083_ova_mecha_0083pose_MS_202_001_GUNDAM_GP_02_A_base_upper_body_5624d486db/0083_ova_mecha_0083pose_MS_202_001_GUNDAM_GP_02_A_base_upper_body_5624d486db.png",
+        "document_id": "h74f1belyaf9o7k627xeebba"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "Re-GZ",
+      "descriptor": "e9f34",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 20,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 10,
+        "name": "Re-GZ",
+        "series": "chars-counterattack",
+        "official_name": "リ・ガズィ",
+        "url": "https://gundam-official.com/mecha/s5yszpq6289nnr2j3mbm6wje",
+        "image": "https://gundam-official.com/media/cca_mecha_re_gz_upper_body_af0f14c796/cca_mecha_re_gz_upper_body_af0f14c796.png",
+        "document_id": "s5yszpq6289nnr2j3mbm6wje"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "RICK-DIAS",
+      "descriptor": "ea0c0",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 12,
+        "torso": 18,
+        "trim": 12,
+        "sensor": 6,
+        "accent": 3,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://tamashiiweb.com/item/14804/?wovn=en",
+        "use": "Standard gray Rick Dias, as in the accepted opening mod."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "SAZABI",
+      "descriptor": "ea254",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 3,
+        "torso": 18,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 12,
+        "name": "SAZABI",
+        "series": "chars-counterattack",
+        "official_name": "サザビー",
+        "url": "https://gundam-official.com/mecha/pliap0gkxznsh7c6jjd005wq",
+        "image": "https://gundam-official.com/media/cca_mecha_sazabi_upper_body_e6353c1232/cca_mecha_sazabi_upper_body_e6353c1232.png",
+        "document_id": "pliap0gkxznsh7c6jjd005wq"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "BYG-ZAM",
+      "descriptor": "ea3f0",
+      "form": "armor",
+      "inks": {
+        "body": 19,
+        "torso": 17,
+        "trim": 17,
+        "sensor": 9,
+        "accent": 13,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 13,
+        "name": "BYG-ZAM",
+        "series": "mobile-suit-gundam",
+        "official_name": "ビグ・ザム",
+        "url": "https://gundam-official.com/mecha/wqehmdbwwk48ccx1xg1i732l",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_big_zam_upper_body_d2e322501d/1st_tv_mecha_big_zam_upper_body_d2e322501d.png",
+        "document_id": "wqehmdbwwk48ccx1xg1i732l"
+      },
+      "battle_body": [
+        40,
+        5,
+        91,
+        62
+      ]
+    },
+    {
+      "name": "MOUSAI",
+      "descriptor": "ea62c",
+      "form": "ship",
+      "inks": {
+        "body": 17,
+        "torso": 19,
+        "trim": 19,
+        "sensor": 9,
+        "accent": 13,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 14,
+        "name": "MOUSAI",
+        "series": "mobile-suit-gundam",
+        "official_name": "ムサイ",
+        "url": "https://gundam-official.com/mecha/bq82q51z8z028yrjvkbkaw42",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_musai_class_upper_body_97fe9209e9/1st_tv_mecha_musai_class_upper_body_97fe9209e9.png",
+        "document_id": "bq82q51z8z028yrjvkbkaw42"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "SALAMIS",
+      "descriptor": "eab9c",
+      "form": "ship",
+      "inks": {
+        "body": 21,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 15,
+        "name": "SALAMIS",
+        "series": "mobile-suit-gundam",
+        "official_name": "サラミス級宇宙巡洋艦",
+        "url": "https://gundam-official.com/mecha/cr5mvj3egqlurht1f01xqb2f",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_salamis_class_upper_body_c1f91379bb/1st_tv_mecha_salamis_class_upper_body_c1f91379bb.png",
+        "document_id": "cr5mvj3egqlurht1f01xqb2f"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "THIBE",
+      "descriptor": "eb10c",
+      "form": "ship",
+      "inks": {
+        "body": 3,
+        "torso": 16,
+        "trim": 18,
+        "sensor": 9,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://www.1999.co.jp/eng/10069651",
+        "image": "https://www.1999.co.jp/itbig06/10069651a5.jpg",
+        "use": "Licensed MegaHouse Cosmo Fleet Collection, original Chivvay red hull; do not use the 2025 alternate-universe green design."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "WHITE BASE",
+      "descriptor": "eb67c",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 1,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 17,
+        "name": "WHITE BASE",
+        "series": "mobile-suit-gundam",
+        "official_name": "ホワイトベース",
+        "url": "https://gundam-official.com/mecha/ph9n8v3hjvxmdtv45lqxi8i3",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_white_base_upper_body_9595afddf3/1st_tv_mecha_white_base_upper_body_9595afddf3.png",
+        "document_id": "ph9n8v3hjvxmdtv45lqxi8i3"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "AHGAMA",
+      "descriptor": "ebbec",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 18,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 14,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 18,
+        "name": "AHGAMA",
+        "series": "z",
+        "official_name": "アーガマ",
+        "url": "https://gundam-official.com/mecha/lf0fc11xd2s1wsdamdl7gmf3",
+        "image": "https://gundam-official.com/media/z_movie_3_mecha_argama_upper_body_b1ff60e6b1/z_movie_3_mecha_argama_upper_body_b1ff60e6b1.png",
+        "document_id": "lf0fc11xd2s1wsdamdl7gmf3"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ALEXANDRIA",
+      "descriptor": "ec15c",
+      "form": "ship",
+      "inks": {
+        "body": 15,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 19,
+        "name": "ALEXANDRIA",
+        "series": "z",
+        "official_name": "アレキサンドリア",
+        "url": "https://gundam-official.com/mecha/ekipfh4cskzl80m49ty4b3oz",
+        "image": "https://gundam-official.com/media/z_movie_1_mecha_alexandria_upper_body_9a078664a8/z_movie_1_mecha_alexandria_upper_body_9a078664a8.png",
+        "document_id": "ekipfh4cskzl80m49ty4b3oz"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ALBION",
+      "descriptor": "ec6cc",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 18,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 20,
+        "name": "ALBION",
+        "series": "0083",
+        "official_name": "アルビオン",
+        "url": "https://gundam-official.com/mecha/pttaxzimcsty5mht4bvsoakr",
+        "image": "https://gundam-official.com/media/0083_3060cea842/0083_3060cea842.png",
+        "document_id": "pttaxzimcsty5mht4bvsoakr"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "DOGOSGERE",
+      "descriptor": "ecc3c",
+      "form": "ship",
+      "inks": {
+        "body": 16,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 13,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 21,
+        "name": "DOGOSGERE",
+        "series": "z",
+        "official_name": "ドゴスギア",
+        "url": "https://gundam-official.com/mecha/znt29kxtv7knuexspem05dyn",
+        "image": "https://gundam-official.com/media/z_movie_2_mecha_dogosse_giar_upper_body_09f5ceca2e/z_movie_2_mecha_dogosse_giar_upper_body_09f5ceca2e.png",
+        "document_id": "znt29kxtv7knuexspem05dyn"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "G-PHANTOM",
+      "descriptor": "ed264",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 21,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 14,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://gundam.fandom.com/wiki/LMSD-76_Gray_Phantom",
+        "image": "https://vignette.wikia.nocookie.net/gundam/images/f/f5/Grey-phantom.jpg/revision/latest?cb=20130403145218",
+        "use": "Original Gray Phantom design reproduced in the Gundam Wiki: white and blue-gray hull, red markings."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GWAZINN",
+      "descriptor": "ed7d4",
+      "form": "ship",
+      "inks": {
+        "body": 3,
+        "torso": 16,
+        "trim": 16,
+        "sensor": 9,
+        "accent": 13,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 23,
+        "name": "GWAZINN",
+        "series": "mobile-suit-gundam",
+        "official_name": "グワジン級大型宇宙戦艦",
+        "url": "https://gundam-official.com/mecha/vy7u9d3xcx1tp80f8qi9nfna",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_gwazine_class_upper_body_c6526d4964/1st_tv_mecha_gwazine_class_upper_body_c6526d4964.png",
+        "document_id": "vy7u9d3xcx1tp80f8qi9nfna"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "LEU RAULA",
+      "descriptor": "eddfc",
+      "form": "ship",
+      "inks": {
+        "body": 3,
+        "torso": 16,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 15,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 24,
+        "name": "LEU RAULA",
+        "series": "chars-counterattack",
+        "official_name": "レウルーラ",
+        "url": "https://gundam-official.com/mecha/po2594tmthq3s8cxx2m9whtx",
+        "image": "https://gundam-official.com/media/cca_mecha_rewloola_upper_body_306efa2191/cca_mecha_rewloola_upper_body_306efa2191.png",
+        "document_id": "po2594tmthq3s8cxx2m9whtx"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "Nel-AHGAMA",
+      "descriptor": "ee424",
+      "form": "ship",
+      "inks": {
+        "body": 1,
+        "torso": 21,
+        "trim": 3,
+        "sensor": 6,
+        "accent": 14,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://gundam.fandom.com/wiki/SCVA-76_Nahel_Argama",
+        "image": "https://static.wikia.nocookie.net/gundam/images/e/e6/Nahel-argama.jpg/revision/latest",
+        "use": "Original ZZ design artwork reproduced in Gundam Wiki; white hull, lilac decks, red markings and orange engines, not the Unicorn refit."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "SAZAREARN",
+      "descriptor": "eea4c",
+      "form": "ship",
+      "inks": {
+        "body": 3,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://hobby.dengeki.com/news/615151/",
+        "image": "https://hobby.dengeki.com/ss/hobby/2018/08/ar_ba56note.jpg",
+        "use": "Kenki Fujioka licensed Sadalahn-class illustration. Cartridge SAZAREARN interpreted as Sadalahn; red hull with dark fittings."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ZANZIBAR",
+      "descriptor": "eefbc",
+      "form": "ship",
+      "inks": {
+        "body": 18,
+        "torso": 13,
+        "trim": 3,
+        "sensor": 9,
+        "accent": 17,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 27,
+        "name": "ZANZIBAR",
+        "series": "mobile-suit-gundam",
+        "official_name": "ザンジバル級機動巡洋艦",
+        "url": "https://gundam-official.com/mecha/na0mx58adnhqur7bthch64il",
+        "image": "https://gundam-official.com/media/1st_tv_mecha_zanzibar_upper_body_5d2a9d0703/1st_tv_mecha_zanzibar_upper_body_5d2a9d0703.png",
+        "document_id": "na0mx58adnhqur7bthch64il"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ZAMUS-GARR",
+      "descriptor": "ef52c",
+      "form": "ship",
+      "inks": {
+        "body": 13,
+        "torso": 17,
+        "trim": 17,
+        "sensor": 6,
+        "accent": 21,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 28,
+        "name": "ZAMUS-GARR",
+        "series": "f91",
+        "official_name": "ザムス・ガル",
+        "url": "https://gundam-official.com/mecha/yqcau87ctcxal2n5yokw7xjj",
+        "image": "https://gundam-official.com/media/F91_739c9859b1/F91_739c9859b1.png",
+        "document_id": "yqcau87ctcxal2n5yokw7xjj"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "JAGD-DOGA",
+      "descriptor": "efa94",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 19,
+        "torso": 18,
+        "trim": 19,
+        "sensor": 9,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 29,
+        "name": "JAGD-DOGA",
+        "series": "chars-counterattack",
+        "official_name": "ヤクト・ドーガ",
+        "url": "https://gundam-official.com/mecha/yy58maf7hmw74tgjnjknp6mk",
+        "image": "https://gundam-official.com/media/cca_mecha_jagd_doga_upper_body_719e33b55c/cca_mecha_jagd_doga_upper_body_719e33b55c.png",
+        "document_id": "yy58maf7hmw74tgjnjknp6mk"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "V2 GUNDAM",
+      "descriptor": "efc20",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 30,
+        "name": "V2 GUNDAM",
+        "series": "v",
+        "official_name": "V2ガンダム",
+        "url": "https://gundam-official.com/mecha/nb01lk2m0h45h24sqf5mfgiz",
+        "image": "https://gundam-official.com/media/V_82c9b9ff28/V_82c9b9ff28.png",
+        "document_id": "nb01lk2m0h45h24sqf5mfgiz"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "THE$O",
+      "descriptor": "efdac",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 22,
+        "torso": 22,
+        "trim": 22,
+        "sensor": 6,
+        "accent": 3,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 31,
+        "name": "THE$O",
+        "series": "z",
+        "official_name": "ジ・O",
+        "url": "https://gundam-official.com/mecha/n01u3e83f5jkvvx0la1lsi57",
+        "image": "https://gundam-official.com/media/z_movie_3_mecha_the_o_upper_body_46736d41ac/z_movie_3_mecha_the_o_upper_body_46736d41ac.png",
+        "document_id": "n01u3e83f5jkvvx0la1lsi57"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "%-AZIERU",
+      "descriptor": "eff38",
+      "form": "armor",
+      "inks": {
+        "body": 7,
+        "torso": 13,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 22,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 32,
+        "name": "%-AZIERU",
+        "series": "chars-counterattack",
+        "official_name": "α・アジール",
+        "url": "https://gundam-official.com/mecha/dml3pqgpn7p4i7fgvoaa8e2p",
+        "image": "https://gundam-official.com/media/cca_mecha_alpha_azieru_upper_body_23597c4ed8/cca_mecha_alpha_azieru_upper_body_23597c4ed8.png",
+        "document_id": "dml3pqgpn7p4i7fgvoaa8e2p"
+      },
+      "battle_body": [
+        40,
+        5,
+        91,
+        62
+      ]
+    },
+    {
+      "name": "ZZ GUNDAM",
+      "descriptor": "f016c",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://gundam-official.com/mecha/rvpwwrp1s28lmazw0woxy4dg",
+        "official_name": "ZZガンダム",
+        "image": "https://gundam-official.com/media/zz_mecha_100_001_GUNDAM_upper_body_4e19556710/zz_mecha_100_001_GUNDAM_upper_body_4e19556710.png"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "HAMBRABI",
+      "descriptor": "f02f8",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 2,
+        "torso": 18,
+        "trim": 2,
+        "sensor": 9,
+        "accent": 3,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 34,
+        "name": "HAMBRABI",
+        "series": "z",
+        "official_name": "ハンブラビ",
+        "url": "https://gundam-official.com/mecha/f0pxu46hm224bnorladnhfmd",
+        "image": "https://gundam-official.com/media/z_movie_2_mecha_hambrabi_upper_body_c8717df563/z_movie_2_mecha_hambrabi_upper_body_c8717df563.png",
+        "document_id": "f0pxu46hm224bnorladnhfmd"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "DENAN ZON",
+      "descriptor": "f04b8",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 17,
+        "torso": 18,
+        "trim": 17,
+        "sensor": 6,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 35,
+        "name": "DENAN ZON",
+        "series": "f91",
+        "official_name": "デナン・ゾン",
+        "url": "https://gundam-official.com/mecha/ngqqrjrlruagccic7yoxel0o",
+        "image": "https://gundam-official.com/media/F91_617ea71ba2/F91_617ea71ba2.png",
+        "document_id": "ngqqrjrlruagccic7yoxel0o"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "GP-01 Fb",
+      "descriptor": "f0644",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://gundam-official.com/mecha/oi1bamuf7nx2ropx5sby3ba0",
+        "official_name": "ガンダム試作1号機 フルバーニアン",
+        "image": "https://gundam-official.com/media/0083_ova_mecha_0083pose_MS_201_001_GUNDAM_GP_01_Fb_base_upper_body_29d9dbf70b/0083_ova_mecha_0083pose_MS_201_001_GUNDAM_GP_01_Fb_base_upper_body_29d9dbf70b.png"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "&-GUNDAM",
+      "descriptor": "f07d0",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 18,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 37,
+        "name": "&-GUNDAM",
+        "series": "chars-counterattack",
+        "official_name": "νガンダム",
+        "url": "https://gundam-official.com/mecha/nfg4eiqba8cs80fjck4mkco2",
+        "image": "https://gundam-official.com/media/n_ef71e9ce57/n_ef71e9ce57.png",
+        "document_id": "nfg4eiqba8cs80fjck4mkco2"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "QUBELEY",
+      "descriptor": "f096c",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 15,
+        "trim": 9,
+        "sensor": 9,
+        "accent": 15,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 38,
+        "name": "QUBELEY",
+        "series": "z",
+        "official_name": "キュベレイ",
+        "url": "https://gundam-official.com/mecha/w948tvzfqnd2yszktvq270ds",
+        "image": "https://gundam-official.com/media/z_movie_3_mecha_qubeley_upper_body_a6e366e969/z_movie_3_mecha_qubeley_upper_body_a6e366e969.png",
+        "document_id": "w948tvzfqnd2yszktvq270ds"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "LAFRESSIA",
+      "descriptor": "f0b2c",
+      "form": "armor",
+      "inks": {
+        "body": 16,
+        "torso": 15,
+        "trim": 16,
+        "sensor": 6,
+        "accent": 19,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 39,
+        "name": "LAFRESSIA",
+        "series": "f91",
+        "official_name": "ラフレシア",
+        "url": "https://gundam-official.com/mecha/mvdvu0rlr3su36yirib7fpd5",
+        "image": "https://gundam-official.com/media/F91_6e4dd42840/F91_6e4dd42840.png",
+        "document_id": "mvdvu0rlr3su36yirib7fpd5"
+      },
+      "battle_body": [
+        40,
+        5,
+        91,
+        62
+      ]
+    },
+    {
+      "name": "VIGNA GHINA",
+      "descriptor": "f0d60",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 21,
+        "torso": 15,
+        "trim": 21,
+        "sensor": 6,
+        "accent": 16,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 40,
+        "name": "VIGNA GHINA",
+        "series": "f91",
+        "official_name": "ビギナ・ギナ",
+        "url": "https://gundam-official.com/mecha/wagh11h75z8h8o5clgpkpap7",
+        "image": "https://gundam-official.com/media/F91_e4d45a215e/F91_e4d45a215e.png",
+        "document_id": "wagh11h75z8h8o5clgpkpap7"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "SHINNING-G",
+      "descriptor": "f0eec",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 41,
+        "name": "SHINNING-G",
+        "series": "g",
+        "official_name": "シャイニングガンダム",
+        "url": "https://gundam-official.com/mecha/yybgcl76bkv5sa49zrws99e2",
+        "image": "https://gundam-official.com/media/G_0367fdde47/G_0367fdde47.png",
+        "document_id": "yybgcl76bkv5sa49zrws99e2"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "Q-MANTHA",
+      "descriptor": "f1078",
+      "form": "armor",
+      "inks": {
+        "body": 23,
+        "torso": 19,
+        "trim": 23,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 42,
+        "name": "Q-MANTHA",
+        "series": "zz",
+        "official_name": "クィン・マンサ",
+        "url": "https://gundam-official.com/mecha/ldxi5s8xal3pfk08r0qcapcv",
+        "image": "https://gundam-official.com/media/zz_mecha_316_001_QUIN_MANTHA_upper_body_85c932347c/zz_mecha_316_001_QUIN_MANTHA_upper_body_85c932347c.png",
+        "document_id": "ldxi5s8xal3pfk08r0qcapcv"
+      },
+      "battle_body": [
+        40,
+        5,
+        91,
+        62
+      ]
+    },
+    {
+      "name": "Z GUNDAM",
+      "descriptor": "f12ac",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 43,
+        "name": "Z GUNDAM",
+        "series": "z",
+        "official_name": "Ζガンダム",
+        "url": "https://gundam-official.com/mecha/dy8zb4hct6k5ip1x2onq3cjf",
+        "image": "https://gundam-official.com/media/z_movie_2_mecha_zgandam_upper_body_227c6ed5ea/z_movie_2_mecha_zgandam_upper_body_227c6ed5ea.png",
+        "document_id": "dy8zb4hct6k5ip1x2onq3cjf"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "WING GUNDAM",
+      "descriptor": "f1448",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 1,
+        "torso": 2,
+        "trim": 3,
+        "sensor": 8,
+        "accent": 4,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "index": 44,
+        "name": "WING GUNDAM",
+        "series": "wing",
+        "official_name": "ウイングガンダム",
+        "url": "https://gundam-official.com/mecha/goujdl4n0x3w0o25yckrvse7",
+        "image": "https://gundam-official.com/media/W_1_800fbc3040/W_1_800fbc3040.png",
+        "document_id": "goujdl4n0x3w0o25yckrvse7"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "G-EPYON",
+      "descriptor": "f15d4",
+      "form": "mobile-suit",
+      "inks": {
+        "body": 16,
+        "torso": 18,
+        "trim": 16,
+        "sensor": 8,
+        "accent": 22,
+        "weapon": 5,
+        "beam": 24
+      },
+      "reference": {
+        "index": 45,
+        "name": "G-EPYON",
+        "series": "wing",
+        "official_name": "ガンダムエピオン",
+        "url": "https://gundam-official.com/mecha/ght43b8ewwusk9fsahlw83ah",
+        "image": "https://gundam-official.com/media/W_1_c00f324a05/W_1_c00f324a05.png",
+        "document_id": "ght43b8ewwusk9fsahlw83ah"
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    },
+    {
+      "name": "ZAMUS-GIRI",
+      "descriptor": "f179c",
+      "form": "ship",
+      "inks": {
+        "body": 25,
+        "torso": 17,
+        "trim": 15,
+        "sensor": 6,
+        "accent": 22,
+        "weapon": 5,
+        "beam": 9
+      },
+      "reference": {
+        "url": "https://www.gundam-c.com/manual/mechanic/f91/zamouth-giri.html",
+        "image": "https://www.gundam-c.com/manual/mechanic/f91/image/zamouth-giri.jpg",
+        "use": "F91 Zamouth Giri design reproduced by Gundam Channel: brown-gray hull, purple engine collars, yellow-green bow deck."
+      },
+      "battle_body": [
+        44,
+        8,
+        83,
+        51
+      ]
+    }
+  ]
+}

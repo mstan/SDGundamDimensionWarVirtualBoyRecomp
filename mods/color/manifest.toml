@@ -1,6 +1,6 @@
 format_version = 1
 id = "sd-gundam-color"
-version = "0.1.0"
+version = "0.2.0"
 name = "SD Gundam reference colors"
 author = "SD Gundam Recomp contributors"
 description = "Optional colors authored from Gundam reference art, applied to native source texels."
@@ -13,7 +13,7 @@ rom_sha256 = "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"
 [[feature]]
 id = "color"
 name = "Gundam reference colors"
-description = "Color the title, interface and identified opening-mission artwork. Unclassified artwork keeps its original red."
+description = "Color all 47 units, tactical and battle artwork, title, interface, terrain and effects using Gundam references. Unknown artwork keeps its original red."
 group = "Video"
 channel = "experimental"
 default_enabled = false
