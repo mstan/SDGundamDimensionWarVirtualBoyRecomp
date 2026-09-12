@@ -36,7 +36,7 @@ With `--stereo`, the two eyes remain stacked and aspect uses each eye's height.
 ## What expands
 
 The tactical map reveals terrain submitted beyond the screen edges, continues
-the native perspective grid, and recovers live units omitted by the original
+the native perspective grid and starfield, and recovers live units omitted by the original
 horizontal projection limits. Battle scenes use a wider viewport, place the two HUD panels
 at the edges, and distribute the original star objects across the wider view.
 Timers, prompts and suit geometry retain their native size. Native left/right
@@ -44,7 +44,9 @@ parallax, brightness, fades, source artwork and optional color masks survive
 the presentation pass.
 
 Title, story and save-menu artwork stays at its original extent. The tactical
-colony panorama is a finite drawing, so wide margins can contain empty space.
+colony panorama is a finite drawing. Its isolated star motifs repeat into the
+wide margins at native pixel size; the colony itself is not repeated or stretched.
+The repeating pattern may be noticeable at very wide aspect ratios.
 Live units use their original artwork and the native depth/height projection;
 there are no invented units. Terrain absent from submitted VIP worlds remains
 outside this implementation. It does not expand map
@@ -58,8 +60,12 @@ automatically retain their original extent.
 to the framework's read-only VIP snapshot renderer. Tactical recognition uses
 the native map-4 panorama plus map-2 affine terrain descriptors. Battles use
 map-4/map-6 affine sheets and the native full-screen map-0 HUD. The top 32 HUD
-rows have separate left/center/right anchors. Four observed star tile content
-hashes identify stars independently of reused CHR slots; no stars are added.
+rows have separate left/center/right anchors. Four observed battle star tile
+content hashes identify the existing objects independently of reused CHR slots.
+For tactical scenes, four separate map-4 tile hashes identify isolated stars.
+The outside-background callback repeats only those source tiles beyond the
+panorama bounds, preserving native brightness, color provenance, parallax and
+foreground occlusion. It does not create guest objects or change game state.
 
 `src/widescreen_scene.cpp` observes the original OAM transfer at guest PC
 `FFF04586` without replacing its function. It latches WRAM unit records,
@@ -136,3 +142,14 @@ shared-panel metadata correction. Exact tested versions are retained in reports.
 ![Expanded tactical grid and original unit artwork](widescreen-tactical.png)
 
 ![Units recovered beyond the original horizontal projection limits](widescreen-units.png)
+
+## Accepted tactical starfield continuation
+
+The starfield addition (`dee18bd`, central issue `beads-vb.4.9`) was accepted
+after visual review. At the checked 32:9 frame it adds 325 left-eye and 367
+right-eye star texels. Every changed texel has an identified star source;
+previously visible artwork remains unchanged. Four load/resume checkpoints
+through frame 3,500 pass all nine native-state planes and exact both-eye
+384-pixel replay, with zero fallback or interpreted instructions. Six runtime
+tests pass. These checks cover the observed opening tactical panorama, not
+every later mission.

@@ -11,7 +11,7 @@ The Japanese baseline is built and validated through the opening tactical
 mission, in its original red display. All 40 checkpoints through frame 4,500
 match independent Beetle across ten state/output planes, with zero interpreter
 fallback. Color-on/off native checks also cover ranged and melee combat.
-This is a development checkout; later missions and endings have not received
+This is an early prototype; later missions and endings have not received
 a complete playthrough or independent-oracle validation. No ROM or generated
 cartridge code is included.
 
@@ -46,6 +46,13 @@ its identity. The translation reference belongs in ignored `reference/`; do
 not apply it to the Japanese baseline ROM.
 
 ## Build and play
+
+For the Windows app, download the ZIP from
+[Releases](https://github.com/mstan/SDGundamDimensionWarVirtualBoyRecomp/releases),
+extract everything, and run `SDGundamDimensionWarVirtualBoyRecomp.exe`.
+Select your own original Japanese `.vb` cartridge and press **Play**.
+In **Mods**, install any of the three included `.vbmod` files and enable the
+features you want. All mods start disabled. See [release notes](docs/RELEASE.md).
 
 Windows prerequisites match Zero Racers: Python 3.11+, MSYS2 MinGW64 GCC,
 CMake, Ninja and SDL2. `tools/build.ps1` calls native toolchain executables
@@ -125,8 +132,9 @@ views. Choose **16:9**, **21:9**, **32:9**, or **Adaptive (fit window)** in its
 Mods detail panel. It is off by default and composes with English and color:
 `tools/play.ps1 -Language en -Color on -Widescreen adaptive`.
 Resize the window to expand the adaptive view. Menus retain their original
-proportions; expanded views reveal native submitted artwork, with some empty
-space where the original game supplies none. See [scope and validation](docs/WIDESCREEN.md).
+proportions; expanded views reveal native submitted artwork. Tactical stars
+repeat into the wide margins at their original size; the colony drawing keeps
+its original extent. See [scope and validation](docs/WIDESCREEN.md).
 
 ## Validation
 
