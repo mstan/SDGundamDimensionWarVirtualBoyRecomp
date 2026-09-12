@@ -94,8 +94,11 @@ def main():
     generated.write_text('\n'.join(header), encoding='utf8', newline='\n')
     dist = root/'dist'; dist.mkdir(exist_ok=True)
     with zipfile.ZipFile(dist/'sd-gundam-english-0.1.0.vbmod', 'w', zipfile.ZIP_DEFLATED) as z:
-        z.write(root/'mods/english/manifest.toml', 'manifest.toml')
-        z.write(root/'translations/english.json', 'source/english.json')
+        for source_path, name in ((root/'mods/english/manifest.toml', 'manifest.toml'),
+                                  (root/'translations/english.json', 'source/english.json')):
+            entry = zipfile.ZipInfo(name, (2026, 9, 12, 0, 0, 0))
+            entry.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(entry, source_path.read_bytes())
     print(json.dumps({'entries': len(entries), 'changed_bytes': sum(a != b for a,b in zip(rom,target)),
                       'generated_instructions_audited': len(pcs), 'code_overlaps': 0,
                       'translated_image_sha256': target_sha,

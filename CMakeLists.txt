@@ -34,6 +34,18 @@ target_compile_definitions(vb-runtime PRIVATE
     VB_GAME_SHA256="98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"
     VB_GAME_CRC32=0x44788197u)
 set_target_properties(vb-runtime PROPERTIES OUTPUT_NAME SDGundamDimensionWarVirtualBoyRecomp)
+if(SD_GUNDAM_UI)
+    add_custom_target(sd-gundam-assets
+        COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:vb-runtime>/assets/img"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_CURRENT_SOURCE_DIR}/assets/boxart.tga"
+            "$<TARGET_FILE_DIR:vb-runtime>/assets/img/boxart.tga"
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_CURRENT_SOURCE_DIR}/assets/NOTICE.md"
+            "$<TARGET_FILE_DIR:vb-runtime>/assets/GAME-ART-NOTICE.md"
+        VERBATIM)
+    add_dependencies(vb-runtime sd-gundam-assets)
+endif()
 find_package(Python3 COMPONENTS Interpreter REQUIRED)
 set(SD_GUNDAM_ROM "${CMAKE_CURRENT_SOURCE_DIR}/roms/sd_gundam.vb" CACHE FILEPATH "Original Japanese cartridge for guarded text assets")
 set(_text_header "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_translation.h")

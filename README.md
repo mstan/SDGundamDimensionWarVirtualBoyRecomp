@@ -32,25 +32,19 @@ CMake, Ninja and SDL2. `tools/build.ps1` calls native toolchain executables
 under `C:\msys64\mingw64\bin`; override `-Toolchain` as needed. Select a native
 Windows Python explicitly with `-Python` if PATH includes MSYS/Cygwin shims.
 
-With initialized dependencies:
+Clone with both pinned dependencies:
 
 ```powershell
-git submodule update --init --recursive
+git clone --recurse-submodules https://github.com/mstan/SDGundamDimensionWarVirtualBoyRecomp.git
+cd SDGundamDimensionWarVirtualBoyRecomp
 .\tools\build.ps1 -Rom 'C:\Games\SD Gundam - Dimension War (Japan).vb' -Python 'C:\Python312\python.exe'
 .\tools\play.ps1 -Rom 'C:\Games\SD Gundam - Dimension War (Japan).vb'
 ```
 
-For the isolated development worktrees created for this game:
-
-```powershell
-.\tools\build.ps1 `
-  -FastBuild `
-  -Framework '..\_wt-sd-gundam-vbrecomp' `
-  -Ui '..\ZeroRacersVirtualBoyRecomp\recomp-ui' `
-  -Oracle '..\_wt-zero-racers-oracle' `
-  -Python 'C:\Users\Matthew\AppData\Local\Programs\Python\Python312\python.exe'
-.\tools\play.ps1
-```
+Install optional authoring/validation dependencies with
+`python -m pip install -r requirements-dev.txt`. The normal build only needs
+Python's standard library and the native toolchain. For separate development
+checkouts, the build helper accepts `-Framework`, `-Ui`, and `-Oracle` paths.
 
 The local ROM defaults to `roms/sd_gundam.vb`. Build output is
 `build/vbrecomp/runtime/SDGundamDimensionWarVirtualBoyRecomp.exe`.
@@ -145,3 +139,24 @@ and the Endless Duel text/glyph workflow. Full-roster color and adaptive
 widescreen are available as independent opt-in mods.
 
 See [LICENSE.md](LICENSE.md). Game content and dependencies retain their own rights.
+
+## Repository layout
+
+The structure follows Zero Racers: `vbrecomp/` and `recomp-ui/` are pinned
+submodules, `sd_gundam.toml` describes cartridge discovery, `src/` contains
+game presentation and translation plugins, and `tools/` owns build and
+validation helpers. `mods/english`, `mods/color`, and `mods/widescreen` define
+the three independent opt-in packages. Editable translation and color sources
+live in `translations/` and `colors/`; `assets/` contains the launcher thumbnail
+and notice, and `docs/` records validation and scope.
+
+The default build includes the recomp-ui launcher, settings, input mapping and
+Mods menu, and creates all three `.vbmod` files under ignored `dist/`. A fresh
+profile starts with the original Japanese, red, native-aspect presentation.
+Select mods in the launcher or use `tools/play.ps1 -Language en -Color on
+-Widescreen adaptive` to install and enable all three.
+
+ROMs, supplied patch archives, generated cartridge code, save files, captures,
+build products, credentials and local tool state stay outside source control.
+Keep source captures under `validation/` and patch references under `reference/`.
+The original verified Japanese ROM is required to build and play.

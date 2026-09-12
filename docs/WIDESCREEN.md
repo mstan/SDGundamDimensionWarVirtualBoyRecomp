@@ -111,7 +111,8 @@ enablement/aspect plus battery SRAM across restarts. Reports below record the
 tested routes and binaries; this is an experimental presentation mod, not a
 complete campaign validation.
 
-Pinned framework: `14a96341753f6fe4a7a81ec0939953d35abb6d99`.
+Viewport implementation: `14a96341753f6fe4a7a81ec0939953d35abb6d99`;
+publication pin: `794a200f4001cb8314955794d2726ae1ea3f5123` (same runtime code).
 Central issues: `beads-vb.4.4` (game), `beads-vb.1.6` (shared renderer).
 
 ## Recorded results

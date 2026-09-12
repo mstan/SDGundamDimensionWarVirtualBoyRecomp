@@ -1875,12 +1875,12 @@
       "passed": true,
       "exit": 0,
       "screenshots": [
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\dashboard.png",
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\settings.png",
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\controller.png",
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\mods.png",
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\widescreen-options.png",
-        "F:\\Projects\\virtualboyrecomp\\_wt-sd-gundam\\validation\\widescreen-ui-final\\widescreen-choices.png"
+        "widescreen-ui-final/dashboard.png",
+        "widescreen-ui-final/settings.png",
+        "widescreen-ui-final/controller.png",
+        "widescreen-ui-final/mods.png",
+        "widescreen-ui-final/widescreen-options.png",
+        "widescreen-ui-final/widescreen-choices.png"
       ]
     }
   }

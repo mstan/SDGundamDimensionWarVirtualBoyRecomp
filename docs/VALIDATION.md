@@ -50,11 +50,11 @@ After building as described in the README, use new output directories:
 
 ```powershell
 .\tools\validate.ps1 -Framework '..\_wt-sd-gundam-vbrecomp' `
-  -Python 'C:\Users\Matthew\AppData\Local\Programs\Python\Python312\python.exe' `
+  -Python 'C:\Python312\python.exe' `
   -Route 'tests/first-mission-route.json' -NativeOnly `
   -Out 'validation/japanese-native-new'
 .\tools\validate.ps1 -Framework '..\_wt-sd-gundam-vbrecomp' `
-  -Python 'C:\Users\Matthew\AppData\Local\Programs\Python\Python312\python.exe' `
+  -Python 'C:\Python312\python.exe' `
   -Gates -Out 'validation/boot-gates-new'
 ```
 
