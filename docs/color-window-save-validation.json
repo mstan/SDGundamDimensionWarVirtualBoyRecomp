@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "default save path loads exact battery file with selected mods",
+    "window keyboard press and release reaches controller",
+    "real window matches renderer output at route checkpoint",
+    "Escape opens shared pause UI and holds CPU state",
+    "Escape closes UI, physical input resumes and guest advances",
+    "English and color enabled: clean exit publishes exact battery SRAM"
+  ],
+  "runtime_sha256": "c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13",
+  "color_sha256": "fe1a77217703480e63965a434e53fd2370fdd6b98b8fc102f95f2df86cea1cbf",
+  "english_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+  "execution": {
+    "ok": true,
+    "id": 4373,
+    "mode": 0,
+    "interpreted": 0,
+    "fallback": 0,
+    "native_entries": 6206035,
+    "first_fallback_pc": 0,
+    "last_fallback_pc": 0,
+    "native_instructions": 701293569,
+    "stopped": 0
+  },
+  "exit": 0,
+  "save_sha256": "ed5b9320f41b46904bad5296854c5ccccb2a8a693d4e9d1479ed4fc850091a44"
+}

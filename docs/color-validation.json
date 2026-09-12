@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "runtime_sha256": "c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13",
+  "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "color_sha256": "fe1a77217703480e63965a434e53fd2370fdd6b98b8fc102f95f2df86cea1cbf",
+  "english_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+  "checkpoints": [
+    {
+      "frame": 300,
+      "label": "",
+      "recolored_pixels": [
+        3094,
+        3094
+      ]
+    },
+    {
+      "frame": 400,
+      "label": "",
+      "recolored_pixels": [
+        3330,
+        3330
+      ]
+    },
+    {
+      "frame": 800,
+      "label": "",
+      "recolored_pixels": [
+        3330,
+        3330
+      ]
+    },
+    {
+      "frame": 1600,
+      "label": "",
+      "recolored_pixels": [
+        33674,
+        33972
+      ]
+    },
+    {
+      "frame": 1800,
+      "label": "",
+      "recolored_pixels": [
+        10232,
+        10230
+      ]
+    },
+    {
+      "frame": 2000,
+      "label": "",
+      "recolored_pixels": [
+        10621,
+        10619
+      ]
+    },
+    {
+      "frame": 2600,
+      "label": "",
+      "recolored_pixels": [
+        1140,
+        1141
+      ]
+    },
+    {
+      "frame": 3800,
+      "label": "",
+      "recolored_pixels": [
+        28347,
+        28053
+      ]
+    },
+    {
+      "frame": 4000,
+      "label": "",
+      "recolored_pixels": [
+        27919,
+        27644
+      ]
+    },
+    {
+      "frame": 4500,
+      "label": "mission-start",
+      "recolored_pixels": [
+        28347,
+        28053
+      ]
+    },
+    {
+      "frame": 5660,
+      "label": "save-area-selection",
+      "recolored_pixels": [
+        18404,
+        18411
+      ]
+    },
+    {
+      "frame": 5840,
+      "label": "save-area1-confirm",
+      "recolored_pixels": [
+        18239,
+        18243
+      ]
+    },
+    {
+      "frame": 6460,
+      "label": "area1-saved",
+      "recolored_pixels": [
+        28347,
+        28053
+      ]
+    },
+    {
+      "frame": 6580,
+      "label": "close-post-save-menu",
+      "recolored_pixels": [
+        18714,
+        18493
+      ]
+    },
+    {
+      "frame": 6630,
+      "label": "unit-action-menu",
+      "recolored_pixels": [
+        28347,
+        28053
+      ]
+    },
+    {
+      "frame": 6680,
+      "label": "move-mode",
+      "recolored_pixels": [
+        27919,
+        27644
+      ]
+    },
+    {
+      "frame": 6730,
+      "label": "move-target",
+      "recolored_pixels": [
+        26237,
+        26883
+      ]
+    },
+    {
+      "frame": 6930,
+      "label": "move-confirm",
+      "recolored_pixels": [
+        25894,
+        26557
+      ]
+    },
+    {
+      "frame": 7230,
+      "label": "unit-moved",
+      "recolored_pixels": [
+        16926,
+        17608
+      ]
+    },
+    {
+      "frame": 8270,
+      "label": "save-selection-after-move",
+      "recolored_pixels": [
+        18519,
+        18527
+      ]
+    },
+    {
+      "frame": 8450,
+      "label": "save-area2-selected",
+      "recolored_pixels": [
+        18520,
+        18527
+      ]
+    },
+    {
+      "frame": 8630,
+      "label": "save-area2-confirm",
+      "recolored_pixels": [
+        18359,
+        18363
+      ]
+    },
+    {
+      "frame": 9250,
+      "label": "area2-saved",
+      "recolored_pixels": [
+        20329,
+        20305
+      ]
+    }
+  ],
+  "byte_audits": 138,
+  "execution": [
+    {
+      "ok": true,
+      "id": 9351,
+      "mode": 1,
+      "interpreted": 0,
+      "fallback": 0,
+      "native_entries": 17642495,
+      "first_fallback_pc": 0,
+      "last_fallback_pc": 0,
+      "native_instructions": 1866224447,
+      "stopped": 0
+    },
+    {
+      "ok": true,
+      "id": 9426,
+      "mode": 1,
+      "interpreted": 0,
+      "fallback": 0,
+      "native_entries": 17642495,
+      "first_fallback_pc": 0,
+      "last_fallback_pc": 0,
+      "native_instructions": 1866224447,
+      "stopped": 0
+    }
+  ]
+}

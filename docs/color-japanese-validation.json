@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "language": "ja",
+  "runtime_sha256": "c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13",
+  "rom_sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "color_sha256": "fe1a77217703480e63965a434e53fd2370fdd6b98b8fc102f95f2df86cea1cbf",
+  "english_sha256": "81fd8a3b55100d4155aad598cec4251168e2edae17dc06d80b39e1e1ca2e218e",
+  "checkpoints": [
+    {
+      "frame": 300,
+      "label": "safety",
+      "recolored_pixels": [
+        3094,
+        3094
+      ]
+    },
+    {
+      "frame": 400,
+      "label": "eye alignment",
+      "recolored_pixels": [
+        3330,
+        3330
+      ]
+    },
+    {
+      "frame": 800,
+      "label": "auto pause",
+      "recolored_pixels": [
+        3330,
+        3330
+      ]
+    },
+    {
+      "frame": 1600,
+      "label": "",
+      "recolored_pixels": [
+        33674,
+        33972
+      ]
+    },
+    {
+      "frame": 1800,
+      "label": "",
+      "recolored_pixels": [
+        10229,
+        10227
+      ]
+    },
+    {
+      "frame": 2000,
+      "label": "",
+      "recolored_pixels": [
+        10677,
+        10675
+      ]
+    },
+    {
+      "frame": 2600,
+      "label": "",
+      "recolored_pixels": [
+        2065,
+        2138
+      ]
+    },
+    {
+      "frame": 3800,
+      "label": "",
+      "recolored_pixels": [
+        27919,
+        27644
+      ]
+    },
+    {
+      "frame": 4000,
+      "label": "",
+      "recolored_pixels": [
+        28347,
+        28053
+      ]
+    },
+    {
+      "frame": 4500,
+      "label": "",
+      "recolored_pixels": [
+        27919,
+        27644
+      ]
+    }
+  ],
+  "byte_audits": 60,
+  "execution": [
+    {
+      "ok": true,
+      "id": 6218,
+      "mode": 1,
+      "interpreted": 0,
+      "fallback": 0,
+      "native_entries": 8642948,
+      "first_fallback_pc": 0,
+      "last_fallback_pc": 0,
+      "native_instructions": 914443855,
+      "stopped": 0
+    },
+    {
+      "ok": true,
+      "id": 6269,
+      "mode": 1,
+      "interpreted": 0,
+      "fallback": 0,
+      "native_entries": 8642948,
+      "first_fallback_pc": 0,
+      "last_fallback_pc": 0,
+      "native_instructions": 914443855,
+      "stopped": 0
+    }
+  ]
+}

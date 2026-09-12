@@ -1,0 +1,2239 @@
+{
+  "version": 1,
+  "inks": {
+    "0": "original",
+    "1": "warm white armor/text",
+    "2": "Gundam blue",
+    "3": "Gundam red",
+    "4": "yellow/gold",
+    "5": "steel",
+    "6": "cyan/teal",
+    "7": "rock",
+    "8": "green",
+    "9": "pink",
+    "10": "blue panel",
+    "11": "star white",
+    "12": "blue-gray armor",
+    "13": "neutral gray"
+  },
+  "authoring_notes": "Higher-priority annotations override base materials. Source world indices label only these captures. Screen-space shapes become guarded source-texel materials; they never run as screen-space filters.",
+  "references": [
+    {
+      "title": "Bandai SD Gundam Dimension War instruction booklet (1995), front and p4",
+      "url": "https://www.virtual-boy.com/games/sd-gundam-dimension-war/manuals/957156/",
+      "use": "Title blue SD/gold Gundam/silver subtitle; original SD RX-78 white/blue/red/yellow armor."
+    },
+    {
+      "title": "Bandai RX-78-2 Gundam official product art",
+      "url": "https://www.bandai.com/gundam-infinity-rx-78-2-gundam",
+      "image": "https://www.bandai.com/media/catalog/product/4/0/40600_40602_rx_78_2_01.jpg",
+      "use": "White armor, blue torso, red shield and feet, yellow vents/waist, gray weapons."
+    },
+    {
+      "title": "Bandai Spirits GP01 Full Burnern ver. A.N.I.M.E.",
+      "url": "https://tamashiiweb.com/item/13375/?wovn=en",
+      "use": "White armor, blue upper chest and shoulder pods, yellow vents, red feet, green eyes."
+    },
+    {
+      "title": "Bandai Spirits RMS-099 Rick Dias ver. A.N.I.M.E.",
+      "url": "https://tamashiiweb.com/item/14804/?wovn=en",
+      "use": "Standard gray/blue-gray machine, red forehead band, teal mono-eye; no pilot identity implies the standard scheme."
+    }
+  ],
+  "notes": "UI cyan/white, neutral steel and rocky terrain are presentation choices. References guide hue; native sprite geometry and brightness are preserved.",
+  "captures": [
+    {
+      "path": "validation/color-sources/0300-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/0300-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/0400-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/0400-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/0800-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/0800-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/1600-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "box": [
+            0,
+            0,
+            139,
+            315
+          ],
+          "ink": 2,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "box": [
+            139,
+            0,
+            512,
+            315
+          ],
+          "ink": 4,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "box": [
+            118,
+            190,
+            130,
+            200
+          ],
+          "ink": 4,
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/1600-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "box": [
+            0,
+            0,
+            139,
+            315
+          ],
+          "ink": 2,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "box": [
+            139,
+            0,
+            512,
+            315
+          ],
+          "ink": 4,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "box": [
+            118,
+            190,
+            130,
+            200
+          ],
+          "ink": 4,
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/1800-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/1800-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/2000-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/2000-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/2600-0.src",
+      "regions": [
+        {
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/2600-1.src",
+      "regions": [
+        {
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4000-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            279,
+            384,
+            281
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            314,
+            384,
+            317
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 20,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 22,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4000-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            279,
+            384,
+            281
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            314,
+            384,
+            317
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 20,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 22,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4500-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            279,
+            384,
+            281
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            314,
+            384,
+            317
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 20,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 22,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4500-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            279,
+            384,
+            281
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "box": [
+            0,
+            314,
+            384,
+            317
+          ],
+          "ink": 6,
+          "priority": 1
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 20,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 22,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/1800-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/1800-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/2000-0.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/2000-1.src",
+      "regions": [
+        {
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 0,
+          "world": 3,
+          "ink": 10,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 5,
+          "priority": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "ink": 11,
+          "priority": 1,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/5660-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/5660-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/5840-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/5840-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8270-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8270-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8450-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8450-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8630-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/8630-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 2,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-free-map/4620-0.src",
+      "regions": [
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            44,
+            12,
+            80,
+            54
+          ],
+          "ink": 1,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            54,
+            25,
+            68,
+            34
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            47,
+            19,
+            56,
+            26
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            68,
+            19,
+            77,
+            26
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            50,
+            46,
+            73,
+            54
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            60,
+            15,
+            63,
+            18
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            59,
+            21,
+            64,
+            22
+          ],
+          "ink": 8,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            60,
+            23,
+            63,
+            25
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            55,
+            26,
+            59,
+            28
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            64,
+            26,
+            67,
+            28
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            45,
+            30,
+            53,
+            42
+          ],
+          "ink": 12,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            268,
+            112,
+            301,
+            157
+          ],
+          "ink": 12,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            276,
+            135,
+            292,
+            144
+          ],
+          "ink": 13,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            280,
+            123,
+            286,
+            126
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            280,
+            127,
+            285,
+            129
+          ],
+          "ink": 6,
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4500-0.src",
+      "regions": [
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            176,
+            74,
+            207,
+            114
+          ],
+          "ink": 1,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "polygon": [
+            [
+              176,
+              87
+            ],
+            [
+              185,
+              88
+            ],
+            [
+              185,
+              103
+            ],
+            [
+              178,
+              108
+            ],
+            [
+              175,
+              106
+            ]
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            191,
+            90,
+            202,
+            100
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            184,
+            106,
+            207,
+            114
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            191,
+            77,
+            195,
+            81
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            192,
+            84,
+            200,
+            86
+          ],
+          "ink": 4,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            192,
+            91,
+            195,
+            94
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            198,
+            91,
+            201,
+            94
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            192,
+            101,
+            198,
+            104
+          ],
+          "ink": 4,
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6460-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6460-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6580-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6580-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6630-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6630-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6680-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6680-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6730-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6730-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6930-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/6930-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/7230-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/7230-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/9250-0.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources-english/9250-1.src",
+      "regions": [
+        {
+          "kind": 0,
+          "map": 0,
+          "ink": 1,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 1,
+          "ink": 6,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 3,
+          "ink": 10,
+          "complete_tile": true
+        },
+        {
+          "kind": 0,
+          "map": 4,
+          "ink": 5,
+          "complete_tile": true
+        },
+        {
+          "kind": 2,
+          "map": 2,
+          "ink": 7,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-free-map/4620-0.src",
+      "regions": [
+        {
+          "kind": 3,
+          "world": 24,
+          "ink": 4,
+          "complete_tile": true
+        }
+      ]
+    },
+    {
+      "path": "validation/color-free-map/4620-1.src",
+      "regions": [
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            47,
+            12,
+            83,
+            54
+          ],
+          "ink": 1,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            57,
+            25,
+            71,
+            34
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            50,
+            19,
+            59,
+            26
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            71,
+            19,
+            80,
+            26
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            53,
+            46,
+            76,
+            54
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            63,
+            15,
+            66,
+            18
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            62,
+            21,
+            67,
+            22
+          ],
+          "ink": 8,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            63,
+            23,
+            66,
+            25
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            58,
+            26,
+            62,
+            28
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            67,
+            26,
+            70,
+            28
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            48,
+            30,
+            56,
+            42
+          ],
+          "ink": 12,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            269,
+            112,
+            302,
+            157
+          ],
+          "ink": 12,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            277,
+            135,
+            293,
+            144
+          ],
+          "ink": 13,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            281,
+            123,
+            287,
+            126
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 26,
+          "space": "screen",
+          "box": [
+            281,
+            127,
+            286,
+            129
+          ],
+          "ink": 6,
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "path": "validation/color-sources/4500-1.src",
+      "regions": [
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            177,
+            74,
+            208,
+            114
+          ],
+          "ink": 1,
+          "priority": 2,
+          "complete_tile": true
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "polygon": [
+            [
+              177,
+              87
+            ],
+            [
+              186,
+              88
+            ],
+            [
+              186,
+              103
+            ],
+            [
+              179,
+              108
+            ],
+            [
+              176,
+              106
+            ]
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            192,
+            90,
+            203,
+            100
+          ],
+          "ink": 2,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            185,
+            106,
+            208,
+            114
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            192,
+            77,
+            196,
+            81
+          ],
+          "ink": 3,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            193,
+            84,
+            201,
+            86
+          ],
+          "ink": 4,
+          "priority": 3
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            193,
+            91,
+            196,
+            94
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            199,
+            91,
+            202,
+            94
+          ],
+          "ink": 4,
+          "priority": 4
+        },
+        {
+          "kind": 3,
+          "world": 24,
+          "space": "screen",
+          "box": [
+            193,
+            101,
+            199,
+            104
+          ],
+          "ink": 4,
+          "priority": 3
+        }
+      ]
+    }
+  ]
+}

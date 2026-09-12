@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "runtime_sha256": "c1a16b86a93b90bb29c675a1c9f67a39f482735a75a2538a86feed2da9ec9e13",
+  "execution": {
+    "ok": true,
+    "id": 1788,
+    "mode": 1,
+    "interpreted": 0,
+    "fallback": 0,
+    "native_entries": 2653872,
+    "first_fallback_pc": 0,
+    "last_fallback_pc": 0,
+    "native_instructions": 315437839,
+    "stopped": 0
+  }
+}

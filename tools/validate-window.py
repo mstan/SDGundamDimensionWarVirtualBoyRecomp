@@ -13,6 +13,9 @@ import time
 
 p=argparse.ArgumentParser(description=__doc__)
 for name in ('exe','rom','framework','route','out'): p.add_argument('--'+name,type=Path,required=True)
+p.add_argument('--english-package',type=Path)
+p.add_argument('--color-package',type=Path)
+p.add_argument('--input-save',type=Path,help='Private source save copied into this test profile')
 p.add_argument('--port',type=int,default=4570)
 args=p.parse_args();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
 sys.path.insert(0,str(args.framework.resolve()/'tools'))
@@ -51,11 +54,20 @@ if assets.exists(): shutil.copytree(assets,out/'assets',dirs_exist_ok=True)
 (out/'settings.cfg').write_text('scale 2\nsource 1\naudio 0\nfullscreen 0\nfilter 0\n')
 environment={k:v for k,v in os.environ.items() if not k.startswith('VBRECOMP_')}
 startup=subprocess.STARTUPINFO();startup.dwFlags=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
-process=subprocess.Popen([str(exe),'--rom',str(args.rom.resolve()),'--no-launcher','--no-save','--paused',
+extra=[]
+for package,feature in ((args.english_package,'sd-gundam-english:english'),(args.color_package,'sd-gundam-color:color')):
+    if package:extra+=['--install-mod',str(package.resolve()),'--enable-mod',feature]
+if args.input_save:
+    save=out/'saves/sd-gundam-dimension-war.sav';save.parent.mkdir(exist_ok=True)
+    shutil.copy2(args.input_save,save)
+else:extra+=['--no-save']
+process=subprocess.Popen([str(exe),'--rom',str(args.rom.resolve()),'--no-launcher',*extra,'--paused',
     '--config',str(out/'settings.cfg'),'--mods-dir',str(out/'mods'),'--port',str(args.port)],
     cwd=out,env=environment,startupinfo=startup,creationflags=subprocess.CREATE_NO_WINDOW,
     stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
 client=None;report={'passed':False,'checks':[],'runtime_sha256':hashlib.sha256(exe.read_bytes()).hexdigest()}
+if args.color_package:report['color_sha256']=hashlib.sha256(args.color_package.read_bytes()).hexdigest()
+if args.english_package:report['english_sha256']=hashlib.sha256(args.english_package.read_bytes()).hexdigest()
 try:
     deadline=time.monotonic()+15;hwnd=None
     while time.monotonic()<deadline:
@@ -68,6 +80,10 @@ try:
         if client and hwnd: break
         time.sleep(.03)
     if not client or not hwnd: raise RuntimeError('window or debugger unavailable')
+    if args.input_save:
+        initial=bytes.fromhex(client.command('read_ram',addr=0x06000000,len=65536)['hex'])
+        assert initial==args.input_save.read_bytes()
+        report['checks'].append('default save path loads exact battery file with selected mods')
     # Posted messages target only this process's window; no focus or desktop
     # keyboard injection is used. SDL consumes its normal window event path.
     key(hwnd,ord('X'),True);time.sleep(.1)
@@ -82,8 +98,11 @@ try:
     key(hwnd,9,False)
     client.command('screenshot',path=(out/'game.png').as_posix())
     client.command('screenshot',host=1,path=(out/'presented.png').as_posix())
-    assert load_png(out/'game.png')==load_png(out/'presented.png')
-    report['checks'].append('window presentation matches faithful framebuffer at route checkpoint')
+    client.command('screenshot',presented=1,path=(out/'expected-presented.png').as_posix())
+    assert load_png(out/'expected-presented.png')==load_png(out/'presented.png')
+    if args.color_package:assert load_png(out/'game.png')!=load_png(out/'presented.png')
+    else:assert load_png(out/'game.png')==load_png(out/'presented.png')
+    report['checks'].append('real window matches renderer output at route checkpoint')
     before=client.command('get_registers')
     tap(hwnd,27)
     client.command('screenshot',host=1,path=(out/'pause-menu.png').as_posix())
@@ -94,11 +113,14 @@ try:
     report['checks'].append('Escape opens shared pause UI and holds CPU state')
     client.command('pause');tap(hwnd,27)
     client.command('screenshot',host=1,path=(out/'resumed.png').as_posix())
-    assert load_png(out/'resumed.png')==load_png(out/'game.png')
+    assert load_png(out/'resumed.png')==load_png(out/'expected-presented.png')
     client.command('clear_input');time.sleep(.1)
     assert int(client.command('pad_state')['pad'],0)==2
     client.run_frames(2)
     report['checks'].append('Escape closes UI, physical input resumes and guest advances')
+    final_sram=bytes.fromhex(client.command('read_ram',addr=0x06000000,len=65536)['hex'])
+    report['execution']=client.command('execution_stats')
+    assert not report['execution']['fallback'] and not report['execution']['stopped']
     report['passed']=True
 except Exception as exc:
     report['error']=repr(exc)
@@ -111,6 +133,10 @@ finally:
     except subprocess.TimeoutExpired: process.terminate();_,err=process.communicate(timeout=5)
     report['exit']=process.returncode
     if process.returncode: report['passed']=False;report['crash']=err.decode(errors='replace')[-4000:]
+if report['passed'] and args.input_save:
+    report['save_sha256']=hashlib.sha256(save.read_bytes()).hexdigest()
+    if save.read_bytes()!=final_sram:report['passed']=False;report['error']='Disk SRAM differs from clean-exit live SRAM'
+    else:report['checks'].append('English and color enabled: clean exit publishes exact battery SRAM')
 (out/'report.json').write_text(json.dumps(report,indent=2))
 print(json.dumps(report,indent=2))
 raise SystemExit(0 if report['passed'] else 1)

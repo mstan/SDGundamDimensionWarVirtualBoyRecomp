@@ -84,6 +84,15 @@ through all 40 opening-mission checkpoints, with zero fallback.
 Restart after changing language to replay all text. See
 [localization details](docs/LOCALIZATION.md) for coverage and validation.
 
+## Color mod
+
+The optional `dist/sd-gundam-color-0.1.0.vbmod` adds colors based on the original
+Bandai booklet and official Gundam reference art. Enable **Gundam reference
+colors** in Mods, or launch with `tools/play.ps1 -Language en -Color on`.
+The first pass covers the title, interface, identified opening allies, terrain,
+and save menus. Uncaptured artwork remains red; full-campaign coverage is pending.
+See [color references, authoring, and validation](docs/COLOR.md).
+
 ## Validation
 
 `tools/validate.ps1` compares separate runtime and Beetle processes through the
@@ -115,6 +124,7 @@ localization mod (`.2`), save persistence validation (`.5`), then color (`.3`),
 then assessment of native widescreen
 (`.4`). Widescreen depends on what the game's scene and camera data support.
 See [localization reference](docs/LOCALIZATION.md) for the supplied IPS audit
-and the Endless Duel text/glyph workflow. Color and widescreen follow separately.
+and the Endless Duel text/glyph workflow. The first color mod is available;
+widescreen applicability remains a separate assessment.
 
 See [LICENSE.md](LICENSE.md). Game content and dependencies retain their own rights.
