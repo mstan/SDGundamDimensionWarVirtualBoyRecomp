@@ -1,4 +1,4 @@
-"""Build guarded native text from editable glyph/string sources; never write a ROM."""
+"""Build guarded native text; optionally export a private oracle reference image."""
 import argparse
 import hashlib
 import json
@@ -53,6 +53,7 @@ def main():
     p.add_argument('--rom', type=Path, default=root/'roms/sd_gundam.vb')
     p.add_argument('--framework', type=Path, required=True)
     p.add_argument('--check-reference', action='store_true')
+    p.add_argument('--reference-out', type=Path, help='Private reference image for independent audits; never the player ROM')
     args = p.parse_args()
     rom = args.rom.read_bytes()
     if hashlib.sha256(rom).hexdigest() != ROM_SHA:
@@ -86,8 +87,16 @@ def main():
         rows.append(f'    {{0x{off:x}u,{len(data)}u,text_source_{i},text_target_{i}}},')
         target[off:off+len(data)] = data
     target_sha = hashlib.sha256(target).hexdigest()
-    if args.check_reference and target_sha != REFERENCE_SHA:
+    if (args.check_reference or args.reference_out) and target_sha != REFERENCE_SHA:
         raise ValueError('Editable text does not reproduce the reference IPS image')
+    if args.reference_out:
+        destination=args.reference_out.resolve()
+        if destination==args.rom.resolve():
+            raise ValueError('Reference output must not overwrite the original cartridge')
+        if destination.exists() and destination.read_bytes()!=target:
+            raise ValueError('Reference output already contains different data')
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        destination.write_bytes(target)
     header += ['static const VbRomDataPatch sd_gundam_text[] = {', *rows, '};',
                f'static const unsigned sd_gundam_text_count = {len(entries)};', '']
     generated = root/'generated/sd_gundam_translation.h'

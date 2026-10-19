@@ -1,0 +1,7 @@
+{
+  "module": "sd_gundam",
+  "ui_option": "SD_GUNDAM_UI",
+  "sha256": "98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92",
+  "rom_option": "SD_GUNDAM_ROM",
+  "fast_build_option": "SD_GUNDAM_FAST_BUILD"
+}

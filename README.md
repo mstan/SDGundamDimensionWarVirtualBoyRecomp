@@ -136,6 +136,11 @@ proportions; expanded views reveal native submitted artwork. Tactical stars
 repeat into the wide margins at their original size; the colony drawing keeps
 its original extent. See [scope and validation](docs/WIDESCREEN.md).
 
+## Coverage pass
+
+See [the October 2026 coverage record](docs/COVERAGE-20261018.md) for the
+tested gameplay, native/fallback results, reproduction commands and limits.
+
 ## Validation
 
 `tools/validate.ps1` compares separate runtime and Beetle processes through the

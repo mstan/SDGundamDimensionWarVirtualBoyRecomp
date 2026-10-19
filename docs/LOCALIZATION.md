@@ -22,9 +22,17 @@ own glyph rendering. No patch records lie outside the small range above.
 This confirms the story surface; it does **not** establish whole-game language
 coverage or provide new font assets.
 
-Reproduce the private reference with `python tools/inspect_inputs.py
---write-reference-rom`, then capture `reference/sd_gundam_english.vb` with
-`tools/capture_route.py --mode oracle`. The compiled Japanese game continues
+Reproduce the private reference from tracked editable text, without requiring
+the historical IPS archive:
+
+```powershell
+python tools/build_translation.py --framework vbrecomp --rom roms/sd_gundam.vb --check-reference --reference-out reference/sd_gundam_english.vb
+```
+
+Then capture `reference/sd_gundam_english.vb` with
+`tools/capture_route.py --mode oracle`. The export checks the exact historical
+reference hash and refuses to overwrite the original cartridge or a different
+existing file. The compiled Japanese game continues
 to require the original ROM. The patched reference is never an input to its
 baseline build and remains ignored.
 

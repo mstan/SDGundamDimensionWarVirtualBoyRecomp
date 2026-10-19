@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(SDGundamDimensionWarVirtualBoyRecomp VERSION 0.1.0 LANGUAGES C CXX)
+project(SDGundamDimensionWarVirtualBoyRecomp VERSION 0.1.1 LANGUAGES C CXX)
 include(CTest)
 set(VBRECOMP_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/vbrecomp" CACHE PATH "vbrecomp checkout")
 set(RECOMP_UI_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/recomp-ui" CACHE PATH "recomp-ui checkout")
@@ -23,8 +23,13 @@ if(SD_GUNDAM_FAST_BUILD)
     else()
         set(_generated_optimization -O1)
     endif()
-    set_property(SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/generated/sd_gundam_full.c"
-        TARGET_DIRECTORY vb-runtime APPEND PROPERTY COMPILE_OPTIONS ${_generated_optimization})
+    get_target_property(_game_sources vb-runtime SOURCES)
+    foreach(_source IN LISTS _game_sources)
+        if(_source MATCHES "/generated/sd_gundam_(full|part_[0-9]+)\\.c$")
+            set_property(SOURCE "${_source}" TARGET_DIRECTORY vb-runtime
+                APPEND PROPERTY COMPILE_OPTIONS ${_generated_optimization})
+        endif()
+    endforeach()
 endif()
 set_property(SOURCE "${VBRECOMP_ROOT}/runtime/src/host.cpp" TARGET_DIRECTORY vb-runtime
     APPEND PROPERTY COMPILE_DEFINITIONS VB_GAME_REGION="Japan")
