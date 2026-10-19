@@ -90,9 +90,14 @@ with tempfile.TemporaryDirectory(prefix='sd-gundam-release-', dir=args.out) as t
     for source in sorted((exe.parent / 'assets').rglob('*')):
         if not source.is_file():
             continue
+        relative = source.relative_to(exe.parent / 'assets')
         if source.suffix.lower() not in ('.tga', '.ttf', '.md'):
-            raise SystemExit(f'Unexpected runtime asset: {source.name}')
-        target = stage / 'assets' / source.relative_to(exe.parent / 'assets')
+            # Current recomp-ui includes a PNG flag atlas. Only accept PNGs
+            # byte-identical to the clean, pinned shared common asset tree.
+            original = args.ui / 'assets/common' / relative
+            if source.suffix.lower() != '.png' or not original.is_file() or sha(source) != sha(original):
+                raise SystemExit(f'Unexpected runtime asset: {source.name}')
+        target = stage / 'assets' / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     for package, _ in packages:
