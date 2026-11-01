@@ -189,7 +189,10 @@ and notice, and `docs/` records validation and scope.
 
 The default build includes the recomp-ui launcher, settings, input mapping and
 Mods menu, and creates all three `.vbmod` files under ignored `dist/`. A fresh
-profile starts with the original Japanese, red, native-aspect presentation.
+profile starts with the original Japanese, red, native-aspect presentation and
+4x internal resolution. Saved resolution choices remain authoritative. Enhanced
+GPU resolution currently applies to stock presentation; color and widescreen
+callbacks retain native rendering.
 Select mods in the launcher or use `tools/play.ps1 -Language en -Color on
 -Widescreen adaptive` to install and enable all three.
 

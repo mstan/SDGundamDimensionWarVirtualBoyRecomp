@@ -1,7 +1,7 @@
-# SD Gundam: Dimension War Recompiled 0.1.0
+# SD Gundam: Dimension War Recompiled 0.1.2
 
 **Early prototype. Bugs are expected.** Later missions and endings have not
-received a complete playthrough. This is the first Windows x64 prerelease.
+received a complete playthrough. This is a Windows x64 prerelease.
 
 ## Download and play
 
@@ -12,7 +12,10 @@ received a complete playthrough. This is the first Windows x64 prerelease.
    Enable **English story text**, **Gundam reference colors**, or **Adaptive
    widescreen** independently. Restart after changing language.
 
-The default is Japanese, original red, and native aspect ratio. Widescreen
+The default is Japanese, original red, native aspect ratio and 4x internal
+resolution. Saved settings override that fresh-profile default. The shared GPU
+renderer enhances stock presentation; color and widescreen callbacks retain
+native rendering. Widescreen
 offers 16:9, 21:9, 32:9 and Adaptive (fit window). The accepted tactical
 starfield continuation fills wide margins using native-sized star motifs.
 The ZIP and separate mod downloads contain identical packages:
@@ -60,4 +63,9 @@ runtime, assets, public documentation, notices and three mod packages. It
 does not copy a development profile. The package script accepts `--framework`,
 `--ui`, `--toolchain`, `--build` and `--out` for separate checkouts.
 
-Central release issue: `beads-vb.4.10`.
+Central release issue: `beads-vb.4.12`.
+
+Version 0.1.2 adopts the qualified shared-engine optimization release
+`84246a09cdc5062fd9da67be1ff6a197e7ac7d68`. The English, color and widescreen
+packages are unchanged. Later missions and endings remain outside the existing
+opening/combat validation coverage.

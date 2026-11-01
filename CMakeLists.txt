@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(SDGundamDimensionWarVirtualBoyRecomp VERSION 0.1.1 LANGUAGES C CXX)
+project(SDGundamDimensionWarVirtualBoyRecomp VERSION 0.1.2 LANGUAGES C CXX)
 include(CTest)
 set(VBRECOMP_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/vbrecomp" CACHE PATH "vbrecomp checkout")
 set(RECOMP_UI_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/recomp-ui" CACHE PATH "recomp-ui checkout")
@@ -34,6 +34,7 @@ endif()
 set_property(SOURCE "${VBRECOMP_ROOT}/runtime/src/host.cpp" TARGET_DIRECTORY vb-runtime
     APPEND PROPERTY COMPILE_DEFINITIONS VB_GAME_REGION="Japan")
 target_compile_definitions(vb-runtime PRIVATE
+    VB_GAME_DEFAULT_INTERNAL_SCALE=4
     VB_GAME_ID="sd-gundam-dimension-war"
     VB_GAME_TITLE="SD Gundam: Dimension War Recompiled"
     VB_GAME_SHA256="98d210dcbd1c5d836aa5bbf018eb26e971711b69b4423187bbb72178d5da9a92"

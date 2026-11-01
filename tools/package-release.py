@@ -80,6 +80,8 @@ info = {'version': (ROOT / 'VERSION').read_text().strip(), 'early_prototype': Tr
         'framework_commit': git(args.framework, 'rev-parse', 'HEAD'),
         'ui_commit': git(args.ui, 'rev-parse', 'HEAD'),
         'configuration': 'Release, full optimization, recomp-ui, hybrid fallback, TCP/CPU trace disabled',
+        'default_internal_resolution': 4, 'saved_resolution_choices_preserved': True,
+        'enhanced_gpu_scope': 'stock presentation; custom color/viewport callbacks use native rendering',
         'executable_sha256': sha(exe), 'optional_mods': [item for _, item in packages]}
 with tempfile.TemporaryDirectory(prefix='sd-gundam-release-', dir=args.out) as temp:
     stage = Path(temp).resolve()
@@ -153,6 +155,8 @@ with tempfile.TemporaryDirectory(prefix='sd-gundam-release-', dir=args.out) as t
         'story text, Gundam reference colors or Adaptive widescreen. All are\n'
         'OFF by default. Restart after changing language. Widescreen supports\n'
         '16:9, 21:9, 32:9 and Adaptive (fit window).\n'
+        'Fresh settings use 4x internal resolution; saved choices are preserved.\n'
+        'Enhanced GPU rendering applies to stock presentation. Color/wide use native rendering.\n'
         'Keyboard: arrows, WASD, X/Z, Q/E, Enter/Right Shift. Escape: settings.\n'
         'Keep vbrecomp.cfg, keybinds.ini, saves/ and mods/ when updating.\n'
         'See docs/RELEASE.md and licenses/ for details and component notices.\n', encoding='utf-8')
