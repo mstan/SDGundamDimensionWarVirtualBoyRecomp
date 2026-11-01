@@ -109,6 +109,7 @@ with tempfile.TemporaryDirectory(prefix='sd-gundam-release-', dir=args.out) as t
     for source, name in [
         (ROOT / 'LICENSE.md', 'project.txt'),
         (args.framework / 'LICENSE', 'vbrecomp.txt'),
+        (args.framework / 'lib/retcomm-rbengine/LICENSE', 'retcomm-rbengine.txt'),
         (args.ui / 'LICENSE', 'recomp-ui.txt'),
         (args.framework / 'runtime/licenses/snes-mod-runtime.txt', 'snes-mod-runtime.txt'),
         (args.ui / 'src/third_party/imgui/LICENSE.txt', 'imgui.txt'),
