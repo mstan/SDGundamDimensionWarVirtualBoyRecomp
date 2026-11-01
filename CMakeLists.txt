@@ -67,6 +67,8 @@ add_custom_target(sd-gundam-english-package
     DEPENDS "${_text_header}" "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-english-0.1.0.vbmod")
 add_dependencies(vb-runtime sd-gundam-english-package)
 target_sources(vb-runtime PRIVATE src/translation_mod.cpp src/color_mod.cpp src/widescreen_mod.cpp src/widescreen_scene.cpp "${_text_header}")
+vb_state_add_identity(vb-runtime src/translation_mod.cpp src/color_mod.cpp
+    src/widescreen_mod.cpp src/widescreen_scene.cpp translations/english.json)
 add_custom_target(sd-gundam-color-package ALL
     COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/build_color.py"
     BYPRODUCTS "${CMAKE_CURRENT_SOURCE_DIR}/dist/sd-gundam-color-0.2.2.vbmod"
